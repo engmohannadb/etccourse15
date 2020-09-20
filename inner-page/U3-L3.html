@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>مقدمة في علم الاحصاء </title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'>
+    <!-- Our Custom CSS -->
+    <link rel='stylesheet' href='../css/page2.css'>
+    <link rel='stylesheet' href='../css/rtl.css'>
+    <!-- Scrollbar Custom CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap' rel='stylesheet'>
+
+
+    <!-- Font Awesome JS -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/solid.js'></script>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js'></script>
+
+
+</head>
+
+<body><nav id='sidebar'>
+            <div id='dismiss'>
+                <i class='fa fa-times' aria-hidden='true'></i>
+
+            </div>
+
+            <div class='sidebar-header'>
+                <!--<h3>Bootstrap Sidebar</h3>-->
+            </div>
+
+            <ul class='list-unstyled components'>
+                <p>الفهرس</p>
+                <li>
+                    <a href='#homeSubmenu1' data-toggle='collapse' aria-expanded='false'>الوحدة الاولى </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu1'>< li>
+                            <a href='U1-L1.html'>مقدمة</a>
+                        </li>< li>
+                            <a href='U1-L2.html'>تعريف علم الاحصاء</a>
+                        </li>< li>
+                            <a href='U1-L3.html'>المجتمع الإحصائي</a>
+                        </li>< li>
+                            <a href='U1-L4.html'>الوحدة الإحصائية</a>
+                        </li>< li>
+                            <a href='U1-L5.html'>العينة والمعاينة</a>
+                        </li>< li>
+                            <a href='U1-L6.html'>الإطار</a>
+                        </li>< li>
+                            <a href='U1-L7.html'>معالم المجتمع وإحصائية العينة</a>
+                        </li>< li>
+                            <a href='U1-L8.html'>وظائف علم الإحصاء</a>
+                        </li>< li>
+                            <a href='U1-L9.html'>وصف البيانات Data Description	</a>
+                        </li>< li>
+                            <a href='U1-L10.html'>الاستدلال الإحصائي Statistical Inference	</a>
+                        </li>< li>
+                            <a href='U1-L11.html'>التنبؤ Forecasting	</a>
+                        </li>< li>
+                            <a href='U1-L12.html'>أنواع البيانات وطرق قياسها	</a>
+                        </li>< li>
+                            <a href='U1-L13.html'>البيانات الوصفية	</a>
+                        </li>< li>
+                            <a href='U1-L14.html'>البيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U1-L15.html'>طرق جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L16.html'>المصادر الأولية</a>
+                        </li>< li>
+                            <a href='U1-L17.html'>المصادر الثانوية      </a>
+                        </li>< li>
+                            <a href='U1-L18.html'>وسائل جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L19.html'>أسلوب جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L20.html'>أنواع العينات</a>
+                        </li>< li>
+                            <a href='U1-L21.html'>العينات الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L22.html'>العينات غير الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L23.html'>تمارين</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu2' data-toggle='collapse' aria-expanded='false'>الوحدة الثانية </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu2'>< li>
+                            <a href='U2-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U2-L2.html'>عرض البيانات جدولياً</a>
+                        </li>< li>
+                            <a href='U2-L3.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L4.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L5.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L6.html'>تكوين التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L7.html'>تكوين جدول تفريغ البيانات</a>
+                        </li>< li>
+                            <a href='U2-L8.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L9.html'>العرض البياني للبيانات الوصفية</a>
+                        </li>< li>
+                            <a href='U2-L10.html'>الدائرة البيانية	</a>
+                        </li>< li>
+                            <a href='U2-L11.html'>رسم الدائرة</a>
+                        </li>< li>
+                            <a href='U2-L12.html'>الأعمدة البيانية</a>
+                        </li>< li>
+                            <a href='U2-L13.html'>الأعمدة البيانية المزدوجة</a>
+                        </li>< li>
+                            <a href='U2-L14.html'>الأعمدة البيانية المجزأة</a>
+                        </li>< li>
+                            <a href='U2-L15.html'>العرض البياني للبيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U2-L16.html'>المدرج التكراري Histogram </a>
+                        </li>< li>
+                            <a href='U2-L17.html'>المنحنى التكراري</a>
+                        </li>< li>
+                            <a href='U2-L18.html'>التوزيعات التكرارية المتجمعة </a>
+                        </li>< li>
+                            <a href='U2-L19.html'>التوزيع التكراري المتجمع الصاعد</a>
+                        </li>< li>
+                            <a href='U2-L20.html'>التوزيع التكراري المتجمع الهابط</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu3' data-toggle='collapse' aria-expanded='false'>الوحدة الثالثة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu3'>< li>
+                            <a href='U3-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U3-L2.html'>مقاييس النزعة المركزية</a>
+                        </li>< li>
+                            <a href='U3-L3.html'>الوسط الحسابي  Arithmetic Mean</a>
+                        </li>< li>
+                            <a href='U3-L4.html'>الوسيط  Median</a>
+                        </li>< li>
+                            <a href='U3-L5.html'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</a>
+                        </li>< li>
+                            <a href='U3-L6.html'>تطبيقات الفصل الثالث</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu4' data-toggle='collapse' aria-expanded='false'>الوحدة الرابعة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu4'>< li>
+                            <a href='U4-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U4-L2.html'>المدى Rang</a>
+                        </li>< li>
+                            <a href='U4-L3.html'>التباين والانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L4.html'>التباين والانحراف المعياري في العينة S</a>
+                        </li>< li>
+                            <a href='U4-L5.html'>خصائص الانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L6.html'>معامل الاختلاف النسبي	</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu5' data-toggle='collapse' aria-expanded='false'>الوحدة الخامسة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu5'>< li>
+                            <a href='U5-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U5-L2.html'>الارتباط الخطى البسيط Simple Correlation</a>
+                        </li>< li>
+                            <a href='U5-L3.html'>معامل الارتباط الخطى البسيط " لبيرسون" Pearson    </a>
+                        </li>< li>
+                            <a href='U5-L4.html'>معامل ارتباط الرتب (اسبيرمان) Spearman     </a>
+                        </li>< li>
+                            <a href='U5-L5.html'>الانحدار الخطى البسيط Simple Regression  </a>
+                        </li>< li>
+                            <a href='U5-L6.html'>السلاسل الزمنية</a>
+                        </li>< li>
+                            <a href='U5-L7.html'>تطبيقات الفصل الخامس</a>
+                        </li></ul>
+                </li></ul>
+
+
+
+        </nav>        <div id='content'>
+
+            <nav class='navbar navbar-light bg-light shadow-sm ' dir='rtl'>
+                <div class='container'>
+
+                    <a class='navbar-brand float-right' href='#'>
+                        <img src='../img/logo1.png' class='d-inline-block align-top img-fluid ' alt=''>
+
+                    </a>
+                    <a class='nav-link home' href='../index.html'>
+                        <i class='fa fa-home fa-lg' aria-hidden='false'></i>
+                        <span class='sr-only'>(current)</span></a>
+                </div>
+            </nav>
+
+
+
+
+            <div class='container'>
+                <nav class='navbar navbar-expand-lg navbar-light  '>
+                    <div class='container-fluid'>
+
+                        <button type='button' id='sidebarCollapse' class='btn btn-info'>
+                            <i class='fas fa-align-left'></i>
+                            <span></span>
+                        </button>
+
+                        <button class='btn btn-dark d-inline-block d-lg-none ml-auto' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                            <i class='fas fa-align-justify'></i>
+                        </button>
+                        <h2 class='pr-3'>مقدمة في علم الاحصاء </h2>
+                        <div class='collapse navbar-collapse ' id='navbarSupportedContent'>
+                            <ul class='nav navbar-nav mx-auto'>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='#'> <button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>تعريف الحقيبة</button></a>
+
+
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='U1-L1.html'><button type='button' class='btn btn-secondary pr-3 pl-4 shadow-sm active'>المحتوى التعليمي </button></a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='../book/pdf.pdf' target='_blank'><button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>الكتاب</button> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav aria-label='breadcrumb'>
+                    <ol class='breadcrumb'>
+                        <li class='breadcrumb-item'><a href='../index.html'>الرئيسية </a></li>
+                        <li class='breadcrumb-item'><span style='color:white'>الوحدة الثالثة </span></li>
+                        <li class='breadcrumb-item active' aria-current='page'>الوسط الحسابي  Arithmetic Mean</li>
+                        
+                    </ol>
+                </nav>
+
+
+
+
+                <!--<h2 class='text-right'>الوسط الحسابي  Arithmetic Mean</h2>-->
+
+                
+
+
+                    <div class='content-text' id='style-1'> <p class='text-right text-justify mr-1 font-weight-normal' dir='rtl'><p>&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><strong><span lang="AR-EG">3/2/1 الوسط الحسابي&nbsp;&nbsp;</span><span dir="LTR">Arithmetic Mean</span></strong></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; من أهم مقاييس النزعة المركزية، وأكثرها استخداما ف</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;النواح</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;التطبيقية، ويمكن حسابه للبيانات المبوبة وغير المبوبة، كما يل</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;:</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><strong><span lang="AR-EG">أولا: الوسط الحسابي للبيانات غير المبوبة</span></strong></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; يعرف الوسط الحس</span><span lang="AR-EG">ابي&nbsp;</span><span lang="AR-SA">&nbsp;بشكل عام على أنه مجموع القيم مقسوما على عددها. فإذا كان لدينا&nbsp;&nbsp;</span><span dir="LTR">&nbsp;n</span><span lang="AR-SA">&nbsp;من القيم ، ويرمز لها بالرمز :</span>&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAAAeCAYAAABZn4LIAAAC7UlEQVRoBe2Xv2vbQBTH/T/4P/DQMZvnDFlN5izJ7r/AmTK0JqPRFoxXd4s9lmQIxRkyFOIOpdQBgwsGF0wh2Fni6ZXv0XeWzidZF70LGk5gJN2P73390dN7pwqFwxuBijflIEwBrscgCHADXI8EPEqHyA1wPRLwKL0TufP5jKJ2i84urvSyi/mUDqrVRJvuzHnhSzfn8k7DpLwm4DLESqVC1eoBTecLirfFgbu4jWtI6rp4yDtW0msCLht4fLglAO5e31EviujP8i93FTr70i1kKmWyhFcr3M3mlc5PjlT0/vj1O2V592Zfuu5O9s+Q8GqFi6WvLs6oVjum5/V6vxOHEb50HSzkHlrUayrcu+uuzru53eQY6Es3x9LOQ4p6tcJdr59pOBzSca2m8q7pCkn/8MOhKnhmX9b9Pt2sue/dJ+HVCvfrzQ2tXlYq7/IO4WW1Uv/vaXyvih1XfZc/naXrovMeYyW8arjILwD58/s3HZGccybTCX0eftH/CU/1tN7Q43SH5cJF1zI9s0n5aNSp3jhN1AbXdl5E2quGO+h3VI69fXjktQhRio+Hj50+vW42ut0GF21II0cn54mxLrr8VmAbyG8ML2rTd4UYHz9bzHb8unhlX1lnDTdrkNmnTKZE7ng0SkSROTftHnkcDxEHb+SxzzaPt+qbOnwvrce6OIvB5X2hDUh8wbTr6WSSiHhU6vhbUFTfXFdaz9THvRhcm3iRNqSIONwiWtJzOUXxdwC+5pA+zcAqLVxErmlWGlIRPQButyICWNQpBINZJ0oJl43Hi2gRED7mAuanXo9Go7GSx07DDAZnuFxsUNHxux8/iXsfdLtvKoriRjIEeduGAED+vmw2d7amznAz1hPpQjrw8cBEzP0XMXdLCLhm8zJRkDG0VHDxqsVfLdyXEbQJEwHR6Q9ouVwmnmFp4MIgpxo+czVOOC7BjVlskSJa7WgnlZUGbgmYiVsIcMWRbgUD3C0L8asAVxzpVvAfq74eE3Km3V4AAAAASUVORK5CYII=" alt="" /><span lang="AR-SA">&nbsp;</span><span lang="AR-EG">.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">فإن الوسط الحسابي لهذه القيم ، ونرمز له بالرمز&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAA80lEQVQ4EWP4T2XAQGXz/g9RAxkYGP4Tg7EFF328fPX8qf+5sbH/D527CXbEs8d3/usJC/93jqj4/+PnT2wOg4thuPDmuUNw78bVTf//4Prl/zuPnYVrIMTAMBCk4efPH/+X9DWBDZ65Zi8hM1DksRoIUgHzJszbKLrwcHAaCHJlRYTzf6q5EBR2mZkuREUEsoOxuhDkuh079v8HRZCSkt//958+IevBy0YxcO+amf+b+pb8P3fwINgQUDjaq9n/v/P42f9tS9cRZTCKgWeP7fwvLKwHT3+wcDT1if3//NUbvC6DSaIYCBOkhB41kJLQg+gFALNG5ykJ4qUtAAAAAElFTkSuQmCC" alt="" /><img src="blob:http://10.34.17.22/1632b7e3-a32e-40a5-bdd4-54a493153d23" alt="" /><span lang="AR-SA">&nbsp;يحسب بالمعادلة التالية</span><span lang="AR-EG">&nbsp;:</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span><img src="blob:http://10.34.17.22/a8f6c1f5-b891-4c2b-a2ee-e0d14bea05fa" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVIAAAB+CAYAAAB2zJkWAAAgAElEQVR4Ae2dBdQVxRvGUVQUDMQAEQXEFsXADsQAxcA8NqKC2KCC3QoWmCAotthxRCzsViywE0Xs7tb//M9vdK5799u9d/fm7Pc9c86evVszs8/uffateaeZURECQkAICIGyEGhW1tW6WAgIASEgBIyIVC+BEBACQqBMBESkZQKoy4WAEBACIlK9A0JACAiBMhFITaR//PGH+eabb7QIA70Degeq/g78+OOPZVJcbS5PRKTffvttDrDjjjvOzDvvvKZVq1ZahIHeAb0DVX0Hunfvbr744osc/yDE/e9//6sNO6ZopSiRvvbaa2ahhRbKgdWsWTMzyyyzmJYtW2oRBnoH9A5U9R1AaOvQoUOOf+abbz5z8803p6C42pxakEg/+eQT07FjRwN5OuKcZ555zPjx483XX3+tRRgUfQfQZr777jvz/fff56QKtvX+6P+T5B346quvzI033pjjH7hozjnnNI8++mhtGDJhK7FEim1itdVWsyS6wQYb5L34f//9d8LqdZoQMFYV++uvvwSFECgZAUe6Bx54oOWk1q1bG7RlX9T8WCLdeuutbYeXW245K0mUjIAubNIITJo0yZx++unm+OOPN0inn332mRkxYoSVUJs0MLr5khD49ddfzQ477GC5aYklljC//fZbSfVU+qJIIv3pp5/MKqusYlDj33///Uq3qfqaEAI33XSTOfnkk83IkSPtS//GG2+Yzp07m/vvv9+igERRb6kCDQsN7M8//2xCTya7t/rzzz+btdZay8w222zmo48+8uJGIol07733tp185plnvOikOpFdBJAYWL788ku7fvnll812222XkySefvppA7kWKhAt3lrsrNUg3SeffNL06NHDkr3ItNCT8OcYqv4CCyxgunXr5kWnIonUic7vvvuuF51UJ7KNwKeffmo23nhjc8IJJ5i33nrLEELnVLL999/fXHTRRQVv8IUXXjCrr766OfTQQw1xzJUsEDP9wYkx11xzmffee6+S1auuKiKw4IILmvbt21exheRVNyDSX375xWyzzTZm7rnnNm+//XbymnSmEIhAACcTBEgYy9JLL22mT59uLrjgAvPUU0/Zs4cNG2Yuv/zyiCv/2QVxnnrqqebII480M2bMsBJpnLOTd9cRdGyFgQOo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qyEhUBoC06ZNszOb9uvXz84LxRQq48aNK60yXVUVBESkVYFVlQqByiDw448/2hlP1113XcNvZjIdOnSobKSVgbditYhIKwalKhIClUUAtf6tt94ya621lvniiy/snFPHHHOMOeKIIwzTTav4g4CI1J9noZ4IgTwEmE+KKaXfeOMNu/+yyy4zAwcONMOGDTNXXnll3rnaqC8CItL64q/WhUAsAhBpjx49bPgTJ91yyy2mXbt25rzzzrMT98VeqAM1R0BEWnPI1aAQSIYAqj3xo8SSUvizouJr5tNk+NXyLBFpLdFWW0JACDRKBESkjfKx6qaEgBCoJQIi0lqirbaEQBEEUNsZAvrNN99YNZ4ppaMWd85ff/1VpEYdrgUCItJaoKw2hEBCBO644w7ToUMH07p1a9O5c2ez5JJLmi5dujRY2rZta+NL33zzzYQ167RqIiAirSa6qlsIpETgl19+McSKNmvWzA4D/eSTT8ynn35qWAeXIUOG2HNeeumllC3o9GogICKtBqqqUwiUgcDPP/9sdthhB9OmTRvz2GOPRdaEJIqkOmXKlMjj4Z0//fRTbhfmA8wFCurPQVL2DxFp2RCqAiFQeQQgOoaFLrPMMlYijWphyy23NM8++2zUodw+QqieeeYZs8EGG1i761dffWVGjBhhSZhkKCqVQUBEWhkcVYsQqDgCb7/9tllxxRXN5ptvblD5w+WHH34wf/75Z3h33jbXrb766maeeeaxdtcFF1zQnHbaadZMIIk0D6qyNkSkZcGni4VAdRFA4uzYsaPZc889I8m0WOtIpATxP/DAA9amuvfee5dUT7F2mvpxEWlTfwN0/94jcO+995qFFlrIOqFK7SyE3KdPHxtaVWodui4eARFpPDZeHEH9wvngU0HKQa1kXa/iQx9qde+o74ceeqjN+lRqm/zRzz33XJsUutQ6dF08AiLSeGy8ODJmzBj7J/KiM/92gryYG2+8cV2lm2+//db2gcD1xl4IcRo8eHBZH9Snn37aLLzwwmaXXXZp7HDV5f5EpBWCHaN+UELD68qfvdxCIl/sWmkLZOcKE6bRn0olu0AaXXnllW2dro1aryFQ+vD111+nahoMgqOBwCVtHakaLPPkjz76yBx22GG5VHppquMd4J18/vnnzW677WYuvvhis8cee9gs+1HOqzR169x8BESk+XiUtMULu802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" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">حيث يدل الرمز</span>&nbsp;<img src="blob:http://10.34.17.22/fc11b63e-f2b9-4d8f-a6b0-b495ed2e693b" alt="" />&nbsp;على المجموع.</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><strong><span lang="AR-SA">مثال (3-1)</span></strong></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; فيما يل</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;درجات&nbsp;</span><span dir="LTR">8</span><span lang="AR-SA">&nbsp;طلاب ف</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;مقرر الإحصاء.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><span dir="LTR">34&nbsp;&nbsp; &nbsp;32&nbsp;&nbsp; &nbsp;42&nbsp;&nbsp; &nbsp;37 &nbsp;&nbsp;&nbsp;35&nbsp;&nbsp;&nbsp; &nbsp;40&nbsp;&nbsp; &nbsp;36 &nbsp;&nbsp;&nbsp;&nbsp;40</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">والمطلوب إيجاد الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;لدرجات الطلاب.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><strong>الحل:</strong></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">لإيجاد الوسط الحساب</span><span lang="AR-EG">ي للدرجات تطبق المعادلة كما يلي:</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span><img src="blob:http://10.34.17.22/7803c090-ff75-4afb-af89-685fa5c377cb" alt="" /><img src="data:image/png;base64,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" alt="" /></p>
+<p dir="RTL" style="text-align: right;">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">أي أن الوسط الحساب</span><span lang="AR-EG">ي</span>&nbsp;<span lang="AR-SA">لدرجات الطلاب يساوي &nbsp;</span><span dir="LTR">37</span><span lang="AR-SA">&nbsp;درجة</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;">&nbsp;</p>
+<p dir="RTL" style="text-align: right;">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><strong><span lang="AR-EG">ثانيا: الوسط الحسابي للبيانات المبوبة</span></strong></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; من المعلوم أن القيم الأصلية ، لا يمكن معرفتها من جدول التوزيع التكرار</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;، حيث أن هذه القيم موضوعة ف</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;شكل فئات، ولذا يتم التعبير عن</span><span lang="AR-EG">&nbsp;كل قيمة من&nbsp;</span><span lang="AR-SA">القيم الت</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;تقع داخل حدود الفئة بمركز</span><span lang="AR-EG">&nbsp;هذه</span><span lang="AR-SA">&nbsp;الفئة، و</span><span lang="AR-EG">من ثم يؤخذ&nbsp;</span><span lang="AR-SA">ف</span><span lang="AR-EG">ي</span>&nbsp;<span lang="AR-SA">الاعتبار أن مركز الفئة هو القيمة التقديرية لكل مفردة تقع في هذه الفئة.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">فإذا&nbsp;</span><span lang="AR-SA">كانت</span>&nbsp;<span dir="LTR">k</span><span lang="AR-SA">&nbsp;ه</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;عدد الفئات، وكانت</span><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/577a3794-4f3f-478a-83bc-96f189400d20" alt="" /><span lang="AR-SA">&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAAAeCAYAAABZn4LIAAACxklEQVRoBe2Yv2vbQBTHNWTq6v/Ag8dsnjWko8lYsii7h8z1lCGUDh1CtqClkwOF5gddgjsE4wwhBOoMIYRAoAFDAiEQ4i7x9MpX8I6zorNPunsllNMiId1931cfPb17UkRhEyMQiSkHYQpwBZMgwA1wBQkISofMDXAFCQhKh8z9l3D/PD/T4f4OxXGD0t0jFXoyeaHu5gZFUUQbm1113vZAStc2fplxvrxOZe7d6IYWa7UMICDW68v0NB4TwHZWltT51fVteplMrP1K6VobKDHQp9cpuOzh8eFewTweXmcZq2cxjyu7l9It68NmvA+vhXAR/Hp4nGVqI47p4PDExo/VGCldq+AlB7l6NcIdj59ouV6npZVOqRIwz7+U7ry4Va67ejXChZnt9VWq1RbpZnRXxZtxjpSuMaDDBRevRrh4akmrmZUGH/WW709Kl/V97l29GuEOBwM6vzzLugd0B742KV1f/nQdV6+FcNGOXFzdqhaMWzIEPh2c0o/uVqWMnqf7pfMh05UoRTo0m+N5XtGKomTobPK6Ci4GYvEajX5Tmu6pcUe7aXbDP09+0V6aqvqLldSmXNjqfvv+ldD2YUNMm4VU/6jJ991Vrtl65TUIZePTxy3jgq/gmsxwU91sJXT/8Kig5+HyuPyTLKuLADDdft/OPmA4YJG+SRtzbK69W1iYyjzTHI5dxGBWyVRw+SZs93m4PO/26kJlN58ruwdc/e3R5/vQ96WHN+yg389aVnzR5t9kb3ABBH3xrCep39SsYywk+OzWN5/60HXVwy+Bz+029fo9Oju/1K2qY29wlaLjgemNcJT1Ph2lIm7EtJYkrzKWg70puADLmQ/z6Fje6sZeed/v9V4tbJXgcgeBOsMwXCHomvofOVddqfnoLNDdoLwkzVbhOlMJrpTh/003wBV8ogFugCtIQFA6ZG6AK0hAUPov51zqXh4zhXwAAAAASUVORK5CYII=" alt="" /> <span lang="AR-EG">هي</span><span lang="AR-SA">&nbsp;مراكز</span><span lang="AR-EG">&nbsp;هذه</span><span lang="AR-SA">&nbsp;الفئات،&nbsp;</span><img src="blob:http://10.34.17.22/dda304c1-b417-4f85-be48-35ff9a485e75" alt="" /><span lang="AR-SA">&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAAAeCAYAAABZn4LIAAAC1UlEQVRoBe2YsUsjQRTG908Q8h+kuOvsUlt4ZbC2WcuDHBxcc6iNhciV4TpJn1JJJ7lCghYphIuFiAgWgqAggphrTPWOL/DCZvNmdmd9jztkAmF2Zme++fY3M29mN6H4MyOQmClHYYpwDSdBhBvhGhIwlI4z93+AO5m8Ure9S0mSUK22TDd394a23od0qZk7Hj9T2mxQu3tIL39eaGt9lToHx++DgOFTlIK7v7NBGzv7ZjaGRz1artWo0Uzp4fHJrB8t4bJ+C+H+Hv4yDQM8cLwiTkfXWgxMdEL8OuEixmL5I8byX/vBr0enVK+v0fN4bAJCWzTUrxMuG+OR4rxW+vT4QGv1umm40fIKnSp+vXB59mpuXqzJqwGppr4mUGi9xa8XLk4JmF3a4QCmQ5eYNrRQvSp+vXAhaHWmtQo3odDK1q/i1wv3+KBjsuFYroiysELqVfXrhesaLUB/S6yUBg19QdNqpYTAzNeV/KIOPPtOO064RaOFkFFlI+INIvtSAi2O63iQ1fUtep1M8s+4kOfX8d12d6F+1Xv5TiS/XAeM9jZ/LvTN951w7+9uaOXDivMbggQXbfCm5RvNIl0Ybn1qzZ19XbpVAXK7z9++08elpcp+wSA7SRgqp064RQ0luCx6e3XhHBTMTJ8hwO10DllqLvXpzlUMzPh0fX5xrzcYTE9UUph0wsXo+r58SXA5lGThoWz7y/b0m8Hl+dn02vdGNjo5mZu14CTpBvITq0u6Zf0iXPxotag/6NPZ+aWoP4ML0bTRnALF94Te0VBswIUSXL6XTTlmYWQ399zxCW3Kamb1ta/L+uXw9jVNnXvPDC6LYrcuAmsBAmB5xsP4xdWtNjdVPfbL6aDfX9jYZnBDekaswUzEn4GEtM/XzepB07ch5tv+qzyOYTjhZFd83ksluHmRmJcJRLgyF5XSCFcFoywS4cpcVEojXBWMskiEK3NRKf0LIaE/GgtOQ98AAAAASUVORK5CYII=" alt="" /> <span lang="AR-SA">ه</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;التكرارات ، فإن الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;يحسب بالمعادلة التالية:</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span><img src="data:image/png;base64,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" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><strong><span lang="AR-SA">مثال (3-2)</span></strong></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; الجدول التالي يعرض توزيع 40 عميل حسب قيمة ودائعهم بالمليون ريال..</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<div style="text-align: right;" align="center">
+<table border="1" width="489" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="103">
+<p><span dir="RTL" lang="AR-SA">فئات قيمة الودائع</span></p>
+</td>
+<td width="64">
+<p align="center">32-34</p>
+</td>
+<td width="64">
+<p align="center">34-36</p>
+</td>
+<td width="64">
+<p align="center">36-38</p>
+</td>
+<td width="64">
+<p align="center">38-40</p>
+</td>
+<td width="64">
+<p align="center">40-42</p>
+</td>
+<td width="64">
+<p align="center">42-44</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="103">
+<p><span dir="RTL" lang="AR-SA">عدد العملاء</span></p>
+</td>
+<td width="64">
+<p align="center">4</p>
+</td>
+<td width="64">
+<p align="center">7</p>
+</td>
+<td width="64">
+<p align="center">13</p>
+</td>
+<td width="64">
+<p align="center">10</p>
+</td>
+<td width="64">
+<p align="center">5</p>
+</td>
+<td width="64">
+<p align="center">1</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">والمطلوب إيجاد الوسط الحسابي.</span></p>
+<p dir="RTL" style="text-align: right;"><strong>الحل</strong>:</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">لحساب الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;يتم إتباع الخطوات التالية :</span></p>
+<p dir="RTL" style="text-align: right;">1-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">إيجاد مجموع التكرارات&nbsp;&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAeCAYAAACv1gdQAAAB70lEQVRYCe2Wv2vCQBTH8z/kP8jQ0a2zg2txdql7+g+oi4OIY3ATd0dLt24OOnToYIdSiiC0ELBQCkImM73yDTy5xFzy7mqLBQNyiXf37vO+70fi0Alfzgmz0RnONjr/Q7lRt0mO41j/xtOZrUDafXvl4nhH7UYtgXPdCi2WK+0mdeLl6ZEqrku/CocDo2hLdc/bA67DjcqhvV8tF8ZwEGMS9BLHIEbeWXvl+ORNuE42IMSeV6dtFPGUdoRT8/lSO5+d4Cg1uyPaxTEhpfKUP4CDISjB+VdrtBMD2QN+8jybjkWO58LhYBhgQHh4rIsjI8lpLRxg1ArOk90EWM1ndroMsBCOc0NqTAKLiEhTpRAOh6ke66pKAoU17Kw0TUrhYJTzBApyhUmB1HVspyycvEcEh8Wo4KvLa1FrYePZETak7Ql7RXAIx8D3cxtlFqDoGQUmzTcxHDq5NBQ6OM43k6ovVQ7VZWJQB4d8q15UjdQvhEOO9IKJ7jyj/+GktErZsBYOnvr+4CivLtuczYVDb+vcdIwq8/31ORUytvEWhnQ7CawicABn4yX2DFv9lDNcAGjcd/cPHCmj8QDOtDK/Pj9o2G8Z9S8pYQpO/RLh96l0NOlfxnDqN5wUSF1nWokSwJRykg1/ueYMZ6v2SSv3DRP3+kTdWJ+cAAAAAElFTkSuQmCC" alt="" /><img src="blob:http://10.34.17.22/5bce2d95-dd99-4bd1-94fe-6ffa2de023f0" alt="" />&nbsp;<span lang="AR-EG">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2-&nbsp;</span><span lang="AR-SA">حساب مراكز الفئات&nbsp;</span><img src="blob:http://10.34.17.22/7971a456-2cb0-4c65-a635-c2597a319f89" alt="" />&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAYAAABbLMdoAAAA3klEQVQ4EWP4TwJgIEHtfzopfvPq+f8JLeX/7dXs/995/AzuwmPb1oPZcGc8e3znv56w8H8GBgYwjqubDlawd81MMB/EgSuGGQPS5Kek9F9Jye//+aun/jf1Lfn/4+dPVJNhikE0zDTniAq4QpA4hskgQZiTZq7Zi2wGfsVEmbx/x47/zaVBYHe///QJbjqGMx5cvwwOtpvnDoFD4dC5m6iKp9fF/QdZeefOpf/rtx0DS3769B4cKqAgPHtsJ1gMbDLM9+geAhkiLKz3f+exswjFcHsIMDDcjE/9UFQMAMPMJZ5O+VNvAAAAAElFTkSuQmCC" alt="" /></p>
+<p dir="RTL" style="text-align: right;">3-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">ضرب مركز الفئة ف</span><span lang="AR-EG">ي</span><span lang="AR-SA"> التكرار المناظر له&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACZUlEQVRIDe1WsUoDQRC9f8gfpLBMZ21hKxZWNvEXrESrFFEEm5AuiCgKESzUaBO0ECFFioAJKEGEFIKgcAQCqZJq5A28ZbO3m+BZKGgg2ezOznszb+b2NpIf+kQ/xCu/j7jbacnpZT21IOPxSA7KZbm4OpP80rxEUSTzS3npvb0rpjfjaqkoi6tb8hH3UxPDsX60p4Tru8eKUymsKS4mCeK7830plqoyGo+/RfrSbihpuXotW6uLsnt4oiOwE8TYnM0uy2A4/BbpcDiQ5WzWYHHeaL8YXJMxjfvnd8aY9g9UQ01tLKyhfFTSECPbTCZnip+W9KF5K7lMxmRLnPe3nq4zayVGB6IOrsz9+EPKO5uyMLcwEVCzXlMQ1gvgzBKZ2l8SUdG1QkVjUWIu2lIwQoLQwSbgGrOyA7BlxrqdHOZKTBIfEGxslE63NbXjCR4qGR4n2AwxW99HjE3M0lZEvZ0fKueWjNu+TExFXPkIyHFWAgliAocypn1WxgBGT7ChGBDHBDElCgHf39zI9sZKousJiJEYofqy/igDPuY5RjS+2rw+P+mjRBmZTRzH5jAAEO2h4BkYVTXEcGS0CAIAvd6j1OpNjdB2xCHBANRoNaC7TjvLRbshphRoIHax20ys0W3zgXg60tenGDcC01bDEGMDsp7mTBB3ZDZuoNxHtZgt1ieIseBGRudpI3xCAVMNN6gEMclxW/BdBNzo3bkdIM56vAPsM512LzGMoasPZOVLA8C41rjZwB+Z4urT6nTJNTEGiSd2WRMA4o2FgwKqhIAtF+/fLxN7UVIs/hOnEC2dy9+T+hNTd6Ti8PYpDwAAAABJRU5ErkJggg==" alt="" /><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/d1a2b519-eb01-449c-bcce-5afa36261fef" alt="" />&nbsp;<span lang="AR-SA">، وحساب المجموع</span>&nbsp;<img src="blob:http://10.34.17.22/23f8b826-ab99-49f7-a654-944c9f2daa1e" alt="" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAeCAYAAACv1gdQAAACZElEQVRYCe2WMWsCMRTH/Q5+A4eObs4dXMXZRXf7BaqLgxRH6SbujpZu5RxEdHAQ1KFIFYQWBAURBCedUv4pL7yLl0u8pTcoyOXu8l5++b9/ckmIGP8SMWYTd7io1YmVcov5RBRzGZFI/GHFBm467olUKi92+4PYbtZS7FjAAebx4VGsN1sJtZqN/HCtWknKCUlv+ZdqraiWUnEYOyiPUu5yOYtKISvBksm0moXKoDUO+53sH5RU6xp6C9XSyaQYzVZX/RQc3nBA1P94Ol0F8AdIXG92+KOb2jSeSQwfHDJTAEprA0Rfzxv4gKDo68uz9BBXY/zxLhWiyQTZqN3t+3JdweHt6XRUSzpbqIjz5eILMt1QicizFNvvtpWPuQ0wTj6VCvQbxgiEI0AEYiAaxASlPydIlMsbeKJcbgROEKsS+bnCPJcRDp1QoqiApFbYxNDH5DeMHwqHDqQCZqh7gs9Sb1McLyPvQ94Og7fCISHkz2WK1tXLByc40+A2vyGXFQ4zbJTL1n2Pg6E98Dzx1mkay2bzmxNcp1k3GlYHovufr085GR1gvVyqhWHzmxUOCVx9BpVQws3mWwyHM8lJpYXv8GGnVenit1A4zJo2TFIk7Eqrk8cQBFZkbzxV4eQ328QDPXcLGLYbHHNu+SF/2BZCua7gUArTpklB/ArFqFz8eVgbMaYthsf54CB39anqtGWgZPARP4fxxLyNRUVbCsYoZnJOq1/BkT/ou+h6dTkc4CgGpTAGtiVXpRVc0CnBBZAU4UrpbXgMZ7ZMrigm84X+2niv4Iw9/vHFHS6q+Hfloir3C7tBsu8WXWcJAAAAAElFTkSuQmCC" alt="" /></p>
+<p dir="RTL" style="text-align: right;">4-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">حساب الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;بتطبيق القانون .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<div style="text-align: right;" align="right">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="131">
+<p dir="LTR" align="center"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABeklEQVRIDe2UMWvCUBDH33fIN8gHcPMT2FEko4vufoI6OZTO4ibudrMdiw4iOjgIpkMpRXAoCBZKQUwXM135P0i4mPdi4qs4NIHAy727+939770IutIjrsSlHPznyvv+gZ6fHqhgWWTbFVpvtpJxcam7rTqVqk3a/+ypWS3RzF1dHrxyZ7LLnefFlIx0DEchRMR5OR9JmVD1wfdjCXSG769Pqtg29QZjpUsEDA/MBPIg4O1lEc5EGa0wet5OAtEAXssqKHPEwMi13azJcRx6ff9QpE5ngnpJKinBqLpx0yDVbNJhKVRN568FYz7BCdQF6+xQrFysJRauBE+GQ3rst6ne6upyJ9rHg97J2BgYpxiz5VW702li9bwKHE5+X/keX4dgVIkTOJov5X6QoFiuKU8lT8LXvGBuP16H4OONc7/RgO7u8pzGYH4DcO9v7zupfjTG4GAk+FnctfupoOjcGMzly7LOwVnUMvLNpTaSL0twLnUWtYx8/5/Uv3Q2n6zfEelBAAAAAElFTkSuQmCC" alt="" /><img src="blob:http://10.34.17.22/39fe186b-fd20-43a0-af77-c52cccc840db" alt="" /></p>
+</td>
+<td width="132">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">مراكز الفئات</span></p>
+<p dir="LTR" align="center"><img src="blob:http://10.34.17.22/7971a456-2cb0-4c65-a635-c2597a319f89" alt="" /><img style="text-align: right;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAYAAABbLMdoAAAA3klEQVQ4EWP4TwJgIEHtfzopfvPq+f8JLeX/7dXs/995/AzuwmPb1oPZcGc8e3znv56w8H8GBgYwjqubDlawd81MMB/EgSuGGQPS5Kek9F9Jye//+aun/jf1Lfn/4+dPVJNhikE0zDTniAq4QpA4hskgQZiTZq7Zi2wGfsVEmbx/x47/zaVBYHe///QJbjqGMx5cvwwOtpvnDoFD4dC5m6iKp9fF/QdZeefOpf/rtx0DS3769B4cKqAgPHtsJ1gMbDLM9+geAhkiLKz3f+exswjFcHsIMDDcjE/9UFQMAMPMJZ5O+VNvAAAAAElFTkSuQmCC" alt="" /></p>
+</td>
+<td width="152">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">التكرارات</span></p>
+<p dir="LTR" align="center"><img src="file:///C:/Users/F/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" width="16" height="21" /><img style="text-align: right;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAA7UlEQVQ4EWP4T2XAQGXz/g+cgT9//vi/pK/pPwMDw39hYb3/dx4/w+o5olz46dP7/7E+pv+dIyr+//j5E2zwzDV7yTMQ5LKKCGe4YVhNQRLE6UKQq/yUlMBeJORNJPMIR8rNc4f+Kyn5/X//6ROyPpxsnC6E6ZheF/c/rm46jEuQxmsgzNuHzt0kaBBMAV4DSfUuyFC8BoK8iyt5wFyETuM08NnjO//t1exxJmB0g2B8nAbuXTOTpMjAMBCUgCeUt4CTx9Xzp/7HxuYSnVRghoFoFBeCwgyUiMtbJoCzGLJCYtkoBhKrCZ+6EWggAMcV/bIIUwnLAAAAAElFTkSuQmCC" alt="" /></p>
+</td>
+<td width="109">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">فئات قيمة الودائع</span></p>
+<p dir="LTR" align="center">(C )</p>
+</td>
+</tr>
+<tr>
+<td width="131">
+<p dir="LTR" align="center">4<img src="blob:http://10.34.17.22/a02152ce-e221-4fc6-a51f-3ede11f0f491" alt="" />33=132</p>
+</td>
+<td width="132">
+<p dir="LTR" align="center">(32+34)<img src="blob:http://10.34.17.22/4d3c2513-fb2e-4c3e-9694-55c87a8946c4" alt="" />2=33</p>
+</td>
+<td width="152">
+<p dir="LTR" align="center">4</p>
+</td>
+<td width="109">
+<p dir="LTR" align="center">32-34</p>
+</td>
+</tr>
+<tr>
+<td width="131">
+<p dir="LTR" align="center">7<img src="blob:http://10.34.17.22/a02152ce-e221-4fc6-a51f-3ede11f0f491" alt="" />35=245</p>
+</td>
+<td width="132">
+<p dir="LTR" align="right">35</p>
+</td>
+<td width="152">
+<p dir="LTR" align="center">7</p>
+</td>
+<td width="109">
+<p dir="LTR" align="center">34-36</p>
+</td>
+</tr>
+<tr>
+<td width="131">
+<p dir="LTR" align="center">13<img src="blob:http://10.34.17.22/a02152ce-e221-4fc6-a51f-3ede11f0f491" alt="" />37=481</p>
+</td>
+<td width="132">
+<p dir="LTR" align="right">37</p>
+</td>
+<td width="152">
+<p dir="LTR" align="center">13</p>
+</td>
+<td width="109">
+<p dir="LTR" align="center">36-38</p>
+</td>
+</tr>
+<tr>
+<td width="131">
+<p dir="LTR" align="center">10<img src="blob:http://10.34.17.22/a02152ce-e221-4fc6-a51f-3ede11f0f491" alt="" />39=390</p>
+</td>
+<td width="132">
+<p dir="LTR" align="right">39</p>
+</td>
+<td width="152">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="109">
+<p dir="LTR" align="center">38-40</p>
+</td>
+</tr>
+<tr>
+<td width="131">
+<p dir="LTR" align="center">5<img src="blob:http://10.34.17.22/a02152ce-e221-4fc6-a51f-3ede11f0f491" alt="" />41=205</p>
+</td>
+<td width="132">
+<p dir="LTR" align="right">41</p>
+</td>
+<td width="152">
+<p dir="LTR" align="center">5</p>
+</td>
+<td width="109">
+<p dir="LTR" align="center">40-42</p>
+</td>
+</tr>
+<tr>
+<td width="131">
+<p dir="LTR" align="center">1<img src="blob:http://10.34.17.22/a02152ce-e221-4fc6-a51f-3ede11f0f491" alt="" />43=43</p>
+</td>
+<td width="132">
+<p dir="LTR" align="right">43</p>
+</td>
+<td width="152">
+<p dir="LTR" align="center">1</p>
+</td>
+<td width="109">
+<p dir="LTR" align="center">42-44</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="131">
+<p dir="LTR" align="center">1496</p>
+</td>
+<td valign="top" width="132">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">&nbsp;</span></p>
+</td>
+<td valign="top" width="152">
+<p dir="LTR" align="center">40</p>
+</td>
+<td width="109">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">المجموع</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">إذا الوسط الحسابي&nbsp;</span><span lang="AR-EG">لقيمة الودائع هو :</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG"><img src="blob:http://10.34.17.22/7061c039-fcbf-4bfb-a4a1-c29092fa4764" alt="" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMsAAABXCAYAAACqX7ELAAALZklEQVR4Ae1dPW8USRD1f/A/cEBIRuyAFBFcRGJyn3ThCUgIOERoOUOW0yXDJrMgQCcROEACghM6I1nySZawZFk62SQ4mtNb8fbK7Zr+mOllu2cKCe3u9Md0varXVdXdM15q7J8hYAhEIbAUVcsqGQKGQGNkMSMwBCIRMLJEAmXVDAEji9mAIRCJQBVkeftyq1laWmq2Xr6NFMuqGQL5ESieLCCKkSS/4q3HdASKJsvX48Pm5vLy1KusrNxt/r24SJfQWhgCmRAomizSqzx/fN88TCalWzfdECieLO8+fplK9uXjOyNLNx1bq0wIFE0WEOT2vYfN98vLBl6GxMkku3VjCCQhUDRZIAnCL6yE3X/8PEkwq2wI5EageLLkFrhrf58/vW/W7tyaEvfJxqRrN9auYgSMLBHKQwi4vHyzef/pc4MVutUbq83h8deIllZlSAgYWQLaRN4kN0Tx25axA6ANtLgYsnzYfzM1Shhm7P955zGXl9+bh/duGzkGavypYhVDFgwchOEmpG/XHkaMxH+eZME9diYbV7xKKrhWf1gIFEUWQCt37ZFIY9lY+3dx8W+ztbWjFTXHx0fN5tMHV8jEfmMIxhU46eFi2qmDsYuDQaA4sgBZGjaMlfssGuJ/vn59jUyyLZJyJOLyWqzRMwTz3V8bk10bLgJFkgVww3NwqfbWnbXkc2HMgRDObW9uNienZ0laJMFiyZXUuVWuEoFiyQI0ObvDw2AFKsXg2Rbe5a+//0lWDlfB7NRAMnSDbVA0WSRhfAl/m3aQe3Rd5kVbhnFt/dv1cSFQPFkQDq2vP7uWm8SoiZuJqRuI9EqWr8SgPJ46RZMFecujXx8l5ytQH9ru7u42d1dWkk8rl5CvYEVvMtluVldvJI0fE0SbN8UkMNl4Mlueh+d8s/8haO1ot7f7YjoWhMRjzeOKJQsU9Gx9vfOxEqyUnX87n24qUrnfzs+nhjE1mu32ZWkYHIxCy1dCbYOWF1EB+dKN1dWZccaGoCS5RhaMGxus0lvKRZC2YXHvC4ssOO7TtpTf1n5I14slC2ZAzVh94HOjEoceGXoxbzk4PGhe7O75ms/K2GbRT2ZykSGGLHL1UCNLm8fxhaqcNGLuPwNvwF+KJAuUFHOyFwZycHA4Uw923N3QAgaHUwHc4OQMS28za/zjC/psC91Cbd2++v5OIQsml43Jjno8hzJpMtMbuWUp9+4rZy3tiyNLSkIPhaZ6Hyhmf+9Vazv0qc3MVKivLevk+ow1WNTDZEAyu+NvIwTGyTYyPCO55LVcMtXcT1FkgZJiE3qEWl2OysM4Nh88nS0awItJo0AI1hZ2uG3nrfgYskjMaPguWXzGr7Vh+IWwFceGkL/hP/KWlL2ueePzs/svhixUGhUT89llHwSzrAzxSA7cH2GcLHOV4bZ1y3P/jiELwi/mZ8TQJQuva3i5RJJ1QRYm9JicEM5qfeSWu9T+iiELZ7MYkrCOaxQxIMMAHzz9//gLftMIpHFofblttTo5r4XIAsykF6Sha7iwL5TRO6A+T1YzZ3HJI+WhjlhXlo3hezFkGQPYqTLSwCUh2Ifm5XxkQTv5aDQ8BLwo9k8w+TD38+U3JJJGRo5ryJ9GloK16yMLZ3l6We0zZNQauUgIzXto9QuGL/vQjCzZIc3XoY8s2l1SjZmEo1dBn74+WCYXRLRxpF47Oz2ZnTAH6dsWEkhkbWLAtdDkIMcF2VPqo+01srQNRF6XN839HQqZtOyuU1mpQuYe48/qb55kIVG04y68ryQRZGaI5l7vgwf63Nzcni0kkDiajjkuaYvyu+YNtbFRDu0eWn1eu0YWFpT6CcLIpd9Sx5ljXDSOWCMITSYoZ94SWtXCKiHq4IgL/tGIY8cSIz/Go02MNGaXlFj543hk/+gn9mgUvBOfk6qaLFS2TyGoM3Sy0FjkrInvWqLvGo32gg3iij5w5iy06sc+sQHLdyKAOK/29lk010/KL8kCIz860l8/hfqxJ9N9Jx1CQl3zLH2fXw/dMFQe2iEfA1lCGA29HF7NN2G68iOkDE0kaANP7Tvp4Pbr/r5CFjIaMxDdtLyWIoB7o5jfJMLJ2en0jJOcWZlUss6iDznGyGN10hDARI0Q6Zff/5jlMKEeYA8xIRg8E0+HoI3mgUP3ukIWVpZHt2OeX2eyKI277btvBgAxJfNlHzWRJRce1EfJnzlkpfFKfcMOeHrAJ39sCBZz0sF3H5SpZOHg4V26PL8eumlbOdyk3F3X6sFFA1SSR6tj1+pEAHbH52egY9/ESgljQjC3Du07W4IPo0ztjALYpyHQBwGG/iH7g9GHQjBGK3I82ckCNjJvkTey74bAz0AgZrKOCcFiwsQQKSmvGoYhGUp5fj1mQIxHNdfKsho/CaT87INH6RhIOfG9j6xuX/I3+g2F2qij2ZPsR/ue1bP4nl/Xbm7XDIGcCNCYfUSICcHaxsT+Yz0K+5l5Fq5tY4eXz0fQFaY8v86O7dMQCCGAUwF4hBtnwY6Oj6fVYchYucJqmO+flougPj1diGi9lo5jnl/3DX4RZTHALGJci7wnMPHNmDzugnAPRsqJcRFjBjHkk5gY09rab+qRFnd8mMjlDj/LY2yit2fhzWr5BCi+2aMWOXKOM7SKhKV5LNrwfBWIg+MsmtHlHNdQ+pqFYTUJRKPATOSbRWuSqe9YQwcEUa69tSbkifqOa0jtqySL9Cpwx+Zhmmmc3/YqJBgsMNO2AjjxGIZhWldLFoYOCC3GrujQAUHG6NpSLD3OvM/9hU2x/BpVkgXGQcVjxiRxyoc7/whh7KEDgiQEMZOj8BFJ1rPvLWfDagAG4RdylrHPiDEHBBlqaViRLJb7ha2+Ss8SFqtbDbmsGlrn73aHvK1k7oae2wzfyJIHdyPLDxyZAGNZFcbV5W2XeVQS1wvG6BK6jSwMwzTPwjItRIsbyXhqGVl+PEGHkI4LBciJSg9LQG6M2fefMpBEGiFIFo1I46FBnKTFk4UPovmMwi1LUTwNiYYVB1uZtXyygFyajAzRxrxIEqvN4skCQWIfCIKxIPGPJQvq8/Wl9CqxwJVYz0cWksKVs41EJcq36DFVQRaARGXDi/geOUVYsbW1E8SVq2nSK8WSLNj5gir4yIIhMS/jeTBOQuZV4hRWDVkgjiSMFn9TZDxiEPP8No3L1xf7rOGT8mjhFsdPgmCSaHvzI+va51UEqiILhg7PwZekQdl93vJC8tXuUa6q1H7NC4HqyAIgOINidsQsyj+hkAoSVr3Qh4UhqciNs36VZJGEcRPWFDUib9EOF6b0YXXHg0C1ZEEIFfvKTk2d9E5DyVc0Ge1aXgSqJAvyFh4e7AqH5StdkRtvu+rIAo8QeldUjDq5A67lK7iH9nb3mH6tznARqI4sOGWrGXiqipCv+JZYU/uz+sNHoCqywBu4hwc1FSFMOzg41Iqm11CuPWKLQuYytpzcCt9oC6ohS0pCjyVhn/cJHZQM/dmL0VrLyAWvgiwpCT2eSXGP18MjyVUvhGBtS87wLEP/Y0kjt/nO4hdPFoZF8gxX6Lu7d0JyoC8cnPSFcvBgvvLOSFvD6hEonixctQoRRJa7iTvCLrwfCyQK/Yk41A392YvqtW4CdEKgeLJ0ksoaGQJzQMDIMgdQrcthImBkGaZeTao5IFAVWZCgazvrXARwc5U54GVdjhiBqsji0xMIY0u+PoSsrC8C1ZCF3qNtZ93I0tcUrH0IgWrIAkF8O+tGlpCqrbwvAtWQhWQ4OTtt8Feb5L4KdufPv51bGNbXGqy9F4FqyMKddYZjRhavXq1wDghUQ5bQzjqOtIBA8gzYHPCyLkeMQDVkGbGOTPRCEDCyFKIIG0b5CBhZyteRjbAQBIwshSjChlE+AkaW8nVkIywEgf8AWM/mJyf11J8AAAAASUVORK5CYII=" alt="" /></span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">أي أن متوسط قيمة الودائع للعملاء يساوي</span><span dir="LTR">&nbsp; 37.4&nbsp;&nbsp;</span><span lang="AR-SA">مليون ريال</span><span dir="LTR">.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><strong><span lang="AR-EG">خصائص الوسط الحسابي</span></strong></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">يتصف الوسط الحسابي&nbsp;</span><span lang="AR-SA">بعدد من الخصائص، ومن هذه الخصائص ما يلي</span><span lang="AR-SA">:</span></p>
+<p dir="RTL" style="text-align: right;">1-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">الوسط الحسابي&nbsp;</span><span lang="AR-SA">للمقدار الثابت يساوى الثابت نفسه، أي أنه إذا كانت قيم&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAYAAABbLMdoAAAA3klEQVQ4EWP4TwJgIEHtfzopfvPq+f8JLeX/7dXs/995/AzuwmPb1oPZcGc8e3znv56w8H8GBgYwjqubDlawd81MMB/EgSuGGQPS5Kek9F9Jye//+aun/jf1Lfn/4+dPVJNhikE0zDTniAq4QpA4hskgQZiTZq7Zi2wGfsVEmbx/x47/zaVBYHe///QJbjqGMx5cvwwOtpvnDoFD4dC5m6iKp9fF/QdZeefOpf/rtx0DS3769B4cKqAgPHtsJ1gMbDLM9+geAhkiLKz3f+exswjFcHsIMDDcjE/9UFQMAMPMJZ5O+VNvAAAAAElFTkSuQmCC" alt="" /><img src="blob:http://10.34.17.22/ba9d9b2f-4bcd-4ad8-b018-5eb3e6ddf074" alt="" /><span lang="AR-SA">&nbsp;هي</span><span lang="AR-SA">:&nbsp;</span><img src="blob:http://10.34.17.22/e17ba746-d386-4721-9de7-150f981feade" alt="" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAAUCAYAAABcbhl9AAACcklEQVRoBe1YO2sCQRC+/3D/wCJlOmuLpJTUabS3SG9lYZHSVtKbLiSdmEIkFhaCphARQUjgIEIIBK7KVRNmYWVvbye3e7db3OWsbmdnv3l8M/vQg+pXqgx4pYqmCgYqQktWBEpCt69LuGm1YL7es3A/ggOc+z5cXHfhJ4rIFETRD3SvL6DebMF3GJJ68gSuGw364HkeW/u6XTJ7dw9TWdVo7ArXyIkMynn8ThC6X89ZYjG57d4Q3ncbeF6stNzKQujX5xGuajXoD0asWHB82+kwH3hBaRmXlFzhSmasD/P6nSAUPRQrJG+X/BVxGH4zMrFwxN+w14Za7cqoy8X1rnBFGy6+bfitJBSd5dtsni5JC5oiDuUyyWlY4rwrXNGGi28bfpOE8u3TVYfyapTxKbluAqn1lFwX17Ue5R8lp/whCcWzs9O5TL0IUcBpcjyrVdvq9OEOfP8cDsFHGoRy3hWu0phFoS2/lYRid04mM6CM2IgDiZMJxW2+1awn5Cb2XOGa+JBF15bfMUIRFG+b65cXdiHBBDfOGqxbxvePqZcUvk3rPFvQltiJ+FR6Gi+An584Pn5+xXKD+DiP66iz3RSXwsRixpu+eMPXkVF4sUAUA1O/FRBMFCN0tXiOJUskSE6uClDUT3uHcl3+9sQtlsvOGg3Y7N4TJvg8rqHexKIOFlYarqgvYuqQhw7KehReIhhJIK7T8VtafhrGCD1JC/Axm0z+/JMjSwi2MW3j6cRUSELxKFB1sE7AlI5tTNt4lN+yvFCE4raEVf8WBHIcmce2MW3jmQZWKEJNg/uP+hWhJWO9IrQitGQZKFk4VYeWjNBfpECiHL+l/KcAAAAASUVORK5CYII=" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">فإن</span><span lang="AR-EG">&nbsp;ا</span><span lang="AR-SA">لوسط الحسابي&nbsp;</span><span lang="AR-EG">هو:</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG"><img src="blob:http://10.34.17.22/e9ec49e6-3cb6-4271-bd87-b2cec18f1646" alt="" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAU0AAABDCAYAAAAYjVcAAAAQ+ElEQVR4Ae2dB9AURROGMWPChAFDiTlgqahYpkLLgIoBURRzwlwmTKUiYg6I2RJUREVFTJgKc8SsCAYwB0AFBTMGELX/euavuZrbi3u333dh36naur2NM+/2vtvT3dPTxlSEgBAQAkKgbATalH2kDhQCQkAICAETaUoIhIAQEAIxEIhFmn/88YfNnDlTizCQDEgGmkIGZs+eHYMu/39oUdKcOHGivfvuu255+eWXbZVVVrH55pvP5p13Xi3CQDIgGWh4Gdh4441tzJgxGZ6D7yZPnlyUSAuS5h133OEIsk2bNhYuu+yyi/Xs2VOLMJAMSAYaXgb23HNP23zzzbM4bq211nJEWog585Lm6aefnrnIueeea5dddplbbrjhhkLX0XYhIASEQEMi8MMPP2Q47rDDDnPct+iii9rQoUPztieLNH/88Ufr3r27O2nxxRe30aNH5z1JG4WAEBACzYjAv//+a4MGDcoojWeddVZOMzOk+fPPP9s666zjDt5www3t448/zjlYG4SAEBACaUDg0UcfteWWW87WW289mzJlSlaTM6SJljn33HPbQgstZD/99FPWQfojBISAEEgbAs8++6xTIrfddtuspmdIc86cOY4wcfr88ssvWQfpjxAQAkIgbQg8//zzjjS32WabrKY70iT2skePHrbwwgvbvffea3///XfWQfojBISAEEgbAkU1TbxHaJiQ5n///Zc2bNReISAEhEAOAkVJE3smtkxIU/bMHOy0QQgIgRQiINJM4UNXk4WAEKgcAZFm5djpTCEgBFKIgEgzhQ9dTRYCQqByBESalWOnM4WAEEghAiLNFD50NVkICIHKERBpVo6dzhQCQiCFCIg0a/TQ//nnH2NcfyPEvzZSXaOPkxFt4KwiBJJCQKSZFJIxr/P5559b586d7ffff495Zusf/uGHHxpJWWfNmtX6N6/yju+884516dLFyFKjIgSSQECkWQaK77//vg0ZMsQuueSSTFq8+++/34YNG2ZfffVVGVfIPeSTTz6xlVde2U0NkLu3ui1kmb7xxhtdfZ966imnzY4cOdJuv/32ktmn892Z9pOdvxFJ880337TVVlstcdJ8++237frrr7dLL73UXnzxRUMbHz58uN155502derUfDDWzTZG+r322mv29NNPZz7a9HggA+T8kUceKSiXb7zxhl177bUuz+Srr77qhlbfdtttNmLECPv+++/rpo0tWRGRZhF00QaPO+4422mnnezUU0+1Cy64wK688koj6bLPWg/5VVI+/fRTW3311QsKZyXXJG3fMcccYzvvvLOddtpprr5XX321E3LqO88889iXX34Z+9IffPCBrbnmmg1Jmm+99ZatvfbaiZEmHyQS0jJTwRlnnOEwvu666+zyyy93MrHEEkvYt99+Gxvj1jhh0qRJdsghh9jWW29tHTp0MLL0/PXXXzZjxgx7+OGHHVnuuuuuTk6uueaarCrxkTj44ION/WeeeaZrN+/BhRde6Nq9/PLL23fffZd1TrP+EWkWeLL33XefyyO6++67Gy+eLwwnReggob322stvjv3LiwURJVXuvvtuIx0/dRo3blzmsnz9fdr+fffdN7M9zsoXX3zhiCfOOfVy7IQJE2zdddetujpoYjfffLPTWg844ABD+/YFMiLXLCkUjzrqKL+57n7JUoZGiPzONddcdv755zuCR+PkY4oJw5Ngnz59XP3ZhkZNT+PQQw815gfzhY80HyTmBjvppJP85qb/FWnmecSPPfaYLb300k5jI9NTWLBBYiNjPP6TTz4Z7sq7zpf8ueees2eeeSZroavM15l7RfcxWV0cG9yDDz5oSy65pMtI9eeff2bVAyfI+uuvb4sttpirR9bOyB/ORSCi9bnllltsxRVXtMcffzxnH120enBm8Vyi9eY/2tBKK63kuqLR/a+//noEgcJ/mRtrkUUWMQgT51JY6I5jAlh22WUtzjXDa7TWOvKA/CJ79EJoF7PJUr7++mtnZ0dWIFf/oSD/xBFHHOFMEGE9IVqwZRk7dmy4q6nXRZqRx4tmgkBBEvm6snSrEaKOHTuWlSoP+9FBBx1kaHnhQveOl7BXr15Z2znm+OOPz3kxI9XM/KW7uMwyyzhNIJpJmoPoWqMJoNWWIje00v333z+nPnT3mRtln332ydl38sknl7xuprItuILmHuLr17t162bt2rWz3r175+zHhFGqgNkrr7zinhXZuqdPn55zCnY+eh6QUb0XnwtygQUWcDZvP1Ut7WQaG9qB04+P9gsvvGAcR7vyJezx14rmlax3DKqtn0gzQBBN64QTTrD555/fzQcS7HKraBh+Py9cKRKKnh/+x/5Tbfcc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" alt="" /></span></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">ومثال على ذلك ، لو اخترنا مجموعة من&nbsp;</span><span dir="LTR">5</span><span lang="AR-SA">&nbsp;طلاب ، ووجدنا أن كل طالب</span>&nbsp;<span lang="AR-SA">وزنه&nbsp;</span><span dir="LTR">63&nbsp;</span>&nbsp;<span lang="AR-SA">&nbsp;كيلو</span><span lang="AR-EG">جرام</span><span lang="AR-SA">&nbsp;، فإن متوسط وزن الطالب ف</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;هذه المجموعة هو :</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="data:image/png;base64,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" alt="" /></p>
+<p dir="RTL" style="text-align: right;">2-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">مجموع انحرافات القيم عن وسطها الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;يساوى صفرا ، ويعبر عن هذه الخاصية بالمعادلة</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG"><img src="blob:http://10.34.17.22/fc815129-ec89-4cef-8ecb-5f814523e9d7" alt="" /><img src="data:image/png;base64,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" alt="" /></span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">ويمكن التحقق من هذه الخاصية باستخدام بيانات مثال (3-1)&nbsp;</span><span lang="AR-EG">،&nbsp;</span><span lang="AR-EG">&nbsp;</span><span lang="AR-SA">نجد أن درجات الطلاب ه</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;:</span><span dir="LTR">&nbsp;34, 32, 42, 37, 35, 40, 36, 40</span>&nbsp;<span lang="AR-EG">&nbsp;،&nbsp;</span><span lang="AR-SA">والوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;للدرجة هو&nbsp;&nbsp;</span><img src="blob:http://10.34.17.22/35be3550-2dcc-4bf6-8061-b5101c19e7aa" alt="" />&nbsp;، إذا :</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<div style="text-align: right;" align="right">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="39">
+<p dir="RTL" align="center"><span dir="LTR">296</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">40</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">36</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">40</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">35</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">37</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">42</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">32</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">34</span></p>
+</td>
+<td width="70">
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/7971a456-2cb0-4c65-a635-c2597a319f89" alt="" /></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="39">
+<p dir="RTL" align="center"><span dir="LTR">0</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">40-37</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">36-37</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">40-37</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">35-37</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">37-37</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">42-37</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">32-37</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">34-37</span></p>
+</td>
+<td rowspan="2" width="70">
+<p dir="RTL" align="center">&nbsp;</p>
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/db7c0cad-edb5-416f-a3dd-463bc92ed727" alt="" /></p>
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/4aabf019-a673-455b-90b1-4790decf26dd" alt="" /></p>
+</td>
+</tr>
+<tr>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">3</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">-1</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">3</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">-2</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">0</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">5</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">-5</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">-3</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">أي أن&nbsp;</span><img src="blob:http://10.34.17.22/f59e7a3d-397b-4739-9e1d-7129b0b95836" alt="" />:&nbsp; &nbsp; &nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAAAuCAYAAAAfpvbyAAAEZ0lEQVR4Ae1a25HkIAwki/u+FO6TgIiHaEiGYHQlQAxggeUdbHam2Kotv3Dr0S0s2FWwfz4+A+rjI9gBwCbxC0SwSdwkfkEGviCEXYmbxC/IwBeEsCtxk/gFGfiCEB6oRA/WGLD+w7LlLRhj4RPcvpdEb0FrDcY9nArvwBoNSqn4qw3wLjgwNIY9/oG///QjAvTOgtEvf6+I/j4SkUD1TALqGu8RY8DVAwGceRHNkagteGfujyP5QWJHm0qh+FuH+euKRGeSEriARvcO1jxYrUBfkRPv3+W7zjSV71+ktv4cxmZr0X8Ky1usakYEefwbJ0HsChQZC1DRvtRmRSIAvYxkCqoIpy2cAioHAELQqOI3Ypv6alZ6ierA9pQeEluSdp8oo0DUoerofiu8MgI6b0jE2yWRZSD0SnPEgCsSo/Ilxhuk+y4DiYJYkgchgVVMSZjTq5FyzRRMEp4SFANDIkZC4FiRZ8F7sKWkWdUX/KSmA7+XZZ68xW+PagRRvPfGqTO9xoYDjbGXvoVRKa6p4qSplMvx6FnjdodEHOWKbkk+NcbvKqMshMyOURcWcWnqCN3kIXuNx1cuabrXttOdMmDBR0a45PtU/7D56xQK2eMIbtwekIgjX02BpKxfFcwkoTScHdRgHS5D5CIpYUbnlTBCojrCakC4qTQOoVwcYzvaSiLtNIO5mmnK5Igqc3TSXJyQiNVDzis4JzKNFZCSAxeMbfJ84dKnJUJd+X2AzlQaXqBPzJHEPt7Jk0wUgzl61sCek4gvZMCzZYOcxIzZmZ4yyR0154V8ep7V3QQYLrP/TLLK8WFcb8ynk4iBhkVvL0DKBFXt2bhCGLdWIvklI6A/lSKODIMsyo6UL2aqp6m2I/ISX1aJIQDGUIkUzuWBOmvBhUW0BPdg6PKN0HANBRN97+eMEn4U6DuzBm2wtHYJczjDpCyISIw7G7K8DbtTgnA27kc2yxHv3E0bBJGANlHkTjgOp1IckUgcglSIsgua6itceTGgkVMSURESNWSPG2Lofqg6rARs+2k7rggA9wurOOjFS8eUaG3A0o53WGbo0/VnEN/IgeTrpVwIfY9Vh516bEPpeuROCT0mEb+DUqSMGhPZBpunhwqPFNfsd2as6yc4a5RNjy4J7cKdV2r0/ziVdiEvPogb7dRFX9mcGFXiFQK9qxbTdwd8MT8ThkextcKcADwFgq9EnDqGTUBtG0mrCix1cr816Np7wVX4RNxXhQIPhkMYEnG7TeowLaaZDjN9Q2pyh778zochDia+X+RtQyJ9o8bbRuU3J553SL+xGXgih4/8QXhCIBWJtGY5knRC6nDq9YB/RaCGdILPz0Ck/7GhJvcZoz+zUpH4M4j91uoMbBJXMzDB/iZxQhJXQ2wSVzMwwf4mcUISV0NsElczMMH+JnFCEldDbBJXMzDB/iZxQhJXQ2wSVzMwwf4mcUISV0NsElczMMH+JnFCEldDbBJXMzDB/iZxQhJXQ2wSVzMwwf5/T9IN+ZitGQEAAAAASUVORK5CYII=" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;">3-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">إذا أضيف مقدار ثابت إلى كل قيمة من القيم ، فإن الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;للقيم المعدلة (بعد الإضافة) يساوى الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;للقيم الأصلية (قبل الاضافة</span><span lang="AR-SA">) مضافا إليها هذا</span><span lang="AR-EG">&nbsp;المقدار&nbsp;</span><span lang="AR-SA">الثابت . فإذا كانت القيم ه</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;:&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF0AAAAaCAYAAADVLFAXAAACTElEQVRoBe1Y25HDIAykgWuIglQPBaQOfV0nFKMbgWUDCcPbztyQn3h4rFaLLAkr2r/bFVC3W9wGaYv+QBBs0bfoDyjwgMkd6V8turWEBkhrRdrYgKolBE1KKdKAwXjl4yrcSvNNyyZxrYt0a0gr5YRlcZUC8vJaMjoYB6TwOIoOrcItGu5YMJFrnejC0eIpMgc1R3gc9bKw8X8VbiONquUTuLaJzqwQfMRrTRClmSrK+UWrcPMW+2cGubaLTkjAKUabtlRSdHEVbtFwx4Ixrh2ic7BzHtc0M9DZ81W4HaoWt4xw7RAdCY7iOSWfn+6twj0NTHwY49osujWGUCp5T4uYcX0Vbsbc0PAo1zbRrSHjekVpFaV1JEKD9GuOfr017xRwXy6drUlpzeoXuNa0zEXRXe7iommRIIhsewgMyJcjuPI7QlUbWY37AhKzzmZFAQ8va6kIPXPVXFNjmROtEP26bUaYkmI0EIYTqeiy7rxQeSZZ52V9iuu2cddwvV1uSNYH41lsV6wz/gRzP9EF0N9H5MYdukpi+yPXjOJECz7tpqKLbTTX2yBjzf/x2xZtn4IfIPbiHT28azJYCz5AeVUP+GKkBzTqHt9EP3raxHAdWLzKFbB4iOPT3xsm4HvoUTxf78AYf3nkQ0i43SD6m0p9A2+H2Qezfpc/NGmnuR4kmt+YXka8DaPl7B5GABfuZa5nsecDSGrQ7JwuHY37Epkeb6efEWZS4Dohl25jvhLl7jvVhyI7P70sdel/gG/RHzjHLfoW/QEFHjD5BwfJqra3Z1nQAAAAAElFTkSuQmCC" alt="" /><img src="blob:http://10.34.17.22/2ff06adf-b924-4d77-abe4-a7e131e24a68" alt="" /><span lang="AR-SA">&nbsp;، وتم إضافة مقدار ثابت&nbsp;</span><span dir="LTR">(a)</span><span lang="AR-SA">&nbsp;إلى كل قيمة&nbsp;</span><span lang="AR-SA">&nbsp;</span><span lang="AR-SA">من القيم ، ونرمز للقيم الجديدة بالرمز&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAAwUlEQVRIDe2S6w0EIQiEqYuCqIdqbIZiZoM542tduZx/LtlNzArqF5iBcPijwzy8wN8V/WMNkxCIfDHUqhSmDGJFk6qHwGZsTCFE4J4IZkHqMDXYaGhQJpC0zxNU27jCfPc10FSX1QWAQNayaOYStO33xeVoUyFQTbDHVgs7BiSB6NqIAvP/Fogk0+i0gHEfAnYmj4QhfgaaQtNqhAfSJ5yB3qK7GnD0DjkBs6vE2/G4g3luAq4uRvMvMKrU+t5xDS/Pm9dHkjdapwAAAABJRU5ErkJggg==" alt="" /><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/d5db763a-0d4f-4ff8-963f-c3e1bffd92b2" alt="" /><span lang="AR-SA">&nbsp;، أي أن&nbsp;&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAARCAYAAACVW1F7AAABoElEQVRYCe2Xi63DIAxFPRcDeR5P42UY5j4ZQiFtArgKT22VSFUoRVz7+AMl3M80AZpeeS/EDcuRBD8EK0ICQx3Oe5dOwVImENknQGKViBJAQdBM1R/fHSlvWtXxqIxg+l2tN2FFAYfsX5CI5OuJzhSs7LeCiWAbPh4VhCXRzEabVlTZBeih/TLww0rBtgTQ7JMFxZJi52Oj44BlxhCI20RXiLTf8841E0tGPr13ezTWtMNogTBH2sne2AkrgdlXCkzzqXpaRQcs5BRtHI0iC3uEZXItxdboMh4G5aScgBz4lwxKAM81/bCKAVbrbUkWDy5757JvYjPY2ZFZh1COKmcv6YJVG3o8LL+y9TDiEwTUstYOkIm1WXceVvWjWAzk/kXoyflhEUOWlh9gjTb1qtRDclmMS94Jy0o89fUIFdMr/Uq3+QqyjFywcNQUy04XvMvpxNvpVHoLBZ44EedhAVqvC7xdfTbfuHOiuGH10vQCXh+9xTys5Q39ozkl4/qw7OZsp18UyNKT7/NBmYVDWPYXZ+0V4TtAjWF9jx//Yukfyvy++DcD2IsAAAAASUVORK5CYII=" alt="" /><img src="blob:http://10.34.17.22/e2b211b0-3591-4e06-a7f3-f4138e4fb69d" alt="" /><span lang="AR-SA">&nbsp;، فإن : الوسط الحسابي&nbsp;</span><span lang="AR-SA">لقيم &nbsp;</span><img src="blob:http://10.34.17.22/d5db763a-0d4f-4ff8-963f-c3e1bffd92b2" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">(القيم بعد الإضافة) هو</span><span lang="AR-EG">:</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAAsCAYAAACHUEHxAAAFKElEQVR4Ae2c2ys9URTHj/s1l39KUngiDzx486IUb8iDS7nkSUKKB8KLa4oU5QFFRCmhEHK/Jblbv7679nRuzpmZM3Nmz8/apZnZM7Pnu9b+7LXX3ul4iAt7wAYPeGxok5tkD1BEYP38/JDH4+G//8AHWVlZlg4HQ2AxSH9rEGVnZ5uGTTdYv0EVExNj+uP8oloeeHh4CJh9zMKlCyxvqBgktWCwS403ZGbg0gWWzKMYKru6Uc127+/vtQhmFK6wYDFUanZ6tFSZhUsXWBypotWNan5HwmUkajFYavalUqqUAOv7+1ubl+U0qucYFxenlDMh5vX11ZQtKSkpytkSiSDLwZJARCKK33W/BxgsF/fh8/MzqRi14VIGi8GyxQPKgPX4+EgrKyvU29tL9fX1AcZiw7W2tpZGR0cD7qlWgY3Czc1N6u7upsLCQtrd3dUkfn190cDAgMjDurq6tHozJ3ZGLPj78PCQOjs7hdaSkhLa2tqisrIySktLo4+Pj5CSlQDLP3mPjY2lm5sbH+F4Ji8vj3DPSPn8/DScTCcmJhr5hM+z/sk79BYVFYlnTk9PKScnR+iJj4+npqYmn3eNXtgFFuCfmJggaFxbWxOyLi8vqbS0VEy9ra2tYaUqAZZUKcWgMw4ODmS1dry4uKCKigrtWuUTjPilpSUBUVJSEp2dnVFHR4eIAlbptgMsCVVCQgLt7+9rUhGhMJsAtsXFRa3+txPZl5btY0WyKkRntLW1ETZX0Sn+BaFYj1H+7zl1jc4oLy8X9jQ2NtLt7a2lUqwGC/5fX18Xg2F4eNhHK2zBwEhOTiZ8N1xRDiwYBDj9wYLRdXV14exR6r531BofHzet7eXlRfhEDlo9x/T0dMPfwzSO6S41NTUgh8K96upqKi4u1tWuUmBB8cLCgnDi2NiYZgA6qK+vj66vr7U6N5xAN3IUgICIZXWxMmIhh11eXhbRdXp6OkDqycmJsGNmZibgXrAKZcHCagQFnbO6uqolkcGMCFUX7eTdW8vd3Z1YGebm5hLyLKuLlWC9v79TQ0OD0IlFhneR0yAWNcFyX+9n5blyYGGZjhEuwcJqBNHKbQVAY+q+urqi5uZmkfQeHx9baoaVYD09PQm/Z2Rk+GiUkQx9kpmZ6XMv1IVyYB0dHQkDsf+DvS0kjG4oWE1hGY5Rj30sQIVEGGV2dlZMMfPz8+J6Y2NDGziR2GY3WJgtzs/PxcDGgqqnp0fIlVsQobQrCxYMQdTCSHJDeXt7EwMCIxtLdZmso3O2t7fFvcrKSkL+AvisKFaCBf1VVVWE6W5nZ0ekIFiF7+3t0eTkpIi4yMH6+/t9Nnx/s0M5sORmKSKWm5J16B4cHBSRaW5uzsffmBZramrE5qKMWj4PmLywEiwMACTo2FnHwBgaGiLkiLALmjFgWlpaCDOKnqIsWHqTRD1G8jPR94BSYGHUjIyMiKkj+q7gL1rpAWXAYqis7Fbn23IUrKmpKSooKNBWf274zwXnu8wdChwDCxEKCSH+sAL03ml3h+tYZSgPOApWe3s75efnm95VD2UY33PWA46B5azZ/HW7PWA5WBAspze7xXP76nqAwVK3b1ytjMFydfepK942sHg6VLfT7VYmoQIDlv1rshSNRhku6Y2/czQLFTwU9rcb8JD/PtXfce3ftTQqv4/lD5eMYHz8/3860sj05z0MdUUs+YJ35GKoGCrJRbCjIbCCNcB17IFgHmCwgnmF6yL2AIMVsQu5gWAeYLCCeYXrIvbAP/d9+Ylu7zJMAAAAAElFTkSuQmCC" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="AR-SA">حيث أن&nbsp;</span><img src="blob:http://10.34.17.22/3e42d3fd-e09d-4321-aac3-06270a3f9398" alt="" /><span lang="AR-SA">&nbsp;هو الوسط الحسابي&nbsp;</span><span lang="AR-SA">للقيم الجديدة، ويمكن التحقق من هذه الخاصية باستخدام بيانات مثال رقم (3-1) .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; إذا قرر المصحح إضافة</span><span dir="LTR">5&nbsp;</span><span lang="AR-SA">&nbsp;درجات لكل طالب، فإن الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;للدرجات المعدلة يصبح قيمته</span>&nbsp;<span lang="AR-SA">&nbsp;</span><span dir="LTR">{(37+5)=42}</span><span lang="AR-SA">&nbsp;، والجدول التال</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;يبين ذلك .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<div style="text-align: right;" align="right">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="51">
+<p dir="RTL" align="center"><span dir="LTR">296</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">40</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">36</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">40</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">35</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">37</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">42</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">32</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">34</span></p>
+</td>
+<td width="70">
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/7971a456-2cb0-4c65-a635-c2597a319f89" alt="" /></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="51">
+<p dir="RTL" align="center"><span dir="LTR">336</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">40+5</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">36+5</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">40+5</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">35+5</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">37+5</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">42+5</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">32+5</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">34+5</span></p>
+</td>
+<td rowspan="2" width="70">
+<p dir="RTL" align="right">&nbsp;</p>
+<p dir="RTL" align="right"><img src="blob:http://10.34.17.22/508f043d-6c5b-4b99-8d1b-ef1e189ea706" alt="" /></p>
+</td>
+</tr>
+<tr>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">45</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">41</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">45</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">40</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">42</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">47</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">37</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">39</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">نجد أن مجموع القيم الجديدة هو :&nbsp;&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAkCAYAAAD4i3Y+AAACr0lEQVRoBe2Yi23EIAyGmYuBmIdpWIZhXDmEgM07hBOVqFRdAs4f82Fj3wk4f58TEJ8rHkE4UBcEwYF6oC4gsEDyROqBuoDAAskTqQfqAgILJJuRapQAId7/S20XuL23ZBMqgAUtPVQJyvQtyBoNUgg4UIu8DKgnWiV0B59RB2qRKU5YF3nuKFDQF7AGdPcOVN8+ORlnmwAhNaSHUo9N7EYUaEyvI/0jIaPC+cqEIqvNLhFWnF03DHKO9diEZT11hmiE+TGoV8DKALYgGuR3uLJgeVhicJCg6LFxa3FA401K1zgMFSWenZooREGDOmi1ZAtOnZ4dwXe34iFrc2dq69lXUGlH0HawDMGlIukQsGuQvWd2Wbk0k4XFjPM295krNei4zSQR74ReQsWHo4Na0GhjPlZub0fJ1mNxy5dBXGy1ZyY69LVXBjwdjACRsa3a3IVaKgWPe754M60JqKwjUCZTUenCcncXqMgpq3VnZ5FT6xnzwVALhIzNBTB9xm0EHZ+DimvAXlS8T9cLqk8hq0H9ogW7Iyzay3Q3uE0BKq5fsEydhMpbkdS31kgoTLaY9l5jJv29hvvESKTRRefxjtu4o4qc/5cZQqVBNQXVqP6vranTbsSljwK9PO2DB7g5CZwwfV1lbZLq744JHvGvoSKMlmPMz/xtJn3yhi9HbxBxgeMQXArTIpjY+NczvZzdO6h4jubU/ItHPo1q9owjcjvYjkPFA9sXltkV/Kowzfo5+PwgVANqtDE3mv6qhVGOm2L1Jj+2DBLrMB+A+qbS4zO0MvoW5CetUweAFSbdUIcrvTWgFf74wqCuWMVmml1QXdtDq2NcTavXX52/m4GrudOGylqIKsD4u7W//qpLqK1is7k21M0c/g/uHKgLdulAPVAXEFggeSL1QF1AYIHkH9G/P3i5Q92LAAAAAElFTkSuQmCC" alt="" /><img src="blob:http://10.34.17.22/76de5973-c491-4cb9-a134-84d5bc920783" alt="" /><span lang="AR-SA">&nbsp;&nbsp;، ومن ثم يكون الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;للقيم الجديدة هو :&nbsp;</span><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="data:image/png;base64,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" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/3dbb4139-34ce-4722-b252-f2d0c38ccd0c" alt="" /></p>
+<p dir="RTL" style="text-align: right;">4-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">إذا ضرب مقدار ثابت&nbsp;</span><span dir="LTR">(a)</span>&nbsp;<span lang="AR-SA">&nbsp;ف</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;كل قيمة من القيم ، فإن الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;للقيم المعدلة (القيم الناتجة بعد الضرب) يساوى الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;للقيم الأصلية (القيم بعد التعديل) مضروبا ف</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;هذا المقدار الثابت . أى أنه إذا كان :&nbsp;</span><img src="blob:http://10.34.17.22/ba1cb63c-11b3-4000-a7b8-e02c8c9c3138" alt="" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAAeCAYAAACSRGY2AAACHUlEQVRYCe1VPWvCUBTNf/AfOHR0c3awo4ijS9wzdK6TU+lYuol73Wy6SRxEdHAQVKiICA6CYKEURLvodMt5cEOMz3zUFBtNQF7yvB/n3HPvewpd0aNcEVeKyF6q2pGykbIXUIGDNi6XCqQoCsViCZotlibFZq1C6XyRtruduRfUy3IxIzWTFHkrtSYBg5dc00FH+MTjWVptNgJOv9ugRCwm9T8gC4/NZkXZeJyQmJ/5ZESqemcG5f1TVxQRhe0NxyIUwKLY1txOOXa7rSgO7MfD3p5Adj8pWQQo5tNUKJVNexTAMFrmN79wJwCg7GeNwT68Qhl7B0Hl1E3KETT78wqfXC5Ho8mct6SrlCwsQcIKdNBuB6oqF9SuIApgbUspatsmhNBuNVd8jmR5blC5t3rXluK0TxkpLoC1yF6y8Nh1BlNH86Nk+UBaf6+l7ctRf9vGHN964GEPo+AGmnPz2jIMen152utE/s+6OpJFO+m67toe1oBe30EM8T8+vwiK1vUqGS1DzGtvPBT7XmLhQMOsovsySVVgPTZyR8nKDg8vyb3aoPX4url/eBZXGues6nXXMCgWDrdGty9seQSSGfXo4eZI1m87uSI8s4GU7F8cSGfmKdKbZNFCmvZIs9k7tduD/4AtcAx7ZDEDQV8xgSM+IaBJ9oQYoXGNyIZGKp9AI2V9Fiw05pGyoZHKJ9BIWZ8FC415pGxopPIJ9AevF8Efw2jUygAAAABJRU5ErkJggg==" alt="" /><span lang="AR-SA">&nbsp;، ويكون الوسط الحسابي&nbsp;</span><span lang="AR-SA">للقيم الجديدة&nbsp;</span><img src="blob:http://10.34.17.22/d5db763a-0d4f-4ff8-963f-c3e1bffd92b2" alt="" />&nbsp;هو :<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAA9klEQVQ4EWP4T2XAQGXz/tPHwOl1cf8ZGBj+Cwvr/b/z+BncE3vXzPzvHFHx/8fPn3AxdAZOFz57fOe/n5LS/5lr9sL1gMRiY3P/v//0CS6GzsBp4M+fP/5XRDj/j6ubDtfz6dP7/zt27IfzsTFIMvDcwYN4XQeyAKeBIElQWMLCDOTd9duOYXMUihheA2GR8PHzR4JehZlK0EAlJb//E2ZPIOhVogy8ee4QRtKBacRF43UhyMBD527i0otVHKeBoEg4df4qVk34BFEMBLkIFKt37lwiKkaxGYxiIChWQdmNmOSBzTCQGIqBuBSRIj5qICmhhV0tABK9BW3/QvcQAAAAAElFTkSuQmCC" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAAA2CAYAAADtcYraAAAHnUlEQVR4Ae2cSWgUQRSG45K4xbhrjBq3g7gg4kUl5pxj9G4QBM1NkoMgEoKoBxVXXA6KIOhFogguUaMoJpqgIRglEXHf97jHNfHJV1BDj7N1T/fMZKaroOmZ6Zrqqldfvfpr6c4SE4wFIlggK8Lv5mdjATFwGAgiWsDAEdE05kJccHz69Ek+fPhgjjS0wZcvX2xTbwsOKwwPHz6UwsJCyc3NlUGDBpkjzWwwd+5cefPmTVDDjgRMTDgePXoUBMPAgQMlKytLBgwYIHw2R3rZIC8vT9WnbtiDBw+WBQsWSDhAosIBGBMmTAiBYcqUKfLkyRPp6OgwR5rZ4P3793Lp0qVAo87JyVH1CyBfv34N6nIiwmEFY+LEifL48eMACB8/fgxKxHxJPwvoht3Y2KikAb1BUVFRECAhcPz9+1eBgK7gD4Dx9OnT9Cu9ybFtC/wPyOfPn9V/Q+BgFDJp0iQFBmcDhm0bp3VEAGGQgUMoLi4ODwfuJjs7W0VEV5jgHwtcvnxZwTFt2rTwcCBKGIH0799fOjs7/WMZU1K5ffu2gmPWrFmhcKA3mMcAjvHjx4vue+K1W3d3txpTv379Wpwcb9++FfLix/Dnzx9HttJ2ZRTiNrS2tkaGA71RUFCg1CuQuK0gMjx79myZOnWqo2PevHm+9VoPHjxwZCtt25KSErdsSFQ40Bt9+/ZVcHz79s31zfAckP3y5UtHBzN4bsF0nfkUJYDncGov4uNt3YaYcNClMHuGFzHBXxZIGRxdXV3y+/fvIGvjHX7+/Cl4mHQLeFY8nPawNCY8r5ceDy/y69evENMwUMBuXoekwkGl37t3T86cOSO7du2STZs2yY8fPwJlYj5/w4YNcvjwYQEeJyEesfvu3TvXlQfgLS0tKt8zZsyQbdu2SXNzswwfPlxY1HIr4gHizp07UldXJxs3bpQ1a9YIOoTAvY8ePSqLFi2S3bt3OzGXrbhJhQNByrAIkcvcSX5+vlqT0TkFjsWLFwvjat0C9bVYZ7TM9OnTHYm3hQsXhnivWPexXqe17ty5U+bMmSMNDQ3y6tUraW9vl6VLlyqtVl1d7doLAsLkyZPVmtaQIUPUyHHdunUqGydPnlS2HDdunOzZs8eaNU8+JxUOLUivXbum5k3QMjdv3gwUBBfM2Hr9+vVBHiUQIcoHPA2V40S8uRG6gIHnA2Qmi3RX+P37d6moqJCRI0eq1h4ly7Yu4Tko1/Pnz5VX6t27t2oEt27dUh72/v37QqOzemBbCduIlFQ4dH4w5OrVq2XEiBFy7tw5/bM64wFYJfxfjwRF6gFfzp49q1ozXaA1AEdlZaVq7YDqZaAbxLOyPQIwE6EzrPlNCRx4iH379smoUaOktrY2kB8My3eM0JMDLZWuo6ysLARiWjlzDMuWLQt4E6/KQqOiGxs9erScPn3aq2QjppMSOMjNkSNHlOs9dOhQIHMIrytXrgiu1GnAcHQTeobQzjleQUpfj16qqakJyebFixcjXguJHMcPp06dUlMLW7ZsiePfzv6SMjhQ2cOGDZPt27erHCNGcdFOhagubrIEKcPGlStXKiHIHhdroAxco2W3tbVZL3nyma72wIED0q9fPyXstc7xJPEwiaQMjvPnz6vh3ubNm4XupKmpSRBX8YZkCVKAYNaYHXHW4TZdJUN0Kg6Rih7wcuIQMJgGoMKWL1+u7s8qOfdNlPZIGRzMBbBfoLS0VLWy69evx9WdxAtTvP9jjalXr17C8FG3XLpBurS9e/cKezA5v3jxQvbv3x8EkJN7kjaNhrQBgC6QPRZMgu3YsUN1XfX19Wp0R1dDHK9DyuC4ceOG9OnTR4YOHSrHjx9PCzAwPl1HeXm5jBkzRi5cuKC20aGV8ChaZB87dkzpEYwbb2B2taqqSo1KSNs6gjtx4oTSa0yIodkQwYkIKYODloWBKWC67RO5e/euGqnMnDlTzVBSkXQxQMFuOWZJ6QLctGb20axatUppCzyEtetgiLxixQpZu3ZtwsAAtpTBwarh1q1bXU8vJ6LF2EkToOlKcP064PLRGVxzAwbp8X/SYdgcbj2F+1rvrfPg5TklcNAqrl69mvDCeWkoP6aVFDhQ2ro1AQbDvERT78fK9LrMCYcDMA4ePKj6SIaqCCtAMaHnWyAmHG53guEhWIZfsmSJIKwSsUDU882cnjmMCgfiauzYsWq6luFUPCJLCyu6k3DCKj3N5o9cR4WDimU/AVsFmRF0u3HFHybNnFJGhYNi0uKBg2lhoxUyp+LtlISNSzzxFva5FRJggkc/8WYehbRj0syJg0YEjohPvKE79EPUbFd79uxZ5pTelCSiBVgIZZ0IONhOSQh5kBrdgRjV7+VgetgAEtGmGXEBMPRD1Lyngzc5hYVDl5bVSFYiIQlAWC7Gq5gjs2zwPxgsNOoQ4jn0Bc5WQPTDTvp1QeacGe9DY+CBA5g/f37Iq5+iwqEBoYsBDnNkng1o5IARbtoiJhwAwmueGMWYIzNtEA4M6t0WHEQ0wX8WMHD4r85tl9jAYdtU/oto4PBfndsusYHDtqn8F9HA4b86t11iA4dtU/kvooHDf3Vuu8QGDtum8l9EA4f/6tx2if8BBKMPxW0gLZUAAAAASUVORK5CYII=" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span dir="LTR">&nbsp;</span><img src="blob:http://10.34.17.22/f04efed4-5cc1-4c64-a063-09e01f6a4109" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">ويمكن للطالب أن يتحقق من هذه الخاصية باستخدام نفس بيانات المثال السابق .&nbsp;</span><span lang="AR-EG">ف</span><span lang="AR-SA">إذا كان تصحيح الدرجة من&nbsp;</span><span dir="LTR">50&nbsp;</span><span lang="AR-SA">&nbsp;، وقرر المصحح أن يجعل التصحيح من&nbsp;</span><span dir="LTR">100</span><span lang="AR-SA">&nbsp;درجة ، بمعنى أنه سوف يضرب كل درجة ف</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;قيمة ثابتة&nbsp;&nbsp;</span><span dir="LTR">(a=2)</span><span lang="AR-SA">&nbsp;، ويصبح الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;الجديد هو :</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/ab621112-8ad7-41d3-8293-2b6e80d31aed" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAAAnCAYAAAAPS6pLAAAFXklEQVR4Ae1av0scQRS+/+H+A4uUFgGrFBJsxSKVzdlbWAatLPxVynVy2Grnj068QoIWFoIKCRIEwYCgcAji2Wg14dvwLW/nZnZvbudkNo4Qdnd23nvffO+bNzN7qan4FxkoyUCtpH00jwyoKKIogtIMRBGVpjA6iCKKGijNQI+IarWayvtXOuKQHORhxrv4NzwGIrvD4zbxfH93o5rNTfX69jZQpLe3V7XZbKqHzuNA9u9hFEU0AMtIbHNlPq3YY5MNdXN33+Pp/LStGo25VACnB/tqtF5P7GDz1O1mbK4vTlKfemX9/OWrap+eZ/qXfciLd3JxbXS/sTijZhY3Mu+iiDJ0FD/oleGx86Aak2OqXh/NCAkJkkL58/tXKgLYTI2MqInphUyFQoJ08eB5ZGRK3d7fJja25BYj7+2RF08XOKwpur5EdHV5lsw0SQKcdLtPyUCW1rd6EXloQelHQkAcCL68Oktmrg7aFAqJQXUY/zSeSSZnvy/MwKhXHbShwrR2jhJo5IkJh/COjy8ysI92Wok4mCzYmJY9JI7jxz0ERZuMQ8eHfuJJl+g/12gY89FTiTA4ORtIBBySHH0GyWCD3iMuZjNLNhID0MAiMZj8M4nETdLlWNhmsi/bRl4oIsQt4ghVgP0R/+X5OVOViGlrfSkVLcS4MD2RsWM/12s/8aRP4Di7ukyKiM5lj4hoCCMkRQ4U70BYq7XLbslVJouJtF11f3BAAckZTsJcZh7EhGUCNqhiqD62DW1ZzJIAxGUFJG6daPbHe3Cbh419wfXKfDMzBoivSKC0d72a4sEHKiDyxsmij80qIq5/etLRXlQZXMCziuhxmAxXwigOVzsXzHpfWVU4HhNHfIcJZtuMS98Yi86LacLBxra/kZNZT76MhXtTPORhc/nf6dJZRBywDAwnehXSgbg8UyimakPAOolF/onb1a7Ir+094s3OrqXVgpPPJCL6wJ4TeyjTuNkH3KzNzqZLGdv78c++LldbPAiLY2FOpCYQw1qJmAxpgE2qXHJcQJr6MoYp4QCPWcQBmOxNbfT5HpXIRHy/SS7qp4uTYy2yYz/Xqyke2uSBxFlENGAyAN6WUCZclk7bvRQM7XS/jJ03U20k/Tg8VMvfv+XOctgytg2nbJeYZVzsbXTs/SaZY9Tt6R/4THFt/ssuZ6Z4eRzJTxrWSsSlBiLqPD54XcYkURIM2hH3YG/beJSkne2KbzGolDrRnU4nXW5stq7tuoCAe7fVUu2Tdua4b/OLWc7NuN7HVOHYB4nVOeO7Qa958aRPCl+uTnhfKCJUg9XVVS/fJiQg3FPpnHHJt57mprq5+ZkmAoLK+y7C0wps9g9OkxBysPhqbJvtOp5+n3lyldUK95hwzy/PyTFcEk3BbO8dJGJG0vKO6qalhdg4Xtupk/1crnnxpB/Jq2y3igidANi36mVwkMmfDxCHIsCgsPHECaboNyNdiPRP7PzuxPay192t9cx3NCkkTgZg4jYA8UA+RMO+GNfZ5ZUVCuzpS3YqEp/s63Jvi6f7GFhEvmexDux/fCbZvrnDMj3IPnHYHFsrEQD7JmHYgwnJv++ED0uYPjgzigjLCZcWH0E+qg/sx3xsB7BXxE9AvpdmX3lJRYTNItZxuUH1FeQj++FhYdCNMPZB+P9EPr/P+c5HIiIAHdZG1Dfg6C88BtJKFB60iKgqDEQRVSVTAeOMIgo4OVWBFkVUlUwFjDOKKODkVAVaFFFVMhUwziiigJNTFWhRRFXJVMA4o4gCTk5VoEURVSVTAeOMIgo4OVWBFkVUlUwFjDOKKODkVAVaFFFVMhUwziiigJNTFWh/Af0EWwiH2QvVAAAAAElFTkSuQmCC" alt="" /></p>
+<p dir="RTL" style="text-align: right;">&nbsp;</p>
+<p dir="RTL" style="text-align: right;">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">مزايا وعيوب الوسط الحسابي&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="AR-SA">يتميز الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;بالمزايا التالية</span><span lang="AR-SA">&nbsp;:</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">أنه سهل الحساب .</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">يأخذ في</span><span lang="AR-SA">الاعتبار كل القيم.</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">أنه أكثر المقاييس استخداما وفهما.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">ومن عيوبه .</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">أنه يتأثر بالقيم الشاذة والمتطرفة .</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">يصعب حسابه في</span><span lang="AR-SA">حالة البيانات الوصفية .</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">يصعب حسابه في</span><span lang="AR-SA">&nbsp;حالة الجداول التكرارية المفتوحة لذا نلجأ الى استخدام الوسيط بدلا منه.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p></p></div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <br>
+
+            <div class='container'>
+                <ul class='pagination justify-content-center'>
+                  <li class='page-item'><a class='page-link' href='U3-L4.html'>التالي</a></li> <span class='pr-5 pl-5 shadow-sm'>62 / 46</span><li class='page-item'><a class='page-link' href='U3-L2.html'>السابق</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </div>  <div class='overlay'></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper.JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js' integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ' crossorigin='anonymous'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js' integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm' crossorigin='anonymous'></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js'></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#sidebar').mCustomScrollbar({
+                theme: 'minimal'
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

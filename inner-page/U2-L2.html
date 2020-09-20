@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>مقدمة في علم الاحصاء </title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'>
+    <!-- Our Custom CSS -->
+    <link rel='stylesheet' href='../css/page2.css'>
+    <link rel='stylesheet' href='../css/rtl.css'>
+    <!-- Scrollbar Custom CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap' rel='stylesheet'>
+
+
+    <!-- Font Awesome JS -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/solid.js'></script>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js'></script>
+
+
+</head>
+
+<body><nav id='sidebar'>
+            <div id='dismiss'>
+                <i class='fa fa-times' aria-hidden='true'></i>
+
+            </div>
+
+            <div class='sidebar-header'>
+                <!--<h3>Bootstrap Sidebar</h3>-->
+            </div>
+
+            <ul class='list-unstyled components'>
+                <p>الفهرس</p>
+                <li>
+                    <a href='#homeSubmenu1' data-toggle='collapse' aria-expanded='false'>الوحدة الاولى </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu1'>< li>
+                            <a href='U1-L1.html'>مقدمة</a>
+                        </li>< li>
+                            <a href='U1-L2.html'>تعريف علم الاحصاء</a>
+                        </li>< li>
+                            <a href='U1-L3.html'>المجتمع الإحصائي</a>
+                        </li>< li>
+                            <a href='U1-L4.html'>الوحدة الإحصائية</a>
+                        </li>< li>
+                            <a href='U1-L5.html'>العينة والمعاينة</a>
+                        </li>< li>
+                            <a href='U1-L6.html'>الإطار</a>
+                        </li>< li>
+                            <a href='U1-L7.html'>معالم المجتمع وإحصائية العينة</a>
+                        </li>< li>
+                            <a href='U1-L8.html'>وظائف علم الإحصاء</a>
+                        </li>< li>
+                            <a href='U1-L9.html'>وصف البيانات Data Description	</a>
+                        </li>< li>
+                            <a href='U1-L10.html'>الاستدلال الإحصائي Statistical Inference	</a>
+                        </li>< li>
+                            <a href='U1-L11.html'>التنبؤ Forecasting	</a>
+                        </li>< li>
+                            <a href='U1-L12.html'>أنواع البيانات وطرق قياسها	</a>
+                        </li>< li>
+                            <a href='U1-L13.html'>البيانات الوصفية	</a>
+                        </li>< li>
+                            <a href='U1-L14.html'>البيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U1-L15.html'>طرق جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L16.html'>المصادر الأولية</a>
+                        </li>< li>
+                            <a href='U1-L17.html'>المصادر الثانوية      </a>
+                        </li>< li>
+                            <a href='U1-L18.html'>وسائل جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L19.html'>أسلوب جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L20.html'>أنواع العينات</a>
+                        </li>< li>
+                            <a href='U1-L21.html'>العينات الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L22.html'>العينات غير الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L23.html'>تمارين</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu2' data-toggle='collapse' aria-expanded='false'>الوحدة الثانية </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu2'>< li>
+                            <a href='U2-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U2-L2.html'>عرض البيانات جدولياً</a>
+                        </li>< li>
+                            <a href='U2-L3.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L4.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L5.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L6.html'>تكوين التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L7.html'>تكوين جدول تفريغ البيانات</a>
+                        </li>< li>
+                            <a href='U2-L8.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L9.html'>العرض البياني للبيانات الوصفية</a>
+                        </li>< li>
+                            <a href='U2-L10.html'>الدائرة البيانية	</a>
+                        </li>< li>
+                            <a href='U2-L11.html'>رسم الدائرة</a>
+                        </li>< li>
+                            <a href='U2-L12.html'>الأعمدة البيانية</a>
+                        </li>< li>
+                            <a href='U2-L13.html'>الأعمدة البيانية المزدوجة</a>
+                        </li>< li>
+                            <a href='U2-L14.html'>الأعمدة البيانية المجزأة</a>
+                        </li>< li>
+                            <a href='U2-L15.html'>العرض البياني للبيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U2-L16.html'>المدرج التكراري Histogram </a>
+                        </li>< li>
+                            <a href='U2-L17.html'>المنحنى التكراري</a>
+                        </li>< li>
+                            <a href='U2-L18.html'>التوزيعات التكرارية المتجمعة </a>
+                        </li>< li>
+                            <a href='U2-L19.html'>التوزيع التكراري المتجمع الصاعد</a>
+                        </li>< li>
+                            <a href='U2-L20.html'>التوزيع التكراري المتجمع الهابط</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu3' data-toggle='collapse' aria-expanded='false'>الوحدة الثالثة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu3'>< li>
+                            <a href='U3-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U3-L2.html'>مقاييس النزعة المركزية</a>
+                        </li>< li>
+                            <a href='U3-L3.html'>الوسط الحسابي  Arithmetic Mean</a>
+                        </li>< li>
+                            <a href='U3-L4.html'>الوسيط  Median</a>
+                        </li>< li>
+                            <a href='U3-L5.html'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</a>
+                        </li>< li>
+                            <a href='U3-L6.html'>تطبيقات الفصل الثالث</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu4' data-toggle='collapse' aria-expanded='false'>الوحدة الرابعة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu4'>< li>
+                            <a href='U4-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U4-L2.html'>المدى Rang</a>
+                        </li>< li>
+                            <a href='U4-L3.html'>التباين والانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L4.html'>التباين والانحراف المعياري في العينة S</a>
+                        </li>< li>
+                            <a href='U4-L5.html'>خصائص الانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L6.html'>معامل الاختلاف النسبي	</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu5' data-toggle='collapse' aria-expanded='false'>الوحدة الخامسة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu5'>< li>
+                            <a href='U5-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U5-L2.html'>الارتباط الخطى البسيط Simple Correlation</a>
+                        </li>< li>
+                            <a href='U5-L3.html'>معامل الارتباط الخطى البسيط " لبيرسون" Pearson    </a>
+                        </li>< li>
+                            <a href='U5-L4.html'>معامل ارتباط الرتب (اسبيرمان) Spearman     </a>
+                        </li>< li>
+                            <a href='U5-L5.html'>الانحدار الخطى البسيط Simple Regression  </a>
+                        </li>< li>
+                            <a href='U5-L6.html'>السلاسل الزمنية</a>
+                        </li>< li>
+                            <a href='U5-L7.html'>تطبيقات الفصل الخامس</a>
+                        </li></ul>
+                </li></ul>
+
+
+
+        </nav>        <div id='content'>
+
+            <nav class='navbar navbar-light bg-light shadow-sm ' dir='rtl'>
+                <div class='container'>
+
+                    <a class='navbar-brand float-right' href='#'>
+                        <img src='../img/logo1.png' class='d-inline-block align-top img-fluid ' alt=''>
+
+                    </a>
+                    <a class='nav-link home' href='../index.html'>
+                        <i class='fa fa-home fa-lg' aria-hidden='false'></i>
+                        <span class='sr-only'>(current)</span></a>
+                </div>
+            </nav>
+
+
+
+
+            <div class='container'>
+                <nav class='navbar navbar-expand-lg navbar-light  '>
+                    <div class='container-fluid'>
+
+                        <button type='button' id='sidebarCollapse' class='btn btn-info'>
+                            <i class='fas fa-align-left'></i>
+                            <span></span>
+                        </button>
+
+                        <button class='btn btn-dark d-inline-block d-lg-none ml-auto' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                            <i class='fas fa-align-justify'></i>
+                        </button>
+                        <h2 class='pr-3'>مقدمة في علم الاحصاء </h2>
+                        <div class='collapse navbar-collapse ' id='navbarSupportedContent'>
+                            <ul class='nav navbar-nav mx-auto'>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='#'> <button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>تعريف الحقيبة</button></a>
+
+
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='U1-L1.html'><button type='button' class='btn btn-secondary pr-3 pl-4 shadow-sm active'>المحتوى التعليمي </button></a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='../book/pdf.pdf' target='_blank'><button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>الكتاب</button> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav aria-label='breadcrumb'>
+                    <ol class='breadcrumb'>
+                        <li class='breadcrumb-item'><a href='../index.html'>الرئيسية </a></li>
+                        <li class='breadcrumb-item'><span style='color:white'>الوحدة الثانية </span></li>
+                        <li class='breadcrumb-item active' aria-current='page'>عرض البيانات جدولياً</li>
+                        
+                    </ol>
+                </nav>
+
+
+
+
+                <!--<h2 class='text-right'>عرض البيانات جدولياً</h2>-->
+
+                
+
+
+                    <div class='content-text' id='style-1'> <p class='text-right text-justify mr-1 font-weight-normal' dir='rtl'><p dir="rtl" style="text-align: right;"><strong><span lang="AR-SA">عرض البيانات جدوليا</span></strong></p>
+<p dir="rtl" style="text-align: right;">&nbsp;</p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">تمر العملية الإحصائية بمراحل متعددة تبدأ بمرحلة التصميم ثم تليها مرحلة جمع البيانات ومراجعتها ميدانيا، وأخيرا مرحلة التجهيز بما تشمله من مراجعة مكتبية وترميز وإدخال البيانات إلى الحاسب .</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">ولكي نضع البيانات في جداول إحصائية يجب أولاً تقسيم البيانات إلى مجموعات متشابهة تسمى فئات ونضع في كل فئة المفردات التي تنتمي إليها ( أو بمعنى آخر نوجد عدد مرات تكرار الفئات ) ثم نضع هذه الفئات وتكرارها في جداول ويطلق على الفئات لفظ ( الفئات التكرارية ) وكل جدول يحتوي على عدد من هذه الفئات التكرارية يسمى&nbsp; " جدولا تكراريا "</span><span lang="AR-SA">، </span><span lang="AR-SA">ويختلف شكل الجدول طبقا لنوع البيانات، وحسب عدد المتغيرات، وفيما يلي عرض بيانات متغير ( وصفي أو كمي ) في شكل جدول تكراري بسيط.</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="rtl" style="text-align: right;"><strong><span lang="AR-SA">2/2/1 عرض بيانات المتغير الوصفي في شكل جدول تكراري بسيط </span></strong></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">&nbsp; إذا كنا بصدد دراسة ظاهرة ما تحتوي على متغير وصفي واحد، فإنه يمكن عرض بياناته في شكل جدول تكراري بسيط، وهو جدول يتكون من عمودين، أحدهما به مستويات (مجموعات) المتغير، والثاني به عدد المفردات (التكرارات) لكل مستوى (مجموعة).</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">والمثال التالي يبين&nbsp; لنا كيف يمكن تبويب البيانات الوصفية الخام في شكل جدول تكراري.</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">مثال (2-1)</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; فيما يلي بيانات عينة من </span><span dir="LTR">40</span><span lang="AR-SA"> مزرعة عن نوع التمر الذي تنتجه المزرعة.</span></p>
+<div dir="rtl" style="text-align: right;" align="center">
+<table dir="rtl" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">سكري</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">خلاص</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">خلاص</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">خلاص</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">صقعي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">خلاص</span></p>
+</td>
+</tr>
+<tr>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">سكري</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">صقعي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">خلاص</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">نبوت سيف</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+</tr>
+<tr>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">صقعي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">سكري</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">خلاص</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">صقعي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">خلاص</span></p>
+</td>
+</tr>
+<tr>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">خلاص</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">سكري</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">نبوت سيف</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">صقعي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">نبوت سيف</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">صقعي</span></p>
+</td>
+</tr>
+<tr>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">خلاص</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">صقعي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">نبوت سيف</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">سكري</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">برحي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">صقعي</span></p>
+</td>
+<td width="68">
+<p dir="RTL"><span lang="AR-SA">خلاص</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">والمطلوب:</span></p>
+<p dir="rtl" style="text-align: right;"><!-- [if !supportLists]-->1-&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">ما هو نوع المتغير؟، وما هو المعيار المستخدم في قياس البيانات؟.</span></p>
+<p dir="rtl" style="text-align: right;"><!-- [if !supportLists]-->2-&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">اعرض البيانات في شكل جدول تكراري.</span></p>
+<p dir="rtl" style="text-align: right;"><!-- [if !supportLists]-->3-&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">كون التوزيع التكراري النسبي.</span></p>
+<p dir="rtl" style="text-align: right;"><!-- [if !supportLists]-->4-&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">علق على النتائج.</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">الحـل</span></p>
+<p dir="rtl" style="text-align: right;"><!-- [if !supportLists]-->1-&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">نوع التمر (سكري &ndash; خلاص &ndash; برحي &ndash; صقعي &ndash; نبوت سيف ) متغير وصفي، تقاس بياناته بمعيار اسمي.</span></p>
+<p dir="rtl" style="text-align: right;"><!-- [if !supportLists]-->2-&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">لعرض البيانات في شكل جدول تكراري ، يتم إتباع الآتي:</span></p>
+<ul dir="rtl" style="text-align: right;" type="disc">
+<li dir="RTL"><span lang="AR-SA">تكوين جدول تفريغ البيانات:</span></li>
+</ul>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">وهو جدول يحتوي على علامات إحصائية، كل علامة تعبر عن تكرار للمجموعة التي ينتمي إليها نوع التمر الذي تنتجه المزرعة، وكل خمس علامات تكون حزمة إحصائية، كما هو مبين بالجدول التالي:</span></p>
+<p dir="rtl" style="text-align: right;" align="center"><span lang="AR-SA">جدول تفريغ البيانات</span></p>
+<div dir="rtl" style="text-align: right;" align="center">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="151">
+<p dir="RTL" align="center"><span lang="AR-SA">عدد المزارع (التكرارات)</span></p>
+</td>
+<td width="156">
+<p dir="RTL" align="center"><span lang="AR-SA">العلامات الإحصائية</span></p>
+</td>
+<td width="90">
+<p dir="RTL" align="center"><span lang="AR-SA">نوع التمر</span></p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p dir="LTR" align="center">5</p>
+</td>
+<td width="156">
+<p dir="RTL" align="right"><img src="http://elearning.edu.sa/uploadfolder/ff.png" /></p>
+</td>
+<td width="90">
+<p dir="RTL" align="center"><span lang="AR-SA">سكري</span></p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="156">
+<p dir="RTL" align="right"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAaCAYAAADmF08eAAAB7klEQVRYCe1XwY3CQBBLC7RAC7RAC7RAC9SSFmiBFmiBFmhhT47O0cQ7jnYP8bjASKdhvZ5xnJ1wYSgfEsOH+Cxfo1s7aXuiwzAU/G0lrBNn9Pl8lv1+X/nvxasGbwas0ev1Op2onirw8/lcXVYvXjX4BdwNdvxW3Bo9nU7ldrtVZomrQC+u9Vw7o70To3xrdLfbUXthNuIzoZTSi8fa+Pldk5QafTwe5XA4RP3ZrOIgZfw1fNFYFpwMPVniQi+teGp0HMdyuVy052xWNxzf4Vof13EyotmIO/4anho9Ho/lfr/Huukz8ChOwho/68M6zdlkUO/VSUqNonkWxClODnGumR3Ofc1uAlSPdY6f4ZUjnABOSENxiivOOodzP8trk0G9WLfGh36MyiieTdwRjQyneCtfe+oa/bIgTj1yiHPNnOFVZzwLeFY0HK7irHN87mt2E6A49RRnP4dXRv/y7UZxiiG7PpETP2cTg/0Mp17PJC2M4k0I/5c0WnCKo9bxtW9cuwlweNRr6bMwindYvJlotOIUd3ztG9duAtZw6rX0WRjFrxK8I2r04BRHbg03AS049aDl+Nhrv5rWq0bTzt+ybgJaceo5/tuMdtyTidozMSjI+DSLnEWOZsx/gNFsdqmbMpoZJPY1yjuxlfwDv313Spex2KwAAAAASUVORK5CYII=" alt="" /></p>
+</td>
+<td width="90">
+<p dir="RTL" align="center"><span lang="AR-SA">خلاص</span></p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p dir="LTR" align="center">13</p>
+</td>
+<td width="156">
+<p dir="RTL" align="right"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAaCAYAAAAzBZtTAAACe0lEQVRoBe1YgY3CMAzsCqzACqzACqzACszCCqzACqzACqyQlxFX+a++1JaoQKiRXm4u53N8JPAwtHUs6sCwqPoq3laDFz4Eq8GrwQs7sLB86gQPw9Dsbx11B1KuKYMfj0fbbreTqlV8IvBDQMrgy+XyPMF8ig0/Ho8TO6r4ROAFqBdW8b8RTxl8OBza9XqdmAycG6vinI+5Mrh6QxQfdTgqfhU33ZTBm81m3INv2uMjobVWxX2uf/7UzaneQMW3XmYNvt/vbbfb+b7Hk8y4kSJ+D/8nTBPcBP+iGgU40cs452P+Tv1Zg8/nczudTqg9Rm4aC4qvcORF0d8EX8/jPq+K+1z/XNVRfNOcNXi/37fb7ebrP58N902D0ONHOsjjGN0E1Fvy5kR1bW9VHP3MGmxNRQM4mgYHOOaICsc6R3XiuR7yFF/hyOOo+FUcurF7r1U7cXYieTCOphlHnsKxHsXeTUA9n9fjW/3sqOooPup1Dbb3XnvleEQ4ms7yWZPnphcN4KgHDnDMERWOdY6KX8WhG3fxWrX3Onvv4aFw20S0EcVnXczViWcc9Rif08E6x6qO4nvdrsHq07GHo2lfRPE9xz9HN8TWIxz13nFzIn1Vt4f7XqTB9s3N/h/kkcHRtOUqPuv6uTrxCvf1Mjqe45+VfhX3mtJg+43BvqHwyOJoWvFZ18/Vie/hqJfR8Rz/3NP3PDwrPtYtSoPtVzL77s2jgqNpi9mhTnwGRz2rpfhqH4pfxVk/3zlnJue+6UyKOvFZHPUUX+1B8as46y9uMBecm1duiGlFfJhsMTsiHaXfw7lefgec+eVzmPzpbf6swZ82FvVXg+HEQvEPjHEds/725vkAAAAASUVORK5CYII=" alt="" /></p>
+</td>
+<td width="90">
+<p dir="RTL" align="center"><span lang="AR-SA">برحي</span></p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p dir="LTR" align="center">8</p>
+</td>
+<td width="156">
+<p dir="RTL" align="right"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAXCAYAAABJXhw0AAABkklEQVRYCe2WgW2DQAxFWYEVWIEVWIEVWIFZWIEVWIEVWIEVXP2ojrhvG7Ciqk1USxW9d/989/kJoZIPqepDfMi/kb+WZJhIVVWCv3ep8KSRkX3fpWka4y/LTYMXQWhknudHIpwK+DAMZtssNw1eBKGRvu9lWRZjRjnvm+W8Ppso60MjdV0/9zp+zI78KRCRLD+uxf/ZRFnvGtm2Tdq2LfZSM8wh8vRnvGj8PcgmynrXyDRNMo6j2U/N8ESkjzivxzibKOtdI13XybquZj9wz8yZ3uvDjbOJenrXCA7rlXI2o5zXRJx1UXIZbk6MO4g7zMVczTDXdRHX+eM1m6inN0bw3cCd4PK4mrmr5546jpLLcGMETyV8Brkirmbu6lkXJZflxgg/DXTjM+6ZifTaT69e0pjL8sIIfsnxfOa6w49mIj33xThKOssLI3iHwi8m112uZiI998U4Si7LCyN4q8U7DFeGqxlcrypKLsuxz/VuV6dx5tWMM1WgKLksR9MfMVKc9mSQSRptIv2vGznxmJ76AooNZ638vl+mAAAAAElFTkSuQmCC" alt="" /></p>
+</td>
+<td width="90">
+<p dir="RTL" align="center"><span lang="AR-SA">صقعي</span></p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p dir="LTR" align="center">4</p>
+</td>
+<td width="156">
+<p dir="RTL" align="right"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAATCAYAAABsmQZ/AAAAzElEQVRIDc2VQQ3EIBREsYCFWqgFLNQCFtCCBSxgAQtYwMJvZhMa4LO32XTn1LzDvP5CwcgLMS845X+krTU5jkN9BBbfTppSEu+9krL4Vnpdl+SclZTFt1JrrRICsLiS1lrlPE8lZXEUK2mMUUIISsriW6lzTkopSsriW6kxavjPC7C4kmJCTLSGxXvvNBbWEmu3hsV77yTFrsUuXcPivXeSsv7Dbz1KihMIJ84aFh97n0lx1uJsXcPiY+8jxa2CW2QNi4+9j3SEv36+Ad0E66o+m9OFAAAAAElFTkSuQmCC" alt="" /></p>
+</td>
+<td width="90">
+<p dir="RTL" align="center"><span lang="AR-SA">نبوت سيف</span></p>
+</td>
+</tr>
+<tr>
+<td width="151">
+<p dir="LTR" align="center">40</p>
+</td>
+<td width="156">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="90">
+<p dir="RTL" align="center"><span lang="AR-SA">المجموع</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="rtl" style="text-align: right;">&nbsp;</p></p></div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <br>
+
+            <div class='container'>
+                <ul class='pagination justify-content-center'>
+                  <li class='page-item'><a class='page-link' href='U2-L3.html'>التالي</a></li> <span class='pr-5 pl-5 shadow-sm'>62 / 25</span><li class='page-item'><a class='page-link' href='U2-L1.html'>السابق</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </div>  <div class='overlay'></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper.JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js' integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ' crossorigin='anonymous'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js' integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm' crossorigin='anonymous'></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js'></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#sidebar').mCustomScrollbar({
+                theme: 'minimal'
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

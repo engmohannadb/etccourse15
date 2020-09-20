@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>مقدمة في علم الاحصاء </title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'>
+    <!-- Our Custom CSS -->
+    <link rel='stylesheet' href='../css/page2.css'>
+    <link rel='stylesheet' href='../css/rtl.css'>
+    <!-- Scrollbar Custom CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap' rel='stylesheet'>
+
+
+    <!-- Font Awesome JS -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/solid.js'></script>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js'></script>
+
+
+</head>
+
+<body><nav id='sidebar'>
+            <div id='dismiss'>
+                <i class='fa fa-times' aria-hidden='true'></i>
+
+            </div>
+
+            <div class='sidebar-header'>
+                <!--<h3>Bootstrap Sidebar</h3>-->
+            </div>
+
+            <ul class='list-unstyled components'>
+                <p>الفهرس</p>
+                <li>
+                    <a href='#homeSubmenu1' data-toggle='collapse' aria-expanded='false'>الوحدة الاولى </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu1'>< li>
+                            <a href='U1-L1.html'>مقدمة</a>
+                        </li>< li>
+                            <a href='U1-L2.html'>تعريف علم الاحصاء</a>
+                        </li>< li>
+                            <a href='U1-L3.html'>المجتمع الإحصائي</a>
+                        </li>< li>
+                            <a href='U1-L4.html'>الوحدة الإحصائية</a>
+                        </li>< li>
+                            <a href='U1-L5.html'>العينة والمعاينة</a>
+                        </li>< li>
+                            <a href='U1-L6.html'>الإطار</a>
+                        </li>< li>
+                            <a href='U1-L7.html'>معالم المجتمع وإحصائية العينة</a>
+                        </li>< li>
+                            <a href='U1-L8.html'>وظائف علم الإحصاء</a>
+                        </li>< li>
+                            <a href='U1-L9.html'>وصف البيانات Data Description	</a>
+                        </li>< li>
+                            <a href='U1-L10.html'>الاستدلال الإحصائي Statistical Inference	</a>
+                        </li>< li>
+                            <a href='U1-L11.html'>التنبؤ Forecasting	</a>
+                        </li>< li>
+                            <a href='U1-L12.html'>أنواع البيانات وطرق قياسها	</a>
+                        </li>< li>
+                            <a href='U1-L13.html'>البيانات الوصفية	</a>
+                        </li>< li>
+                            <a href='U1-L14.html'>البيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U1-L15.html'>طرق جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L16.html'>المصادر الأولية</a>
+                        </li>< li>
+                            <a href='U1-L17.html'>المصادر الثانوية      </a>
+                        </li>< li>
+                            <a href='U1-L18.html'>وسائل جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L19.html'>أسلوب جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L20.html'>أنواع العينات</a>
+                        </li>< li>
+                            <a href='U1-L21.html'>العينات الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L22.html'>العينات غير الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L23.html'>تمارين</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu2' data-toggle='collapse' aria-expanded='false'>الوحدة الثانية </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu2'>< li>
+                            <a href='U2-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U2-L2.html'>عرض البيانات جدولياً</a>
+                        </li>< li>
+                            <a href='U2-L3.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L4.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L5.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L6.html'>تكوين التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L7.html'>تكوين جدول تفريغ البيانات</a>
+                        </li>< li>
+                            <a href='U2-L8.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L9.html'>العرض البياني للبيانات الوصفية</a>
+                        </li>< li>
+                            <a href='U2-L10.html'>الدائرة البيانية	</a>
+                        </li>< li>
+                            <a href='U2-L11.html'>رسم الدائرة</a>
+                        </li>< li>
+                            <a href='U2-L12.html'>الأعمدة البيانية</a>
+                        </li>< li>
+                            <a href='U2-L13.html'>الأعمدة البيانية المزدوجة</a>
+                        </li>< li>
+                            <a href='U2-L14.html'>الأعمدة البيانية المجزأة</a>
+                        </li>< li>
+                            <a href='U2-L15.html'>العرض البياني للبيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U2-L16.html'>المدرج التكراري Histogram </a>
+                        </li>< li>
+                            <a href='U2-L17.html'>المنحنى التكراري</a>
+                        </li>< li>
+                            <a href='U2-L18.html'>التوزيعات التكرارية المتجمعة </a>
+                        </li>< li>
+                            <a href='U2-L19.html'>التوزيع التكراري المتجمع الصاعد</a>
+                        </li>< li>
+                            <a href='U2-L20.html'>التوزيع التكراري المتجمع الهابط</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu3' data-toggle='collapse' aria-expanded='false'>الوحدة الثالثة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu3'>< li>
+                            <a href='U3-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U3-L2.html'>مقاييس النزعة المركزية</a>
+                        </li>< li>
+                            <a href='U3-L3.html'>الوسط الحسابي  Arithmetic Mean</a>
+                        </li>< li>
+                            <a href='U3-L4.html'>الوسيط  Median</a>
+                        </li>< li>
+                            <a href='U3-L5.html'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</a>
+                        </li>< li>
+                            <a href='U3-L6.html'>تطبيقات الفصل الثالث</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu4' data-toggle='collapse' aria-expanded='false'>الوحدة الرابعة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu4'>< li>
+                            <a href='U4-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U4-L2.html'>المدى Rang</a>
+                        </li>< li>
+                            <a href='U4-L3.html'>التباين والانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L4.html'>التباين والانحراف المعياري في العينة S</a>
+                        </li>< li>
+                            <a href='U4-L5.html'>خصائص الانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L6.html'>معامل الاختلاف النسبي	</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu5' data-toggle='collapse' aria-expanded='false'>الوحدة الخامسة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu5'>< li>
+                            <a href='U5-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U5-L2.html'>الارتباط الخطى البسيط Simple Correlation</a>
+                        </li>< li>
+                            <a href='U5-L3.html'>معامل الارتباط الخطى البسيط " لبيرسون" Pearson    </a>
+                        </li>< li>
+                            <a href='U5-L4.html'>معامل ارتباط الرتب (اسبيرمان) Spearman     </a>
+                        </li>< li>
+                            <a href='U5-L5.html'>الانحدار الخطى البسيط Simple Regression  </a>
+                        </li>< li>
+                            <a href='U5-L6.html'>السلاسل الزمنية</a>
+                        </li>< li>
+                            <a href='U5-L7.html'>تطبيقات الفصل الخامس</a>
+                        </li></ul>
+                </li></ul>
+
+
+
+        </nav>        <div id='content'>
+
+            <nav class='navbar navbar-light bg-light shadow-sm ' dir='rtl'>
+                <div class='container'>
+
+                    <a class='navbar-brand float-right' href='#'>
+                        <img src='../img/logo1.png' class='d-inline-block align-top img-fluid ' alt=''>
+
+                    </a>
+                    <a class='nav-link home' href='../index.html'>
+                        <i class='fa fa-home fa-lg' aria-hidden='false'></i>
+                        <span class='sr-only'>(current)</span></a>
+                </div>
+            </nav>
+
+
+
+
+            <div class='container'>
+                <nav class='navbar navbar-expand-lg navbar-light  '>
+                    <div class='container-fluid'>
+
+                        <button type='button' id='sidebarCollapse' class='btn btn-info'>
+                            <i class='fas fa-align-left'></i>
+                            <span></span>
+                        </button>
+
+                        <button class='btn btn-dark d-inline-block d-lg-none ml-auto' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                            <i class='fas fa-align-justify'></i>
+                        </button>
+                        <h2 class='pr-3'>مقدمة في علم الاحصاء </h2>
+                        <div class='collapse navbar-collapse ' id='navbarSupportedContent'>
+                            <ul class='nav navbar-nav mx-auto'>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='#'> <button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>تعريف الحقيبة</button></a>
+
+
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='U1-L1.html'><button type='button' class='btn btn-secondary pr-3 pl-4 shadow-sm active'>المحتوى التعليمي </button></a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='../book/pdf.pdf' target='_blank'><button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>الكتاب</button> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav aria-label='breadcrumb'>
+                    <ol class='breadcrumb'>
+                        <li class='breadcrumb-item'><a href='../index.html'>الرئيسية </a></li>
+                        <li class='breadcrumb-item'><span style='color:white'>الوحدة الخامسة </span></li>
+                        <li class='breadcrumb-item active' aria-current='page'>تطبيقات الفصل الخامس</li>
+                        
+                    </ol>
+                </nav>
+
+
+
+
+                <!--<h2 class='text-right'>تطبيقات الفصل الخامس</h2>-->
+
+                
+
+
+                    <div class='content-text' id='style-1'> <p class='text-right text-justify mr-1 font-weight-normal' dir='rtl'><p dir="RTL" align="center"><strong><span lang="AR-SA">تطبيقات الفصل الخامس</span></strong></p>
+<p dir="RTL" align="center"><span dir="LTR" lang="EN-GB">&nbsp;</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">البيانات التالية توضح ساعات العمل اليومية لـ 10 عمال في أحد المصانع وكذلك الإنتاج اليومي لكل منهم.</span></p>
+<p class="MsoBodyTextIndent" dir="RTL" style="margin-right: 18pt; text-indent: 0cm; text-align: right;"><span lang="AR-SA" style="font-family: 'Traditional Arabic',serif;">&nbsp;</span></p>
+<div style="text-align: right;" align="center">
+<table class="MsoNormalTable" style="width: 118.0pt; border-collapse: collapse; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt;" border="0" width="157" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 24.35pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 24.35pt;" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">الإنتاج</span></p>
+</td>
+<td style="width: 70.0pt; border: solid windowtext 1.0pt; border-left: none; mso-border-top-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 24.35pt;" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">ساعات العمل</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; height: 12.75pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">11</span></p>
+</td>
+<td style="width: 70.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">10</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 2; height: 12.75pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">10</span></p>
+</td>
+<td style="width: 70.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">7</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 3; height: 12.75pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">12</span></p>
+</td>
+<td style="width: 70.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">10</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 4; height: 12.75pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">6</span></p>
+</td>
+<td style="width: 70.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">5</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 5; height: 12.75pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">10</span></p>
+</td>
+<td style="width: 70.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">8</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 6; height: 12.75pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">7</span></p>
+</td>
+<td style="width: 70.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">8</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 7; height: 12.75pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">9</span></p>
+</td>
+<td style="width: 70.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">6</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 8; height: 12.75pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">10</span></p>
+</td>
+<td style="width: 70.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">7</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 9; height: 12.75pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">11</span></p>
+</td>
+<td style="width: 70.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">9</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 10; mso-yfti-lastrow: yes; height: 12.75pt;">
+<td style="width: 48.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="64">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">10</span></p>
+</td>
+<td style="width: 70.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; background: #9CC2E5; mso-background-themecolor: accent1; mso-background-themetint: 153; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.75pt;" valign="bottom" nowrap="nowrap" width="93">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; color: black; mso-color-alt: windowtext; mso-fareast-language: AR-SA;">10</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="MsoBodyTextIndent" dir="RTL" style="margin-right: 18pt; text-indent: 0cm; text-align: right;">&nbsp;</p>
+<p class="MsoBodyTextIndent" dir="RTL" style="margin-right: 18pt; text-indent: 0cm; text-align: right;"><!-- [if !supportLists]-->1-&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">قم برسم شكل الانتشار للبيانات، ما نوع العلاقة بين المتغيرين؟</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->2-&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">من شكل الانتشار، هل تبدو العلاقة خطية؟</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->3-&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">أحسب قوة العلاقة بين المتغيرين (معامل بيرسون). </span></p>
+<p dir="RTL"><!-- [if !supportLists]-->4-&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">بين أثر ساعات العمل علي الانتاج (قم بتقدير نموذج&nbsp; الانحدار الخطي).</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->5-&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">قدر انتاج عامل عدد ساعات عمله 9 ساعات.</span></p>
+<p dir="RTL"><span dir="LTR">&nbsp;</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->b.&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">المعلومات أدناه تختص بإجمالي الإنفاق الاستهلاكي (</span><span dir="LTR">y</span><span lang="AR-SA"> ) بملايين الريالات وإجمالي الدخل المتاح (</span><span dir="LTR">x</span><span lang="AR-SA"> ) بملايين الريالات لاقتصاد منطقة معينة لفترة عشر سنوات.</span></p>
+<div style="text-align: right;" align="right">
+<table class="MsoNormalTable" style="width: 450.0pt; border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt;" border="0" width="600" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 26.55pt;">
+<td style="width: 79.15pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="106">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="font-size: 10.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">الإنفاق </span></p>
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="font-size: 10.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">الاستهلاكي </span><span style="font-size: 10.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;"><span style="mso-spacerun: yes;">&nbsp;</span>(y) </span></p>
+</td>
+<td style="width: 37.05pt; border-top: solid windowtext 1.0pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">7</span></p>
+</td>
+<td style="width: 37.1pt; border: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">6.5</span></p>
+</td>
+<td style="width: 37.1pt; border: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">9</span></p>
+</td>
+<td style="width: 37.05pt; border: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">9</span><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">.<span dir="RTL" lang="AR-SA">5</span></span></p>
+</td>
+<td style="width: 37.1pt; border: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">11</span></p>
+</td>
+<td style="width: 37.1pt; border: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="49">
+<p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: center; line-height: normal; direction: rtl; unicode-bidi: embed;" align="center"><span dir="LTR" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">11.5</span></p>
+</td>
+<td style="width: 37.05pt; border: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">12</span></p>
+</td>
+<td style="width: 37.1pt; border: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">14</span></p>
+</td>
+<td style="width: 37.1pt; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext 1.0pt; mso-border-right-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">16</span></p>
+</td>
+<td style="width: 37.1pt; border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.55pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="color: black;">15</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; mso-yfti-lastrow: yes; height: 23.4pt;">
+<td style="width: 79.15pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="106">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="font-size: 10.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">الدخل المتاح </span><span style="font-size: 10.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;"><span style="mso-spacerun: yes;">&nbsp;</span>(x)</span></p>
+</td>
+<td style="width: 37.05pt; border: none; border-bottom: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">8</span></p>
+</td>
+<td style="width: 37.1pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">10</span></p>
+</td>
+<td style="width: 37.1pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">12</span></p>
+</td>
+<td style="width: 37.05pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">14</span></p>
+</td>
+<td style="width: 37.1pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">16</span></p>
+</td>
+<td style="width: 37.1pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">18</span></p>
+</td>
+<td style="width: 37.05pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">20</span></p>
+</td>
+<td style="width: 37.1pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">22</span></p>
+</td>
+<td style="width: 37.1pt; border: solid windowtext 1.0pt; border-top: none; mso-border-left-alt: solid windowtext 1.0pt; mso-border-bottom-alt: solid windowtext 1.0pt; mso-border-right-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">24</span></p>
+</td>
+<td style="width: 37.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 23.4pt;" width="49">
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="color: black;">26</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">المطلوب : </span></p>
+<p dir="RTL"><!-- [if !supportLists]-->1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">&nbsp;أوجد الارتباط بين المتغيرين.</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">ارسم شكل الانتشار.</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">هل يوجد علاقة بين المتغيرين ؟ وان وجدت ما نوعها وقوتها ؟</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">أوجد معادلة الانحدار الخطي البسيط باستخدام طريقة المربعات الصغرى.</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">ما هو تفسيرك لقيمة القاطع وميل خط الانحدار</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">قدر بإجمالي الإنفاق الاستهلاكي اذا كان الدخل المتاح </span><span dir="LTR">14</span> <span lang="AR-SA">مليون ريال.</span></p>
+<p dir="RTL"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->c.&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">البيانات التالية تمثل إنتاج أحد أنواع السيارات ( بالألف ) للفترة من </span><span dir="LTR">2010</span><span lang="AR-SA"> - </span><span dir="LTR">2019</span><span lang="AR-SA"> .</span></p>
+<p class="MsoNormal" dir="RTL" style="text-align: right; line-height: normal; direction: rtl; unicode-bidi: embed; margin: 0cm -.75pt 0cm 0cm;"><span lang="AR-SA" style="font-size: 13.0pt; font-family: 'AdvertisingLight',serif; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: AdvertisingLight; mso-fareast-language: AR-SA;">&nbsp;</span></p>
+<div style="text-align: right;" align="right">
+<table class="MsoTableGrid" dir="rtl" style="border-collapse: collapse; border: none; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-table-dir: bidi;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+<td style="width: 37.5pt; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">2019</span></p>
+</td>
+<td style="width: 37.5pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">2018</span></p>
+</td>
+<td style="width: 37.5pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">2017</span></p>
+</td>
+<td style="width: 37.5pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">2016</span></p>
+</td>
+<td style="width: 37.5pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">2015</span></p>
+</td>
+<td style="width: 37.55pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">2014</span></p>
+</td>
+<td style="width: 37.55pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">2013</span></p>
+</td>
+<td style="width: 37.55pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">2012</span></p>
+</td>
+<td style="width: 37.55pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">2011</span></p>
+</td>
+<td style="width: 37.55pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">2010</span></p>
+</td>
+<td style="width: 37.55pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">السنة</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; mso-yfti-lastrow: yes;">
+<td style="width: 37.5pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">37</span></p>
+</td>
+<td style="width: 37.5pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">28</span></p>
+</td>
+<td style="width: 37.5pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">31</span></p>
+</td>
+<td style="width: 37.5pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">19</span></p>
+</td>
+<td style="width: 37.5pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">27</span></p>
+</td>
+<td style="width: 37.55pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">16</span></p>
+</td>
+<td style="width: 37.55pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">26</span></p>
+</td>
+<td style="width: 37.55pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">18</span></p>
+</td>
+<td style="width: 37.55pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">22</span></p>
+</td>
+<td style="width: 37.55pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">17</span></p>
+</td>
+<td style="width: 37.55pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal;" align="center"><span dir="RTL" lang="AR-SA" style="mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-fareast-language: AR-SA;">الإنتاج</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="MsoNormal" dir="RTL" style="text-align: right; mso-pagination: no-line-numbers; direction: rtl; unicode-bidi: embed;"><span style="font-size: 13.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; mso-fareast-font-family: 'Traditional Arabic'; letter-spacing: .4pt; mso-ansi-font-weight: bold;"><span style="mso-list: Ignore;">1-<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="AR-EG">ايجاد معادلة الاتجاه العام.</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->2-&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">تقدير عدد العاملين عام </span><span dir="LTR">2026</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->d.&nbsp;&nbsp; <!--[endif]--><span lang="AR-SA">الجدول التالي يمثل أرباح إحدى الشركات بآلاف الريالات:</span></p>
+<p class="MsoBodyTextIndent" dir="RTL" style="margin-right: 18pt; text-indent: 0cm;"><span lang="AR-SA" style="font-family: 'Traditional Arabic',serif;">&nbsp;</span></p>
+<div style="text-align: right;" align="center">
+<table class="MsoNormalTable" style="width: 324.0pt; border-collapse: collapse; border: none; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext;" border="1" width="432" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 17.25pt;">
+<td style="width: 54.0pt; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-ansi-language: AR-SA; mso-no-proof: yes;">السنة</span></p>
+</td>
+<td style="width: 54.0pt; border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">2009</span></p>
+</td>
+<td style="width: 54.0pt; border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">2010</span></p>
+</td>
+<td style="width: 54.0pt; border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">2011</span></p>
+</td>
+<td style="width: 54.0pt; border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">2012</span></p>
+</td>
+<td style="width: 54.0pt; border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">2013</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; height: 17.25pt;">
+<td style="width: 54.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-ansi-language: AR-SA; mso-no-proof: yes;">الأرباح</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">11.87</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">12.12</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">12.82</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">13.29</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">13.53</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 2; height: 17.25pt;">
+<td style="width: 54.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-ansi-language: AR-SA; mso-no-proof: yes;">السنة</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">2014</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">2015</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">2016</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">2017</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">2018</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 3; mso-yfti-lastrow: yes; height: 17.25pt;">
+<td style="width: 54.0pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi; mso-ansi-language: AR-SA; mso-no-proof: yes;">الأرباح</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">14.07</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">14.48</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">14.22</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">14.84</span></p>
+</td>
+<td style="width: 54.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.25pt;" width="72">
+<p class="MsoBodyTextIndent" dir="RTL" style="text-align: right; text-indent: 0cm;" align="left"><span lang="AR-SA" style="font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: AR-SA; mso-no-proof: yes;">14.86</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL"><span lang="AR-SA">والمطلوب:</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->1-&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">ايجاد معادلة الاتجاه العام.</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->2-&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">تقدير الأرباح عام </span><span dir="LTR">2021</span></p>
+<p class="MsoNormal" dir="RTL" style="text-align: right; direction: rtl; unicode-bidi: embed;"><span lang="AR-SA" style="font-size: 13.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif;">&nbsp;</span></p></p></div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <br>
+
+            <div class='container'>
+                <ul class='pagination justify-content-center'>
+                  <span class='pr-5 pl-5 shadow-sm'>62 / 62</span><li class='page-item'><a class='page-link' href='U5-L6.html'>السابق</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </div>  <div class='overlay'></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper.JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js' integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ' crossorigin='anonymous'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js' integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm' crossorigin='anonymous'></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js'></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#sidebar').mCustomScrollbar({
+                theme: 'minimal'
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

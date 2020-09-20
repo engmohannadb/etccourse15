@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>مقدمة في علم الاحصاء </title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'>
+    <!-- Our Custom CSS -->
+    <link rel='stylesheet' href='../css/page2.css'>
+    <link rel='stylesheet' href='../css/rtl.css'>
+    <!-- Scrollbar Custom CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap' rel='stylesheet'>
+
+
+    <!-- Font Awesome JS -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/solid.js'></script>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js'></script>
+
+
+</head>
+
+<body><nav id='sidebar'>
+            <div id='dismiss'>
+                <i class='fa fa-times' aria-hidden='true'></i>
+
+            </div>
+
+            <div class='sidebar-header'>
+                <!--<h3>Bootstrap Sidebar</h3>-->
+            </div>
+
+            <ul class='list-unstyled components'>
+                <p>الفهرس</p>
+                <li>
+                    <a href='#homeSubmenu1' data-toggle='collapse' aria-expanded='false'>الوحدة الاولى </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu1'>< li>
+                            <a href='U1-L1.html'>مقدمة</a>
+                        </li>< li>
+                            <a href='U1-L2.html'>تعريف علم الاحصاء</a>
+                        </li>< li>
+                            <a href='U1-L3.html'>المجتمع الإحصائي</a>
+                        </li>< li>
+                            <a href='U1-L4.html'>الوحدة الإحصائية</a>
+                        </li>< li>
+                            <a href='U1-L5.html'>العينة والمعاينة</a>
+                        </li>< li>
+                            <a href='U1-L6.html'>الإطار</a>
+                        </li>< li>
+                            <a href='U1-L7.html'>معالم المجتمع وإحصائية العينة</a>
+                        </li>< li>
+                            <a href='U1-L8.html'>وظائف علم الإحصاء</a>
+                        </li>< li>
+                            <a href='U1-L9.html'>وصف البيانات Data Description	</a>
+                        </li>< li>
+                            <a href='U1-L10.html'>الاستدلال الإحصائي Statistical Inference	</a>
+                        </li>< li>
+                            <a href='U1-L11.html'>التنبؤ Forecasting	</a>
+                        </li>< li>
+                            <a href='U1-L12.html'>أنواع البيانات وطرق قياسها	</a>
+                        </li>< li>
+                            <a href='U1-L13.html'>البيانات الوصفية	</a>
+                        </li>< li>
+                            <a href='U1-L14.html'>البيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U1-L15.html'>طرق جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L16.html'>المصادر الأولية</a>
+                        </li>< li>
+                            <a href='U1-L17.html'>المصادر الثانوية      </a>
+                        </li>< li>
+                            <a href='U1-L18.html'>وسائل جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L19.html'>أسلوب جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L20.html'>أنواع العينات</a>
+                        </li>< li>
+                            <a href='U1-L21.html'>العينات الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L22.html'>العينات غير الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L23.html'>تمارين</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu2' data-toggle='collapse' aria-expanded='false'>الوحدة الثانية </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu2'>< li>
+                            <a href='U2-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U2-L2.html'>عرض البيانات جدولياً</a>
+                        </li>< li>
+                            <a href='U2-L3.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L4.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L5.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L6.html'>تكوين التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L7.html'>تكوين جدول تفريغ البيانات</a>
+                        </li>< li>
+                            <a href='U2-L8.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L9.html'>العرض البياني للبيانات الوصفية</a>
+                        </li>< li>
+                            <a href='U2-L10.html'>الدائرة البيانية	</a>
+                        </li>< li>
+                            <a href='U2-L11.html'>رسم الدائرة</a>
+                        </li>< li>
+                            <a href='U2-L12.html'>الأعمدة البيانية</a>
+                        </li>< li>
+                            <a href='U2-L13.html'>الأعمدة البيانية المزدوجة</a>
+                        </li>< li>
+                            <a href='U2-L14.html'>الأعمدة البيانية المجزأة</a>
+                        </li>< li>
+                            <a href='U2-L15.html'>العرض البياني للبيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U2-L16.html'>المدرج التكراري Histogram </a>
+                        </li>< li>
+                            <a href='U2-L17.html'>المنحنى التكراري</a>
+                        </li>< li>
+                            <a href='U2-L18.html'>التوزيعات التكرارية المتجمعة </a>
+                        </li>< li>
+                            <a href='U2-L19.html'>التوزيع التكراري المتجمع الصاعد</a>
+                        </li>< li>
+                            <a href='U2-L20.html'>التوزيع التكراري المتجمع الهابط</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu3' data-toggle='collapse' aria-expanded='false'>الوحدة الثالثة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu3'>< li>
+                            <a href='U3-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U3-L2.html'>مقاييس النزعة المركزية</a>
+                        </li>< li>
+                            <a href='U3-L3.html'>الوسط الحسابي  Arithmetic Mean</a>
+                        </li>< li>
+                            <a href='U3-L4.html'>الوسيط  Median</a>
+                        </li>< li>
+                            <a href='U3-L5.html'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</a>
+                        </li>< li>
+                            <a href='U3-L6.html'>تطبيقات الفصل الثالث</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu4' data-toggle='collapse' aria-expanded='false'>الوحدة الرابعة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu4'>< li>
+                            <a href='U4-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U4-L2.html'>المدى Rang</a>
+                        </li>< li>
+                            <a href='U4-L3.html'>التباين والانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L4.html'>التباين والانحراف المعياري في العينة S</a>
+                        </li>< li>
+                            <a href='U4-L5.html'>خصائص الانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L6.html'>معامل الاختلاف النسبي	</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu5' data-toggle='collapse' aria-expanded='false'>الوحدة الخامسة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu5'>< li>
+                            <a href='U5-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U5-L2.html'>الارتباط الخطى البسيط Simple Correlation</a>
+                        </li>< li>
+                            <a href='U5-L3.html'>معامل الارتباط الخطى البسيط " لبيرسون" Pearson    </a>
+                        </li>< li>
+                            <a href='U5-L4.html'>معامل ارتباط الرتب (اسبيرمان) Spearman     </a>
+                        </li>< li>
+                            <a href='U5-L5.html'>الانحدار الخطى البسيط Simple Regression  </a>
+                        </li>< li>
+                            <a href='U5-L6.html'>السلاسل الزمنية</a>
+                        </li>< li>
+                            <a href='U5-L7.html'>تطبيقات الفصل الخامس</a>
+                        </li></ul>
+                </li></ul>
+
+
+
+        </nav>        <div id='content'>
+
+            <nav class='navbar navbar-light bg-light shadow-sm ' dir='rtl'>
+                <div class='container'>
+
+                    <a class='navbar-brand float-right' href='#'>
+                        <img src='../img/logo1.png' class='d-inline-block align-top img-fluid ' alt=''>
+
+                    </a>
+                    <a class='nav-link home' href='../index.html'>
+                        <i class='fa fa-home fa-lg' aria-hidden='false'></i>
+                        <span class='sr-only'>(current)</span></a>
+                </div>
+            </nav>
+
+
+
+
+            <div class='container'>
+                <nav class='navbar navbar-expand-lg navbar-light  '>
+                    <div class='container-fluid'>
+
+                        <button type='button' id='sidebarCollapse' class='btn btn-info'>
+                            <i class='fas fa-align-left'></i>
+                            <span></span>
+                        </button>
+
+                        <button class='btn btn-dark d-inline-block d-lg-none ml-auto' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                            <i class='fas fa-align-justify'></i>
+                        </button>
+                        <h2 class='pr-3'>مقدمة في علم الاحصاء </h2>
+                        <div class='collapse navbar-collapse ' id='navbarSupportedContent'>
+                            <ul class='nav navbar-nav mx-auto'>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='#'> <button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>تعريف الحقيبة</button></a>
+
+
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='U1-L1.html'><button type='button' class='btn btn-secondary pr-3 pl-4 shadow-sm active'>المحتوى التعليمي </button></a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='../book/pdf.pdf' target='_blank'><button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>الكتاب</button> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav aria-label='breadcrumb'>
+                    <ol class='breadcrumb'>
+                        <li class='breadcrumb-item'><a href='../index.html'>الرئيسية </a></li>
+                        <li class='breadcrumb-item'><span style='color:white'>الوحدة الثانية </span></li>
+                        <li class='breadcrumb-item active' aria-current='page'>التوزيع التكراري المتجمع الصاعد</li>
+                        
+                    </ol>
+                </nav>
+
+
+
+
+                <!--<h2 class='text-right'>التوزيع التكراري المتجمع الصاعد</h2>-->
+
+                
+
+
+                    <div class='content-text' id='style-1'> <p class='text-right text-justify mr-1 font-weight-normal' dir='rtl'><p dir="RTL" style="text-align: right;"><span lang="AR-SA">2/5/1 التوزيع التكراري المتجمع الصاعد</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;لتكوين الجدول التكراري المتجمع الصاعد، يتم حساب مجموع التكرارات (عدد القيم) التي &nbsp;&nbsp;تقل عن كل حد من حدود الفئات.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">مثال (2-10)</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">الجدول التكراري التالي يبين توزيع&nbsp;</span><span dir="LTR">40</span><span lang="AR-SA">&nbsp;بقرة في مزرعة حسب كمية الألبان التي تنتجها البقرة في اليوم باللتر.</span></p>
+<div dir="rtl" style="text-align: right;" align="left">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="66">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">المجموع</span></p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">34-38</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">30-</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">26-</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">22-</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">18-</p>
+</td>
+<td width="79">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">كمية الألبان</span></p>
+</td>
+</tr>
+<tr>
+<td width="66">
+<p dir="LTR" align="center">40</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">4</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">8</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">15</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">9</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">4</p>
+</td>
+<td width="79">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">عدد الأبقار</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">والمطلوب:</span></p>
+<p dir="RTL" style="text-align: right;">1-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">كون جدول التوزيع التكراري المتجمع الصاعد.</span></p>
+<p dir="RTL" style="text-align: right;">2-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">كون جدول التوزيع التكراري المتجمع الصاعد النسبي.</span></p>
+<p dir="RTL" style="text-align: right;">3-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">ارسم المنحنى التكراري المتجمع الصاعد.</span></p>
+<p dir="RTL" style="text-align: right;">4-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">ارسم المنحنى التكراري المتجمع الصاعد النسبي.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">الحل</span></p>
+<p dir="RTL" style="text-align: right;">1-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">التوزيع التكراري المتجمع الصاعد.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; توزيع تكراري متجمع صاعد&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;التوزيع التكراري</span></p>
+<div dir="rtl" style="text-align: right;" align="center">
+<table dir="rtl" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="88">
+<p dir="RTL" align="center"><span lang="AR-SA">تكرار متجمع صاعد نسبي</span></p>
+</td>
+<td width="88">
+<p dir="RTL" align="center"><span lang="AR-SA">تكرار متجمع صاعد</span></p>
+</td>
+<td width="91">
+<p dir="RTL" align="center"><span lang="AR-SA">أقل من</span></p>
+</td>
+<td width="17">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="90">
+<p dir="RTL" align="center"><span lang="AR-SA">عدد الأبقار</span></p>
+</td>
+<td width="90">
+<p dir="RTL" align="center"><span lang="AR-SA">كمية الإنتاج باللتر</span></p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p dir="LTR" align="center">0.00</p>
+</td>
+<td width="88">
+<p dir="LTR" align="center">0</p>
+</td>
+<td width="91">
+<p dir="RTL"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">18</span></p>
+</td>
+<td width="17">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="90">
+<p dir="LTR" align="center">4</p>
+</td>
+<td width="90">
+<p dir="LTR">18-</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p dir="LTR" align="center">0.10</p>
+</td>
+<td width="88">
+<p dir="LTR" align="center">4</p>
+</td>
+<td width="91">
+<p dir="RTL"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">22</span></p>
+</td>
+<td width="17">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="90">
+<p dir="LTR" align="center">9</p>
+</td>
+<td width="90">
+<p dir="LTR">22-</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p dir="LTR" align="center">0.325</p>
+</td>
+<td width="88">
+<p dir="LTR" align="center">13</p>
+</td>
+<td width="91">
+<p dir="RTL"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">26</span></p>
+</td>
+<td width="17">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="90">
+<p dir="LTR" align="center">15</p>
+</td>
+<td width="90">
+<p dir="LTR">26-</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p dir="LTR" align="center">0.70</p>
+</td>
+<td width="88">
+<p dir="LTR" align="center">28</p>
+</td>
+<td width="91">
+<p dir="RTL"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">30</span></p>
+</td>
+<td width="17">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="90">
+<p dir="LTR" align="center">8</p>
+</td>
+<td width="90">
+<p dir="LTR">30-</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p dir="LTR" align="center">0.90</p>
+</td>
+<td width="88">
+<p dir="LTR" align="center">36</p>
+</td>
+<td width="91">
+<p dir="RTL"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">34</span></p>
+</td>
+<td width="17">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="90">
+<p dir="LTR" align="center">4</p>
+</td>
+<td width="90">
+<p dir="LTR">34-38</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p dir="LTR" align="center">1.00</p>
+</td>
+<td width="88">
+<p dir="LTR" align="center">40</p>
+</td>
+<td width="91">
+<p dir="RTL"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">38</span></p>
+</td>
+<td width="17">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="90">
+<p dir="LTR" align="center">40</p>
+</td>
+<td width="90">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">المجموع</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">التوزيع التكراري المتجمع الصاعد النسبي: يحسب التكرار المتجمع الصاعد النسبي بقسمة التكرار المتجمع الصاعد على مجموع التكرارات، كما هو مبين بالعمود الأخير في جدول التوزيع التكراري المتجمع الصاعد.</span></p>
+<p dir="RTL" style="text-align: right;">3-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">رسم المنحنى التكراري المتجمع الصاعد:</span><span lang="AR-SA">&nbsp;المنحنى التكراري المتجمع الصاعد هو التمثيل البياني للتوزيع التكراري المتجمع الصاعد ، حيث تمثل حدود الفئات على المحور الأفقي، والتكرار المتجمع الصاعد على المحور الرأسي، ويتم تمهيد المنحنى ليمر بالإحداثيات، كما هو مبين في الشكل التالي:</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="blob:http://10.34.17.22/4ef28590-21cb-4371-88d1-ed2e9e0fc00f" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">شكل (2-11) المنحنى التكراري المتجمع الصاعد</span></p>
+<p dir="RTL" style="text-align: right;">4-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">رسم المنحنى التكراري المتجمع الصاعد النسبي:</span><span lang="AR-SA">&nbsp;المنحنى التكراري المتجمع الصاعد النسبي هو التمثيل البياني للتوزيع التكراري المتجمع الصاعد النسبي ، حيث تمثل حدود الفئات على المحور الأفقي، والتكرار المتجمع الصاعد النسبي على المحور الرأسي، ويتم تمهيد المنحنى ليمر بالإحداثيات، كما هو مبين في الشكل التالي:</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="blob:http://10.34.17.22/a97cadf9-65e6-487f-84c4-22360896720d" alt="" /><img src="data:image/png;base64,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" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">شكل (2-12) المنحنى التكراري المتجمع الصاعد</span><span lang="AR-SA">&nbsp;النسبي</span></p></p></div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <br>
+
+            <div class='container'>
+                <ul class='pagination justify-content-center'>
+                  <li class='page-item'><a class='page-link' href='U2-L20.html'>التالي</a></li> <span class='pr-5 pl-5 shadow-sm'>62 / 42</span><li class='page-item'><a class='page-link' href='U2-L18.html'>السابق</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </div>  <div class='overlay'></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper.JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js' integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ' crossorigin='anonymous'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js' integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm' crossorigin='anonymous'></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js'></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#sidebar').mCustomScrollbar({
+                theme: 'minimal'
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

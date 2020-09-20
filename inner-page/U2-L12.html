@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>مقدمة في علم الاحصاء </title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'>
+    <!-- Our Custom CSS -->
+    <link rel='stylesheet' href='../css/page2.css'>
+    <link rel='stylesheet' href='../css/rtl.css'>
+    <!-- Scrollbar Custom CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap' rel='stylesheet'>
+
+
+    <!-- Font Awesome JS -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/solid.js'></script>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js'></script>
+
+
+</head>
+
+<body><nav id='sidebar'>
+            <div id='dismiss'>
+                <i class='fa fa-times' aria-hidden='true'></i>
+
+            </div>
+
+            <div class='sidebar-header'>
+                <!--<h3>Bootstrap Sidebar</h3>-->
+            </div>
+
+            <ul class='list-unstyled components'>
+                <p>الفهرس</p>
+                <li>
+                    <a href='#homeSubmenu1' data-toggle='collapse' aria-expanded='false'>الوحدة الاولى </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu1'>< li>
+                            <a href='U1-L1.html'>مقدمة</a>
+                        </li>< li>
+                            <a href='U1-L2.html'>تعريف علم الاحصاء</a>
+                        </li>< li>
+                            <a href='U1-L3.html'>المجتمع الإحصائي</a>
+                        </li>< li>
+                            <a href='U1-L4.html'>الوحدة الإحصائية</a>
+                        </li>< li>
+                            <a href='U1-L5.html'>العينة والمعاينة</a>
+                        </li>< li>
+                            <a href='U1-L6.html'>الإطار</a>
+                        </li>< li>
+                            <a href='U1-L7.html'>معالم المجتمع وإحصائية العينة</a>
+                        </li>< li>
+                            <a href='U1-L8.html'>وظائف علم الإحصاء</a>
+                        </li>< li>
+                            <a href='U1-L9.html'>وصف البيانات Data Description	</a>
+                        </li>< li>
+                            <a href='U1-L10.html'>الاستدلال الإحصائي Statistical Inference	</a>
+                        </li>< li>
+                            <a href='U1-L11.html'>التنبؤ Forecasting	</a>
+                        </li>< li>
+                            <a href='U1-L12.html'>أنواع البيانات وطرق قياسها	</a>
+                        </li>< li>
+                            <a href='U1-L13.html'>البيانات الوصفية	</a>
+                        </li>< li>
+                            <a href='U1-L14.html'>البيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U1-L15.html'>طرق جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L16.html'>المصادر الأولية</a>
+                        </li>< li>
+                            <a href='U1-L17.html'>المصادر الثانوية      </a>
+                        </li>< li>
+                            <a href='U1-L18.html'>وسائل جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L19.html'>أسلوب جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L20.html'>أنواع العينات</a>
+                        </li>< li>
+                            <a href='U1-L21.html'>العينات الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L22.html'>العينات غير الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L23.html'>تمارين</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu2' data-toggle='collapse' aria-expanded='false'>الوحدة الثانية </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu2'>< li>
+                            <a href='U2-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U2-L2.html'>عرض البيانات جدولياً</a>
+                        </li>< li>
+                            <a href='U2-L3.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L4.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L5.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L6.html'>تكوين التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L7.html'>تكوين جدول تفريغ البيانات</a>
+                        </li>< li>
+                            <a href='U2-L8.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L9.html'>العرض البياني للبيانات الوصفية</a>
+                        </li>< li>
+                            <a href='U2-L10.html'>الدائرة البيانية	</a>
+                        </li>< li>
+                            <a href='U2-L11.html'>رسم الدائرة</a>
+                        </li>< li>
+                            <a href='U2-L12.html'>الأعمدة البيانية</a>
+                        </li>< li>
+                            <a href='U2-L13.html'>الأعمدة البيانية المزدوجة</a>
+                        </li>< li>
+                            <a href='U2-L14.html'>الأعمدة البيانية المجزأة</a>
+                        </li>< li>
+                            <a href='U2-L15.html'>العرض البياني للبيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U2-L16.html'>المدرج التكراري Histogram </a>
+                        </li>< li>
+                            <a href='U2-L17.html'>المنحنى التكراري</a>
+                        </li>< li>
+                            <a href='U2-L18.html'>التوزيعات التكرارية المتجمعة </a>
+                        </li>< li>
+                            <a href='U2-L19.html'>التوزيع التكراري المتجمع الصاعد</a>
+                        </li>< li>
+                            <a href='U2-L20.html'>التوزيع التكراري المتجمع الهابط</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu3' data-toggle='collapse' aria-expanded='false'>الوحدة الثالثة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu3'>< li>
+                            <a href='U3-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U3-L2.html'>مقاييس النزعة المركزية</a>
+                        </li>< li>
+                            <a href='U3-L3.html'>الوسط الحسابي  Arithmetic Mean</a>
+                        </li>< li>
+                            <a href='U3-L4.html'>الوسيط  Median</a>
+                        </li>< li>
+                            <a href='U3-L5.html'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</a>
+                        </li>< li>
+                            <a href='U3-L6.html'>تطبيقات الفصل الثالث</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu4' data-toggle='collapse' aria-expanded='false'>الوحدة الرابعة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu4'>< li>
+                            <a href='U4-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U4-L2.html'>المدى Rang</a>
+                        </li>< li>
+                            <a href='U4-L3.html'>التباين والانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L4.html'>التباين والانحراف المعياري في العينة S</a>
+                        </li>< li>
+                            <a href='U4-L5.html'>خصائص الانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L6.html'>معامل الاختلاف النسبي	</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu5' data-toggle='collapse' aria-expanded='false'>الوحدة الخامسة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu5'>< li>
+                            <a href='U5-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U5-L2.html'>الارتباط الخطى البسيط Simple Correlation</a>
+                        </li>< li>
+                            <a href='U5-L3.html'>معامل الارتباط الخطى البسيط " لبيرسون" Pearson    </a>
+                        </li>< li>
+                            <a href='U5-L4.html'>معامل ارتباط الرتب (اسبيرمان) Spearman     </a>
+                        </li>< li>
+                            <a href='U5-L5.html'>الانحدار الخطى البسيط Simple Regression  </a>
+                        </li>< li>
+                            <a href='U5-L6.html'>السلاسل الزمنية</a>
+                        </li>< li>
+                            <a href='U5-L7.html'>تطبيقات الفصل الخامس</a>
+                        </li></ul>
+                </li></ul>
+
+
+
+        </nav>        <div id='content'>
+
+            <nav class='navbar navbar-light bg-light shadow-sm ' dir='rtl'>
+                <div class='container'>
+
+                    <a class='navbar-brand float-right' href='#'>
+                        <img src='../img/logo1.png' class='d-inline-block align-top img-fluid ' alt=''>
+
+                    </a>
+                    <a class='nav-link home' href='../index.html'>
+                        <i class='fa fa-home fa-lg' aria-hidden='false'></i>
+                        <span class='sr-only'>(current)</span></a>
+                </div>
+            </nav>
+
+
+
+
+            <div class='container'>
+                <nav class='navbar navbar-expand-lg navbar-light  '>
+                    <div class='container-fluid'>
+
+                        <button type='button' id='sidebarCollapse' class='btn btn-info'>
+                            <i class='fas fa-align-left'></i>
+                            <span></span>
+                        </button>
+
+                        <button class='btn btn-dark d-inline-block d-lg-none ml-auto' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                            <i class='fas fa-align-justify'></i>
+                        </button>
+                        <h2 class='pr-3'>مقدمة في علم الاحصاء </h2>
+                        <div class='collapse navbar-collapse ' id='navbarSupportedContent'>
+                            <ul class='nav navbar-nav mx-auto'>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='#'> <button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>تعريف الحقيبة</button></a>
+
+
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='U1-L1.html'><button type='button' class='btn btn-secondary pr-3 pl-4 shadow-sm active'>المحتوى التعليمي </button></a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='../book/pdf.pdf' target='_blank'><button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>الكتاب</button> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav aria-label='breadcrumb'>
+                    <ol class='breadcrumb'>
+                        <li class='breadcrumb-item'><a href='../index.html'>الرئيسية </a></li>
+                        <li class='breadcrumb-item'><span style='color:white'>الوحدة الثانية </span></li>
+                        <li class='breadcrumb-item active' aria-current='page'>الأعمدة البيانية</li>
+                        
+                    </ol>
+                </nav>
+
+
+
+
+                <!--<h2 class='text-right'>الأعمدة البيانية</h2>-->
+
+                
+
+
+                    <div class='content-text' id='style-1'> <p class='text-right text-justify mr-1 font-weight-normal' dir='rtl'><p style="text-align: right;">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><strong><span lang="AR-SA">2/3/2 الأعمدة البيانية</span></strong></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">هي عبارة عن مجموعة من الأعمدة الرأسية أو المستطيلات المتساوية القاعدة والتي يتناسب ارتفاعها مع البيانات التي تمثلها، وعادة يأخذ المحور الرأسي لتمثيل قيم الظاهرة، والمحور الأفقي لتمثيل الفئة</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">مثال (2-5)</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">البيانات التالية تبين التقديرات التي حصل عليها ( 25 ) طالبا في اختبار مادة الاحصاء.</span></p>
+<p dir="RTL" style="text-align: right;">&nbsp;</p>
+<div style="text-align: right;" align="center">
+<table border="0" width="397" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">التقدير</span></p>
+</td>
+<td width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">التكرار</span></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">جيد</span></p>
+</td>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">9</span></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">جيد جدا</span></p>
+</td>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">5</span></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">راسب</span></p>
+</td>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">2</span></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">مقبول</span></p>
+</td>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">6</span></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">ممتاز</span></p>
+</td>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">3</span></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">المجموع</span></p>
+</td>
+<td valign="bottom" width="199">
+<p dir="RTL" align="center"><span lang="AR-SA">25</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><strong><span lang="AR-SA">المطلوب تمثيل البيانات بالأعمدة البيانية.</span></strong></p>
+<p dir="RTL" style="text-align: right;"><strong><span lang="AR-SA">الحل:</span></strong></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">نستخدم المحور الرأسي لتمثيل التكرار، والمحور الأفقي لتمثيل التقدير ومن خلال البيانات الموجودة بالجدول السابق نحصل على الشكل التالي:</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="blob:http://10.34.17.22/31c9ef3c-be5f-4245-aea9-b66cc7e5e378" alt="" /><img src="data:image/png;base64,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" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">شكل رقم (2-2)&nbsp; الأعمدة البيانية للتقديرات التي حصل عليها ( 25 ) طالبا في اختبار مادة الاحصاء</span></p></p></div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <br>
+
+            <div class='container'>
+                <ul class='pagination justify-content-center'>
+                  <li class='page-item'><a class='page-link' href='U2-L13.html'>التالي</a></li> <span class='pr-5 pl-5 shadow-sm'>62 / 35</span><li class='page-item'><a class='page-link' href='U2-L11.html'>السابق</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </div>  <div class='overlay'></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper.JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js' integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ' crossorigin='anonymous'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js' integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm' crossorigin='anonymous'></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js'></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#sidebar').mCustomScrollbar({
+                theme: 'minimal'
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

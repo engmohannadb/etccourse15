@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>مقدمة في علم الاحصاء </title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'>
+    <!-- Our Custom CSS -->
+    <link rel='stylesheet' href='../css/page2.css'>
+    <link rel='stylesheet' href='../css/rtl.css'>
+    <!-- Scrollbar Custom CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap' rel='stylesheet'>
+
+
+    <!-- Font Awesome JS -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/solid.js'></script>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js'></script>
+
+
+</head>
+
+<body><nav id='sidebar'>
+            <div id='dismiss'>
+                <i class='fa fa-times' aria-hidden='true'></i>
+
+            </div>
+
+            <div class='sidebar-header'>
+                <!--<h3>Bootstrap Sidebar</h3>-->
+            </div>
+
+            <ul class='list-unstyled components'>
+                <p>الفهرس</p>
+                <li>
+                    <a href='#homeSubmenu1' data-toggle='collapse' aria-expanded='false'>الوحدة الاولى </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu1'>< li>
+                            <a href='U1-L1.html'>مقدمة</a>
+                        </li>< li>
+                            <a href='U1-L2.html'>تعريف علم الاحصاء</a>
+                        </li>< li>
+                            <a href='U1-L3.html'>المجتمع الإحصائي</a>
+                        </li>< li>
+                            <a href='U1-L4.html'>الوحدة الإحصائية</a>
+                        </li>< li>
+                            <a href='U1-L5.html'>العينة والمعاينة</a>
+                        </li>< li>
+                            <a href='U1-L6.html'>الإطار</a>
+                        </li>< li>
+                            <a href='U1-L7.html'>معالم المجتمع وإحصائية العينة</a>
+                        </li>< li>
+                            <a href='U1-L8.html'>وظائف علم الإحصاء</a>
+                        </li>< li>
+                            <a href='U1-L9.html'>وصف البيانات Data Description	</a>
+                        </li>< li>
+                            <a href='U1-L10.html'>الاستدلال الإحصائي Statistical Inference	</a>
+                        </li>< li>
+                            <a href='U1-L11.html'>التنبؤ Forecasting	</a>
+                        </li>< li>
+                            <a href='U1-L12.html'>أنواع البيانات وطرق قياسها	</a>
+                        </li>< li>
+                            <a href='U1-L13.html'>البيانات الوصفية	</a>
+                        </li>< li>
+                            <a href='U1-L14.html'>البيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U1-L15.html'>طرق جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L16.html'>المصادر الأولية</a>
+                        </li>< li>
+                            <a href='U1-L17.html'>المصادر الثانوية      </a>
+                        </li>< li>
+                            <a href='U1-L18.html'>وسائل جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L19.html'>أسلوب جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L20.html'>أنواع العينات</a>
+                        </li>< li>
+                            <a href='U1-L21.html'>العينات الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L22.html'>العينات غير الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L23.html'>تمارين</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu2' data-toggle='collapse' aria-expanded='false'>الوحدة الثانية </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu2'>< li>
+                            <a href='U2-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U2-L2.html'>عرض البيانات جدولياً</a>
+                        </li>< li>
+                            <a href='U2-L3.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L4.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L5.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L6.html'>تكوين التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L7.html'>تكوين جدول تفريغ البيانات</a>
+                        </li>< li>
+                            <a href='U2-L8.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L9.html'>العرض البياني للبيانات الوصفية</a>
+                        </li>< li>
+                            <a href='U2-L10.html'>الدائرة البيانية	</a>
+                        </li>< li>
+                            <a href='U2-L11.html'>رسم الدائرة</a>
+                        </li>< li>
+                            <a href='U2-L12.html'>الأعمدة البيانية</a>
+                        </li>< li>
+                            <a href='U2-L13.html'>الأعمدة البيانية المزدوجة</a>
+                        </li>< li>
+                            <a href='U2-L14.html'>الأعمدة البيانية المجزأة</a>
+                        </li>< li>
+                            <a href='U2-L15.html'>العرض البياني للبيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U2-L16.html'>المدرج التكراري Histogram </a>
+                        </li>< li>
+                            <a href='U2-L17.html'>المنحنى التكراري</a>
+                        </li>< li>
+                            <a href='U2-L18.html'>التوزيعات التكرارية المتجمعة </a>
+                        </li>< li>
+                            <a href='U2-L19.html'>التوزيع التكراري المتجمع الصاعد</a>
+                        </li>< li>
+                            <a href='U2-L20.html'>التوزيع التكراري المتجمع الهابط</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu3' data-toggle='collapse' aria-expanded='false'>الوحدة الثالثة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu3'>< li>
+                            <a href='U3-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U3-L2.html'>مقاييس النزعة المركزية</a>
+                        </li>< li>
+                            <a href='U3-L3.html'>الوسط الحسابي  Arithmetic Mean</a>
+                        </li>< li>
+                            <a href='U3-L4.html'>الوسيط  Median</a>
+                        </li>< li>
+                            <a href='U3-L5.html'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</a>
+                        </li>< li>
+                            <a href='U3-L6.html'>تطبيقات الفصل الثالث</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu4' data-toggle='collapse' aria-expanded='false'>الوحدة الرابعة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu4'>< li>
+                            <a href='U4-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U4-L2.html'>المدى Rang</a>
+                        </li>< li>
+                            <a href='U4-L3.html'>التباين والانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L4.html'>التباين والانحراف المعياري في العينة S</a>
+                        </li>< li>
+                            <a href='U4-L5.html'>خصائص الانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L6.html'>معامل الاختلاف النسبي	</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu5' data-toggle='collapse' aria-expanded='false'>الوحدة الخامسة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu5'>< li>
+                            <a href='U5-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U5-L2.html'>الارتباط الخطى البسيط Simple Correlation</a>
+                        </li>< li>
+                            <a href='U5-L3.html'>معامل الارتباط الخطى البسيط " لبيرسون" Pearson    </a>
+                        </li>< li>
+                            <a href='U5-L4.html'>معامل ارتباط الرتب (اسبيرمان) Spearman     </a>
+                        </li>< li>
+                            <a href='U5-L5.html'>الانحدار الخطى البسيط Simple Regression  </a>
+                        </li>< li>
+                            <a href='U5-L6.html'>السلاسل الزمنية</a>
+                        </li>< li>
+                            <a href='U5-L7.html'>تطبيقات الفصل الخامس</a>
+                        </li></ul>
+                </li></ul>
+
+
+
+        </nav>        <div id='content'>
+
+            <nav class='navbar navbar-light bg-light shadow-sm ' dir='rtl'>
+                <div class='container'>
+
+                    <a class='navbar-brand float-right' href='#'>
+                        <img src='../img/logo1.png' class='d-inline-block align-top img-fluid ' alt=''>
+
+                    </a>
+                    <a class='nav-link home' href='../index.html'>
+                        <i class='fa fa-home fa-lg' aria-hidden='false'></i>
+                        <span class='sr-only'>(current)</span></a>
+                </div>
+            </nav>
+
+
+
+
+            <div class='container'>
+                <nav class='navbar navbar-expand-lg navbar-light  '>
+                    <div class='container-fluid'>
+
+                        <button type='button' id='sidebarCollapse' class='btn btn-info'>
+                            <i class='fas fa-align-left'></i>
+                            <span></span>
+                        </button>
+
+                        <button class='btn btn-dark d-inline-block d-lg-none ml-auto' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                            <i class='fas fa-align-justify'></i>
+                        </button>
+                        <h2 class='pr-3'>مقدمة في علم الاحصاء </h2>
+                        <div class='collapse navbar-collapse ' id='navbarSupportedContent'>
+                            <ul class='nav navbar-nav mx-auto'>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='#'> <button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>تعريف الحقيبة</button></a>
+
+
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='U1-L1.html'><button type='button' class='btn btn-secondary pr-3 pl-4 shadow-sm active'>المحتوى التعليمي </button></a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='../book/pdf.pdf' target='_blank'><button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>الكتاب</button> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav aria-label='breadcrumb'>
+                    <ol class='breadcrumb'>
+                        <li class='breadcrumb-item'><a href='../index.html'>الرئيسية </a></li>
+                        <li class='breadcrumb-item'><span style='color:white'>الوحدة الخامسة </span></li>
+                        <li class='breadcrumb-item active' aria-current='page'>السلاسل الزمنية</li>
+                        
+                    </ol>
+                </nav>
+
+
+
+
+                <!--<h2 class='text-right'>السلاسل الزمنية</h2>-->
+
+                
+
+
+                    <div class='content-text' id='style-1'> <p class='text-right text-justify mr-1 font-weight-normal' dir='rtl'><p>&nbsp;</p>
+<p dir="RTL"><span lang="AR-EG">السلاسل الزمنية</span></p>
+<p dir="RTL"><span lang="AR-SA">السلسلة الزمنية هي مجموعة من المشاهدات مرتبة وفق حدوثها في الزمن كالسنين أو الفصول أو الأشهر أو الأيام أو أية وحدة زمنية . فهي بذلك عبارة عن سجل تاريخي يتم اعتماده لبناء التوقعات المستقبلية .</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">مكونات السلسلة الزمنية :</span></p>
+<p dir="RTL"><span lang="AR-SA">تتعرض أي سلسلة زمنية لنوعين من التغيرات وهذه. التغيرات يطلق عليها عناصر السلسلة .</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">أولاً : التغيرات المنتظمة : </span></p>
+<p dir="RTL"><span lang="AR-SA">هي التغيرات التي يتكرر ظهورها في السلسلة في مواضع ذات صفات محددة وتشمل الاتجاه العام والتغيرات الموسمية والتغيرات الدورية.</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">الاتجاه العام</span><span lang="AR-EG"> : وهو العنصر الذي يقصد به الحركة المنتظمة للسلسلة عبر فترة زمنية طويلة نسبياً . ويقال إن الاتجاه العام للسلسلة موجبٌ إذا كان الاتجاه نحو التزايد بمرور الزمن ويقال إن الاتجاه العام سالب إذا اتجهت نحو التناقص بمرور الزمن .</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">التغيرات الموسمية</span><span lang="AR-EG"> : هي التى تمثل التغيرات المنتظمة القصيرة الأجل والتي تحدث خلال الفترة الزمنية الواحدة التي لا يزيد طولها عن السنة ، فقد تكون أسبوعية أو شهرية أو فصلية .</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->3.&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">التغيرات الدورية </span><span lang="AR-EG">: هي التى تمثل التغيرات التي تطرأ على قيم السلسلة الزمنية بصورة منتظمة ويزيد أمدها عن السنة . وتتكون من دوال تشبه دوال الجيب وجيب التمام ولكن بأطوال وسعات مختلفة.</span></p>
+<p dir="RTL"><span dir="LTR">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">ثانياً : التغيرات غير المنتظمة ( العرضية ) :</span></p>
+<p dir="RTL"><span lang="AR-SA">تشمل التغيرات العرضية أو الفجائية التي تحدث فجائية لا يمكن التنبؤ بها. ومن أمثلتها ما يحدث للنشاط الاقتصادي في بلد ما بسبب الزلازل أو الحروب غير المتوقعة .</span></p>
+<p dir="RTL"><span dir="LTR">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">تحليل الاتجاه العام</span></p>
+<p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; text-justify: kashida; text-kashida: 0%; line-height: normal; direction: rtl; unicode-bidi: embed;"><span lang="AR-SA" style="font-family: 'AdvertisingLight',serif; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: AdvertisingLight; mso-fareast-language: AR-SA;">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">يتم تحديد الاتجاه العام لأي ظاهرة بطرق كثيرة ، ومن أهم الطرق التي نستخدمها في هذا المجال هي طريقة المربعات الصغرى :</span></p>
+<p dir="RTL"><span lang="AR-SA">يمكن تقدير الاتجاه العام للسلسلة الزمنية بطريقة المربعات الصغرى، بحيث نستخدم الزمن كمتغير مستقل</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAABY0lEQVRIDe2Uv6rCMBTG8w59gw6Obs4dXMXZRV+jTg7SWbqJu6PQTXAQwaHDBXVyENwEBRGETnY6ly+QkiYpCXIR4bZQmj8n3y/5cnoYfehhH+JQDXrb6X9mXZ6/6Hj4oTgKKWgEdL5cS9Y97jfqd1rEGKNVuivNqZ1K67LsSV3f5yIQwtvuDemV51wDEHl+MJqq2qV+JUiO2qUrDvK8Jj8VThqHEd3uD7peztT0PJot1vISre0EgvCw1+YwCKbLRLNRU1YGnEBYs17MOKgRBJQsU0XG3nUGCYt8v0vPLLMrKxHOINm+7f6kyNi7ziBxImSf7eJNWCeQyLLNJtHS3CRqGnMCzSdjgl3i3xJpbhKsGjOCINzq9PmlI9vGk3mxfjoaFGmOwdN+yzdRBFQ0NJB86Wo1gIZIc2wEpck11TWQLBZGcVFyxEZhH+ob7LPVN7EGXyNIDvirdg1628nauu+37hf4js0t7pkBdwAAAABJRU5ErkJggg==" alt="" /> <span lang="AR-SA">وقيم السلسلة</span><span dir="LTR"> Y</span><span lang="AR-SA">&nbsp;كمتغير تابع ، ويمكن استخدام معادلة الانحدار للتنبؤ عن قيم مستقبلية لهذه السلسلة .</span></p>
+<p dir="RTL"><span lang="AR-SA">وهناك أنواع عديدة من معادلات الاتجاه العام سنقتصر على معادلة الاتجاه العام الخطي.&nbsp; </span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">الاتجاه العام الخطي&nbsp; </span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;إذا كانت الظاهرة تزيد أو ( تنقص ) بمقدار ثابت كل فترة زمنية فإن معادلة الاتجاه العام تكون على صورة خط مستقيم أي أن معادلته هي&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAAAqCAYAAAByUvM5AAAErklEQVR4Ae2bvUsjQRjG8z/kP0hhaWedwlZErrKJfQ6uPNTGwhPLYCfh2lxnzk60kAOLFIIKJyJC4ISAQhAksTHVHM/CEyab2c1+vNmZO0eQ3czuzjzzvL/52DdaUv7HO6A5UNLO/al3QHkgPAQTDnggJuzwHzwQnoEJBzwQE3b4D+JAnB81ValUCn43dg6ddPhwZyPQt7y+pd5HIyc1UlTRWkWBGA5f1WqlMgYCYFxcP7BvThyfel21slRTN3eXarFcdk6fbpINraJAgOZyeVFd3typdqvh5ChsNXZVt/cU+A7D6/V9Z2cJG1rFgIC51YXq2Gw4fnfj1iiExtv7R30QKlPZxA2WPph0mcqk5YkB0W421XP/ZUrfS/9Ztb631OtwOHXNF7jngBgQ7nXNK8rigAcii2v/8TMfEohe74/6UquN34awEd5ttJzcXBat9UMBMRq9K+zcAcBZ52o8zjsnxwEcLuVNbGnNDcTbYKB+nZ4GIw5G85Vu7LZSxiDo14s6R9LMpJH5E5cSVba05gJCz0oyO9k8Op+IL0jfWl+2npPAKxsSUaZZIO7aRGcK+hCnJ+6ahLxcQFAAXi2ZoTQZjuu1lSVlcwRGjTj0Ie4a+5j0iLpMHiR9fpYeSa0mTSJAoOJZOXeQjY2bjR/OUiYgoQsJNakUe14gJLRiAB7sbU4lCrFXwiwZFwcxIGAElo1KZdWYhNLTsEVDwWmWyxnhXahWp0zLqy0vEHm18nku4ZytGB+Us8zUVzEgHq4vIoHAtTgqIUwXzM5EHRlYU4dMZajbtJnEvYAjCmJTXbPK8gIhpRVgYBlH3/BFXtLXanEgwsZjB7/9eds4a8wyV+J63BSM+gliWsiitOUBQlor+2ZaKqP0iwHBqSoMBERJrc9RnYgrp66ogNO0qOtxdfPZqJlML4+bptmGtNZZ9bFd/SgOBEwgAEmWCl3MPM4RtDCkejvcT1Czfi3LOdpLEnxT3dJaCYSVGYLJHQKBz3ubB4nTwWlGW9LRPGsKzmKYKZB6WVYg5qEVCcNvXz+l2iOJzRA6EI1WW+3X68aspW7evM8ZcBNADIA+e/B+vSytxqxAsO2kWqErrq3H+9vAf272OQP2+/3YQSoGBA3GDAFDKSCtoZL3c9ZZW1tTP36ejI1gokwPPICuLa0EJiI4+DO7LH/DERekuL6l0UoY4LW+PGH5w/LQ7f5WxyedoDkOVNx31TmbGZe5AGGiPM6MeVwjoDBo8DYIEjUwEL/IP+iAoH2MJJrLZ7NAnQUItpdUK/0Kt0Wowv4DFMCvf6HHOsJHMSBQMRoOiwk3WNTnuCnYpCFsbpF9SauV+sOaWZ7nKAYEOtVstvNoEX2Wo8L07aupIZirw1wkEGm1Ur+zQGBtmpWJZCeKOHLdTPO6ZQuILFrpoRNAhNc7fEeRNC3Kjsz7GN5ZJ2lPag+RpC39nixa+bwTQLAD3KC5BoMObJr/ygq/ZRTx/xpZtToFBDdASXetFP8vHPW+Jd172OqXPjD5diShRWxTKSHG12HfAQ+E/Rg4pcAD4VQ47IvxQNiPgVMKPBBOhcO+GA+E/Rg4pcAD4VQ47IvxQNiPgVMK/gJJf/3uXcSBBQAAAABJRU5ErkJggg==" alt="" /></span></p>
+<p dir="RTL" align="center"><span dir="LTR"> <!-- [if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1659770328">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+<p dir="RTL"><span lang="AR-SA">حيث&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAApCAYAAAC2qTBFAAACIUlEQVRYCe2XoY7CQBCG+w59gwokrroC26AxxSPOoxCIkwRHyFkkL4DAIHAgDkFIKkhIICEkhGKomsv0bppl227b7cJVlIS03d10vv3/3ZmtBiX+aSVmgwpO1p2XKDfqtUHTNGi0uvDwfVk29bbu1gvodD7Bdb+hruuwWO/KAef7D/gaDuHqeQHQ8eAGoLLqKbV1v92Aezg+KYWAm+3+qS3rg1K4rEGzjqvgsirFj3uJcvfbDSaDfrBbMaXg33E+4HS+8PGFz8rhVstZANUfTMIch5sC04phNMOdLKT661QKRxDj6TwSGxOzrtcjuzkykGlQBoc5rttqxKoj6mNYIrfK4Ei1dm8UCYJVA9ddnKKRwUyDMrj5dBwA8OXK867QNAzANZj3pwSOAGjBk4q4xiyrllsxmoQSOLItztIkRQlAdFUCR0ck3lIMTCrKHJ8Kw/GW8kr8K5zIUgRN6+cnwz4XVk5kKQZK62dh+PtCcDKWks1ZqkUhOJFlVBVYCJyMY9pBCUNI23SEtbYQHFmGuYwt9JfzCRzbBNN2nmopTobSDcHH7XCyVxqOLMUUcbv/HpHoeFSzLJgtV+GphIJhziM4bMPJiUqaNBxZKno5QdEV4djxL4PDF7PriQBE17fAsZbm+ex7y5qTrZf8bsWPb9Hkcq85Uo1OICIb4/relufigqtsy62cyuBp76rg0hRK6q+US1Imrb1SLk2hpP5SK/cDDwzjoAmN5K8AAAAASUVORK5CYII=" alt="" />&nbsp;هو الجزء المقطوع من المحور الرأسي</p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> <span dir="LTR"><!-- [if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1659770330">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang="AR-SA">&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAApCAYAAAC/QpA/AAAB6UlEQVRYCe2XoY7CQBCG+w59gwokDl2BJWhM8YjzKATiJMERchbJCyAwCByIQxCSChISSAgJoRiq5jJ7GbLQTlvSWYJoE9Ky2zDf/v/M7GLBB13WB7FAAcO5YUSZQacJlmVBtdGGWxhysSPj4jCb5QxarW/w/V8o2zbMlptIUG5AFCYMb/DT78M5CFS8/c5XYFnVEYXZrlfg7/YPC0eg1Xr7MMZ9EYXhgmQdL2A4pYwoc71cYNTrqmrCEseP533B4XjiONS4OMxiPlEQ3d7o3mMwibHMHad+r7Q4KlEYCjocTyOxsBHadjlSbfqLYjDYY9qNauzqk+aMwJAqzc5A/331jF0Z8yZOMf1lMWWm46EK+Nz+g+AMdccBzKG0SwSGAlKCkkqYI65bSlWEIEVgyIY4izjFCEC/i8DQkeHZIgxEKmU5TuSGebZIX+nbYZIsQpi0eR0+tzJJFmGgtHkxmFctwmSOS3ICyqVMkgXUdWkLoKoyBkMWYC/RN8bT8QBerQKVmvewFxlThizCkr1c/48MdFwouS5M5ov7rk02GIMhi9L2GwLBuzEYtIjyQQ+Y9GwERrco698QY8rgCjE/4tr/W5UhVWiHTgquz1GO4SK48s7VZ/RgEs8FDKdioUyhDKcAN17kDKfMH3XRZCr+ZXUvAAAAAElFTkSuQmCC" alt="" />ميل خط الاتجاه</p>
+<p dir="RTL"><span lang="AR-SA">&nbsp; &nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAgCAYAAAD5VeO1AAABeklEQVRIDe2VsWoCMRzG8w73BvcAbn0C1+LsUnf7AtXFQYqjZJPD1bHFTejg4nBDoRYqIsINgmChFISbvOlfPmmOJN4l8VqHVgUxiff/fX+/fImMTvhiJ2TTGcB7rRoxxqhcbdAuSZzcdLJlOZ1Qvd6hKHqjkufRZLr8HXiS7KjPOW3jeA/crKO9kEv31s5XixlF643SKQRmi5WyljWxwrOKXNf+KXz++kz8/o6urm/SDYUlcbyliu9TuzswOpRri8g1so23HD8B9/2KIqor5cLxIGIoRIKHsVILAc77xgNlhIOGA4TOdTjW5V+jKH9PrHBkGqey1uql9S5d4+FC8HA0PDhYqbI0sMLF5okLC3YMR6GEyB8eBf/4fKcgeMynad9Y4UhMo1omzyvRbbNpjJ7Gtnsuw/ULTIfpc2vnKBh0204beDTcJc86VMyNnSPjrskQQPnzAA4LEDv8pf0EDBEFLu4SJOMpfJGbKDRW4IUIhqILPNOcv2vLF8U7DgBoBOlYAAAAAElFTkSuQmCC" alt="" />&nbsp;قيمة الظاهرة الاتجاهية</p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAYCAYAAAD+vg1LAAABPElEQVRIDe2ToY7CQBCG9x36BhVIHLoCe0FjDs8boBCIk7Vkfc9RcA2GkCCQmBMHSZO7pAmXXC4h9AxVP5kNO4Fd2hISUK3pznTm23//zgo86BEP4qICs7PPt+J/v0c0fofn1TDwA1aSZQcE/gBCiIs8F5wWVxWn6Q4t11XNBHCcOuJkq1qG/Q7nO/0hDllmMlV8FawrSV2v3VQgOZphNpLwgzAXpvvoXQimgs1qocA1zys8+jn0JrC2xXVb2KWp2Z8blyqmTrKAvF6sNrkg80MpmBS/dbvsswnIi0vBy2iCdbxWU9Js9276cbRZIXibxPj4/IaeDu0zxdPpvHATC0xzSsqS5AtShnxS7fMkWiKUkueaC4yFBQ4DX/lJt+18+El93XHQeHnFz++fgbFDC2yX3JepwOxbZQVbcQRtcthLQVhGnAAAAABJRU5ErkJggg==" alt="" /><span lang="AR-SA">&nbsp;</span> <span lang="AR-SA">&nbsp;دليل الزمن ( تبدأ بالواحد&nbsp; لأول فترة ثم اثنين للفترة الثانية وهكذا ..........)</span></p>
+<p dir="RTL"><span lang="AR-EG">مثـال (5-4)</span></p>
+<p dir="RTL"><span lang="AR-EG">البيانات التالية تمثل عدد العاملين (بالألف) في احدى الشركات العالمية</span></p>
+<div align="center">
+<table class="MsoTableGrid" dir="rtl" style="background: #FFE599; mso-background-themecolor: accent4; mso-background-themetint: 102; border-collapse: collapse; border: none; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-table-dir: bidi;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+<td style="width: 43.15pt; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="58">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt; mso-bidi-language: AR-EG;">2020</span></strong></p>
+</td>
+<td style="width: 43.15pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="58">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; line-height: normal; text-align: center;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">2019</span></strong></p>
+</td>
+<td style="width: 43.15pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="58">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">2018</span></strong></p>
+</td>
+<td style="width: 43.15pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="58">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">2017</span></strong></p>
+</td>
+<td style="width: 43.2pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="58">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">2016</span></strong></p>
+</td>
+<td style="width: 63.0pt; border: solid windowtext 1.0pt; border-right: none; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="84">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><span dir="RTL" lang="AR-EG" style="font-size: 10.0pt; mso-ansi-font-size: 12.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;">السنة</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; mso-yfti-lastrow: yes;">
+<td style="width: 43.15pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="58">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">13</span></strong></p>
+</td>
+<td style="width: 43.15pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="58">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">11</span></strong></p>
+</td>
+<td style="width: 43.15pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="58">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">10</span></strong></p>
+</td>
+<td style="width: 43.15pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="58">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">8</span></strong></p>
+</td>
+<td style="width: 43.2pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" width="58">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">7</span></strong></p>
+</td>
+<td style="width: 63.0pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: none; mso-border-top-alt: solid windowtext .5pt; mso-border-right-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="84">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><span dir="RTL" lang="AR-EG" style="font-size: 10.0pt; mso-ansi-font-size: 12.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;">عدد العاملين</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL"><span lang="AR-SA">والمطلوب:</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->1-&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">ايجاد معادلة الاتجاه العام</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->2-&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">تقدير عدد العاملين عام </span><span dir="LTR">2026</span></p>
+<p dir="RTL"><span lang="AR-SA">الحل</span><span lang="AR-SA">:</span></p>
+<p dir="RTL"><span lang="AR-SA">لسهولة العمليات الحسابية</span> <span lang="AR-SA">يمكن اختصار أرقام السنوات بطرح السنة الأولى من كل سنة أي نطرح 2016 من كل سنة لتمثل </span> <span dir="LTR"><!-- [if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1659770333">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang="AR-SA">&nbsp;وبذلك تصبح قيم </span> <span dir="LTR"><!-- [if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1659770334">
+ </o:OLEObject>
+</xml><![endif]--></span>&nbsp;<span dir="LTR">0</span><span lang="AR-SA">&nbsp; </span><span dir="LTR">1</span><span lang="AR-SA">&nbsp;&nbsp;&nbsp; </span><span dir="LTR">2</span><span lang="AR-SA">&nbsp; </span><span dir="LTR">3</span><span lang="AR-SA">&nbsp;&nbsp; </span><span dir="LTR">4</span></p>
+<p dir="RTL"><span lang="AR-SA">ولايجاد معادلة الاتجاه العام نحسب المجاميع التالية</span></p>
+<div align="center">
+<table class="MsoTableGrid" dir="rtl" style="border-collapse: collapse; border: none; width: 54.5192%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+<td style="width: 0%; border: 1pt solid windowtext; background: #d9e2f3; padding: 0cm 5.4pt;" width="167">
+<p class="MsoNormal" dir="RTL" style="text-align: center; direction: rtl; unicode-bidi: embed;" align="center"><span lang="AR-EG" style="font-size: 10.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;">المجاميع المطلوبة</span></p>
+</td>
+<td style="width: 0%; border-top: none; border-right: none; border-bottom: none; border-image: initial; border-left: 1.5pt solid windowtext; background: white; padding: 0cm 5.4pt;" rowspan="2" valign="top" width="18">
+<p class="MsoNormal" dir="LTR" style="text-align: center; mso-pagination: no-line-numbers;" align="center"><img style="background-color: #d9e2f3;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABf0lEQVRIDe2UzWrCQBDH8w55gzyAL9G75568+wT25EGkx5CbSK/pzeZY9CAFDx4E7UGKCoEKAQulIIkXc5oyCzPsxt1KPhooNBB2sh/zy/xnZyyo6bFq4sDfASXJEZqOA5ZliXe22mlFKhVRmp7B6/ThmCTC+XQ0NMJKgfabNYTRgSNA8N3tDbS6A54joxSInMjjoNv6fRBFpMtTpREdohDa7Xs4p6kcpLArBfluT8mZTKsMhDdOJxnBtKAoegev31GSirI0bFuZIye71QyGoyl9Au5db/b8jcYFiBxiAdp2Q0ghz2WvLkKoWGl0nCbXFtEuQLSwnE+EA/zTB8+Dj88vWuKRCpQANGZ/Bg8YQXRVMaqsDEzKYRhB6AOLTydDDv+89UcQSkN54hMFDSMIu3IQBKIzyzeqIMeco5fxGOJTrDTJUxwX5aggaohvrwuucMrTNtzCY/BcDejJd0VOJvMlO8Q6wULtub62h/HGK4YxR1fO5V7+B+WWjA7UJt03hZ/9NtrxXW0AAAAASUVORK5CYII=" alt="" /><sub><span dir="RTL" lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;">&nbsp;</span></sub></p>
+</td>
+<td style="width: 0%; border-top: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-left: 1.5pt solid windowtext; border-image: initial; border-right: none; background: #d9e2f3; padding: 0cm 5.4pt;" width="57">
+<p class="MsoNormal" dir="LTR" style="text-align: center; mso-pagination: no-line-numbers;" align="center"><sub><span dir="RTL" lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; position: relative; top: 3.0pt; mso-text-raise: -3.0pt; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"> </span></sub><sub><span dir="RTL" lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><!-- [if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+    DrawAspect="Content" ObjectID="_1659770335">
+   </o:OLEObject>
+  </xml><![endif]--></span></sub></p>
+</td>
+<td style="width: 0%; border-top: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-left: 1.5pt solid windowtext; border-image: initial; border-right: none; background: #d9e2f3; padding: 0cm 5.4pt;" width="50">&nbsp; <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAYAAAAJKR1YAAABxklEQVRYCe2Vv2vCQBTH8z/kP8jQ0a2zg2tx6ORS/4uik4NtVukm2R0tbqKDFBwyCCq0SBEyFASFIAiZzPTKO3jHJXnXS9sIDhEkl3f3vvd5v9SCK/tYV8YDJZCpImWGygyZMmDaz/TQMTzAy3MLqjdVCHZ76e+PR1Cxbej2BtJmWmzWC6F1e/cApyiSx6PoBHXHYbUSQPtdIC61LAvw2+z0hchs6Il31SbVNQvVB/3mq608SUC1RhvOcSztuEgA0Q6CYQSOU4f1ZiEiSTvSWdNz0OuKYLzhLHEUoTzvNWHDFxYINyhCLoqMyg+G7WrOAqFdzRpJaIGofOnIyDHvk3So/Oinyw7uGYH+myEOCAdEHRg1OC3Q22QCT4/3oo/UCVGd86zTDawrFWmxQF+fHyICqj/VOgzDzFSQkO4Zx2doN2qAmQ6PB7aRVV8J1O80hVMQvMNo7IszFB3Wf+lP2SZUxbg1AeHEuq6b+D3izksgmqp0EyOobVdg6i85/1w20tD1jSoigVRj0WsEorKbtC8OZGriNOBFgXDkqR/TF+veCwfCvwqcKHU4dJdz9kKBcKKogf86BIUCcRH/1lYCmTJWZsiUoW92Ig41UpusIQAAAABJRU5ErkJggg==" alt="" /><br /><span dir="RTL" lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; mso-fareast-font-family: 'Times New Roman'; letter-spacing: .4pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><!-- [if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1659770750">
+ </o:OLEObject>
+</xml><![endif]--></span>
+<p class="MsoNormal" dir="LTR" style="text-align: center; mso-pagination: no-line-numbers;" align="center"><span dir="RTL" lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; position: relative; top: 7.0pt; mso-text-raise: -7.0pt; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"> </span><span dir="RTL" lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><!-- [if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+    DrawAspect="Content" ObjectID="_1659770336">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+</td>
+<td style="width: 0%; border-top: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-left: 1.5pt solid windowtext; border-image: initial; border-right: none; background: #d9e2f3; padding: 0cm 5.4pt;" valign="top" width="96">
+<p class="MsoNormal" dir="LTR" style="text-align: center; mso-pagination: no-line-numbers;" align="center"><span dir="RTL" lang="AR-EG" style="font-size: 8.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;">التكلفة بألاف الريالات </span><span dir="RTL" lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><span style="position: relative; top: 6.0pt; mso-text-raise: -6.0pt;"> </span><!-- [if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+    DrawAspect="Content" ObjectID="_1659770337">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+</td>
+<td style="width: 0%; border-top: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-left: 1.5pt solid windowtext; border-image: initial; border-right: none; background: #d9e2f3; padding: 0cm 5.4pt;" valign="top" width="79">
+<p class="MsoNormal" dir="LTR" style="text-align: center; mso-pagination: no-line-numbers;" align="center"><span dir="RTL" lang="AR-EG" style="font-size: 8.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;">كمية الانتاج </span><span dir="RTL" lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><span style="position: relative; top: 3.0pt; mso-text-raise: -3.0pt;"> </span><!-- [if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+    DrawAspect="Content" ObjectID="_1659770338">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; height: 14.8pt;">
+<td style="width: 0%; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-image: initial; border-top: none; background: #d9e2f3; padding: 0cm 5.4pt; height: 14.8pt;" rowspan="8" valign="top" width="167">
+<p class="MsoNormal" dir="RTL" style="text-align: left; direction: rtl; unicode-bidi: embed;" align="right"><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; position: relative; top: 6.0pt; mso-text-raise: -6.0pt; letter-spacing: .4pt;"> </span></strong><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt;"><!-- [if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038"
+    DrawAspect="Content" ObjectID="_1659770339">
+   </o:OLEObject>
+  </xml><![endif]--></span></strong></p>
+<p class="MsoNormal" dir="RTL" style="text-align: left; direction: rtl; unicode-bidi: embed;" align="right"><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; position: relative; top: 6.0pt; mso-text-raise: -6.0pt; letter-spacing: .4pt;"> </span></strong><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt;"><!-- [if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+    DrawAspect="Content" ObjectID="_1659770340">
+   </o:OLEObject>
+  </xml><![endif]--></span></strong></p>
+<p class="MsoNormal" dir="RTL" style="text-align: left; direction: rtl; unicode-bidi: embed;" align="right"><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; position: relative; top: 6.0pt; mso-text-raise: -6.0pt; letter-spacing: .4pt;"> </span></strong><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt;"><!-- [if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+    DrawAspect="Content" ObjectID="_1659770341">
+   </o:OLEObject>
+  </xml><![endif]--></span></strong></p>
+<p class="MsoNormal" dir="RTL" style="text-align: left; direction: rtl; unicode-bidi: embed;" align="right"><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; position: relative; top: 6.0pt; mso-text-raise: -6.0pt; letter-spacing: .4pt;"> </span></strong><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt;"><!-- [if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041"
+    DrawAspect="Content" ObjectID="_1659770342">
+   </o:OLEObject>
+  </xml><![endif]--></span></strong></p>
+<p class="MsoNormal" dir="RTL" style="text-align: justify; text-justify: kashida; text-kashida: 0%; direction: rtl; unicode-bidi: embed;"><span lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAeCAYAAACVBrgjAAADLUlEQVRoBe1YMUtjQRDOf8g/SGFplzqFbbC2efY5sI42FpJYhnQitrnOu/LQQo5YiAjG4pBTCNxBQEEEIZWp5vgefI95k91NXjR3z+MFZN/uzs588+3M7K4lKX4pBkqpXtGRghATBAUh/yMhz0+P0usdSa22Ipu7B8bFdPf25kqielVKpZJU65EMRw8pgSRCDnY3YyEILvJ3eHyWUvy3OveDc4miLVktl2PcIUIgC99OL65jeNcXp1Iur8r54D6BmxAymbzK9sZavMAKJdKODzAOMP+KEEKisz5CHkbDGKeep8+Vyrq8jMexqoQQ9MbjF1mvVBJSbDjRuG0BJu+EnB0fxn7paIAfHCf+FCEQIJMILc2cJUH3QWS/P9BDAva/n5zIVhTJSq2WylXkPPN4r9NLrVu0E4oQRgIi324y161tbMempwjBKIVACgRfJ5NMOHWksR4xVDXhmON4JgMOYWJ26aNN1wbrOah1EoIJhtJbQGNnvvQ6cagCzN3wTnY+7cjj07PDpbcNLZ0QwNMnD3MsK2yGK4jFacDiZfXoDWBUhVqLJ0QI50IRgnTCzxshmNTOAJwtSNYpX5/OWid88ouM0+mlpQxB6XrgKkqUC7UEu0g9CunVc7SxdEJglIUHUQKDWYosCO12j+I7zqKEasd93yFCuKku+3ZdMGW0cSysVyNvDdCy/EbK7Tca8VHHtPGlHedDdUPP2fSzjhEDW9ZDa592qW8uQrRjNOBrYRhvhF+jkfQ6e8mFzQLGrn3++s2nJvO41W8VMMp1SrFG6mI7FyFwzDJrDaJPA9xJbVyHbf/yUtrtdqZoc9nTY9zpUJ2CDNLm6uY2Xsq+9m0mIVjEcNIAfN8EhhuorTWca7a6U3M+fbPGufPcBLY+zHjQ8SGISLZ3oiAhCMP3ulrPciwv815CwHyjsf9uO5kXh2fhcBKCfMcV23erdCn9/fPH1MPJJZf3sSlCspwodA5rus1WJgK5Nm/tFCHznih0BE/5bqs5978KuC6vbYoQngKs1Fna0HGXV+dduBJCeLHJQoKW1XcOl6GPMpYQ8lEALxtnQYhhuCCkIMQwYLp/AEFoIRfe5gHGAAAAAElFTkSuQmCC" alt="" /></span></p>
+<p class="MsoNormal" dir="RTL" style="text-align: justify; text-justify: kashida; text-kashida: 0%; direction: rtl; unicode-bidi: embed;"><span lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAeCAYAAACVBrgjAAADX0lEQVRoBe2YvUscQRjGr7BKe//BFUIai8DVV9geVils1iLdBVIGtbEQMd1hJ5J202nsDiwstLgi4AUSQhAOEjhQEEE8G6+a8Cx5hndnZ3ZnLnuXSFaQ3fnY9+M3zzuzezVV/aUI1FKtqqEqIIYIKiD/A5DTwwNVry+p4ejKSFepyeRRxd1ttVSvq1qtlsw76V/oeVoh+1tryQRMmub/4PBUG/2bN1ejYZKsDQhgbKwuq+XVDXV9c5uEedE/SfJl/BoIJ5Pa+eDSK69vnz8lAdCg10MzmoQcdjsdvfKmQqCcRmNF3Y3HqQioKHRqIGiMx3dqpdFwGkxZEY3Lwbn6F4Agjm58lKjAVAhzgzoeJxMRvVJUFTpTQNDBQSjFRjNl6XcDzs7OBnpoNPqh4vi9arUW1XY31v28MWXK/j+5Ioad9T11/3BvBcK8bEBYHfCfAYJOkOY+YjOQFzjkx2ddUDnHF3ieP45ho0SZMzlTIQRi88lnYMsKBAMMGkmtbe3Tr/eVAZiB0QDGO53djHw5HnLFAlKJTM70y37kY+6PLCf4dALBoDx5QveIvABgG0nIwOQCSIW57hkP/Oyt7+iNkn5NIPQJe3IM84/ibqLqQiA0zqBkAni46I9AGTzns97NzY3jIVeAlPYZs0xa2sOpGLWb+uCAsnofP/gBgSHKySQrnbjuXUBQ7+aR6LKR128ruyIgNnuME2O5JcOHuR8ACvYT35VlGcg9qN87TpUKfUxzpX0q2Ha1baLSF3PD4YE/LyCYiJpvNyNdq9Ko656nFYGgfdzrW6f7JCcTlmUiDYYohOqX5eUFBE7wBhgqcwIB/eHwS2mnigRg3vsCkfPk3ugFhGe86byoTTliBaLoTZC6imy7xmWitgXEOF4M8XHXbEeZRS4EYu7irkBs/ZQk6pgfU7Z5Zfa5gLAfZbfYail84dr2wlwgkDxfeKYJGkCiZjuzCtPYmtczTiC2Iy00qGlLLdRPmfOtQLCym683g2r+5/evWgmQJ2C4ToIyEyjbVgYIkgk9UfDMyxfPkx9e8KWLH2GeIgzAzQAJlfntzbV69/ZV6gv3qcLIAAl9OZIvSgvPFjK/T5Yt53nY0wrhS5RMMuSeb6PzCHqWPjSQWTp5SrYrIMZqVUAqIAYBo/kLlUUtIYNTltQAAAAASUVORK5CYII=" alt="" /></span></p>
+<p class="MsoNormal" dir="RTL" style="text-align: justify; text-justify: kashida; text-kashida: 0%; direction: rtl; unicode-bidi: embed;"><span lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAaCAYAAAAtzKvgAAADR0lEQVRoBe1Yv0sjURDO/5D/IIWlnXUKW7G4yubsc/1x2lh4F0u5TtJr52kXYiGiRYqACdwRDiHFgWBgCQipTDXHtzCP2dn3Y7PuYgJ7cOzuvPdmvvne9+ZNrFH1rxQGaqV4rZxSRWxJIqiIrYgtiYGS3BrFPg0fqFarLf3/YfhUErTi3C4Wb9S9uqBmc4M6l7cpx6FxLOh3r2mzXo/52dr5TK/zecqPNBhiYXzs3xhibQDkwlk0pYO9bStQOe+j30HaSatlSNF5hcaB/9/fP3TTf4xTQd67jQZt7x3Q22LhTC9BLGZJ5WoQ2svL84Suu31tjr8B4OePb9TcaNLk+cXM4Z0/Pj2PbePRIJ6nVTCfv8YJ8DzjIOcLsEJxrpxc4yD+/n6YiHp72aFGY9er2hSx8AByWfYuIJiHoL3eXSIoPhgkl5b9o7N4DgBJm/yGXZYVJjakjFRwh4ExufIJjUu3Z0f7zg3ieVZiMZiVXHZkewIsjg12dzQeENRnOz7np8cx4TppkNvp/LK5XtoWIi40joAQErC68pCgnMRiUhHksip9yuPyo4mFXaoYSmHFu558OmSSeA8Rl3UccVG2ZHnTsfDtJVYCgkOduM2htoUAyxiSlCLVKmO4csiCE35wJ6BM5qqxmhwoZ2cr3GLodTIhn2I5KUksLrmQKmzxXDaO8V5i4Z9PmDxNOm5QsdyO5E3yrtej718/eXdYX1S6BDDojywFjAFPxvsuYlGsfQ5kQP2O/g8bonc4iqLEJYbNQ08MVUezaWEXlsRTpGLhS7eRMhbevYrFxeM6OtoRf0NVIGgy+W16XN5hHHX8CNEbxcSibrXbbW9/yHGWfeYllkm8uOrGYmCsIV6cxEJleZpz7gJ0YBBer2+aXzCaGB7PW3K0P/mtS4i+eHzjEAVOE3ch6AgGo7F0b323EotdarVOEsfVupqI8AtrGs1cw5ntSE4rOfPiFZyYIhY7dPjlMPNxLOL2dl1WK8hXZkgJYpfpADAXpIaKeAgJTofr7w2htas8niBW1xquK76nrldZkkWnoS+4LOvWaY4hllsiH4m2MV/jbyMCSscG+i4y27p1sxli1w34quOtiC1phypiK2JLYqAkt/8BrDd4UpIHBxcAAAAASUVORK5CYII=" alt="" /></span></p>
+<p class="MsoNormal" dir="RTL" style="text-align: justify; text-justify: kashida; text-kashida: 0%; direction: rtl; unicode-bidi: embed;"><span lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAgCAYAAACFM/9sAAADSElEQVRoBe2YMUsjQRTH9zvkG6S40i61hW2wuMpG+1x/qI2FJ5ZiJ/ZeJ2cXYiGiRYqACZwEEVIIgkIQhFSmmuO/8B/evMwmk901ibkVZHZnZ95785s3771JZIq/TASiTLOLyaYAmNEJCoAFwIwEMk6fuwcOBu9mvVw2URTF/7ftx4xLmu30uQIcDj/M8faBeR8M4lVfnZ9+OYhzBfj0cG96zy/WZQB0Z2PNbO2d2L5Ff5grQB+ck72tAqAPTEgfPfArxcGF8sCX556p1Q7Nx3AYwnshxliAj+1bmwmZEUPaPL3l7GjfiYmfQahZvzArpVK81kp10yYwqeut/2o2qxU75rX/Jj87zxYgeu+alxbi6fmVM1C/QAkC/qRxel7SOzJwnpvh04Okddm8iz/BfpRPaxs7jsezrOI4MCmX172gIcgBiA7piZPg4Mhd1Js+Ww0MPD7YNqvfVh2vogfsH53ZedApdUHu/cOT/Z7HA+LrzU3bEYVN03CQxCRUxuWkymAEIDRgQXRzuTBHuzEGwhuNa91tAIDzEQaonHWe7JMbxpChFzWiIKcOwJLro/fJPqjygaYJXoD4GAqRgnwtQOKYAEin2zLwOpkgJFDCk3B9MvPow8Yj3mp7uPE6lIBFqbTinCTakQgQA/KASEjyWFB5mhZeI2H7nunxPvmEhHlIIrKQ52nwAcR43Q/5YwFigFSoXdtnoO7j/DRztaw837udVhxmZLj4FIAwGoKrFX/Kn7QoAszLAyfpm+a7BkZbtafhFKU6wjAG8eKwVnNcfRojrxsN8+vn95FsN40MOTbrEZaymDQIjO/6tKRKIlSEYEsF7Att+WOB3ul+v+8kk1B5eY+Dx+kyK5cyhoaCvN4NfktqaUCv99fWiNxZBHcUpmk3JElnSD9h/f5TjzeP9Z1eH48xC+lx3ge9iUkEXiOL3RAjMQYKkbG0YQCLOELDQuXlNQ6biJsTszYycKvT9YoHxFRXOUqDgNBLPW4c4+6KlLms7YgHYqd2f+wm3v00CFzNZC2lvy/7uwNwmoyLsYCng/CyA9PrcwCGlAiMIWxlIaqF/w/vFiBLDYIJbRexQJ7lxlmAs1S6TLoKgBl3swBYAMxIIOP0f5XHtr4ztFqpAAAAAElFTkSuQmCC" alt="" /></span></p>
+<p class="MsoNormal" dir="RTL" style="text-align: justify; text-justify: kashida; text-kashida: 0%; direction: rtl; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" dir="RTL" style="text-align: justify; text-justify: kashida; text-kashida: 0%; direction: rtl; unicode-bidi: embed;"><span lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;">إذا الوسط الحسابي:</span></p>
+<p class="MsoNormal" dir="RTL" style="text-align: justify; text-justify: kashida; text-kashida: 0%; direction: rtl; unicode-bidi: embed;"><span lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAArCAYAAACw5YDmAAAEyklEQVR4Ae1bv0sjQRTO/5D/IIWlnXUKW7G20T73D0QbCxFLSSfhWu00dkELObBIcaBXyGGEwAkBBREksTHVHN/CtzfZndnsr9nM3k5AZp2fb773zXtvXjY14T6VRqBW6d27zQtHgIqTwBHAEaDiCFR8+9ZYgLvBtajVaon+dvZPrFHfbPYldrfWxfrWrviazUJy3Zx3/b3d3j+F2pdVYQ0BAABIsFqve0B1z2+0mADsk/0doSPAePxHdA7bc+0v45E3t26MdrEYDdPph9hsNDy5VQR4ur8Vjcam+JhOBfvaQgKrCACsqShYg4PjU+VpQj8A2e1ehNQjj6/XV8Vo/DI3pwkCUAic8iABaBlkhYMQwX6co+jSOgIAAFmJUUD9uLrSEoQuBZbke6cjXt/ejWOrIgD20lxpekSkAKo6thVdWkkAgIATvr2x5pnVtY1tz3wmAYcnD1bg4fE5ydDUfVUEkM0/J7bJDVhLAIBFJcIdwIcmPcWIE+h7Cb7J0hHAALokQVRQqFsWCmEcoOuTZ31cAtDFyXFBnnIkmctqC4CNAKxW60jr63WbhZnt9XpedJ6GPLp5o+pVBFD5e1Vd1Lwm20IEiHMXNymQPDeUuPdtL7H/xxwIECefE+9uzsj/czKRp8/9WUUAWjD5tKv65S5MzAlDBIg5zng3AHfUas1Fz4sWZW7g96+f/jjGAcPRUJz1+oumyNSOtVS3FvnaZzoABG7IgfAgI4COip2sJcDp8YGQT00czVycHns+/3pw53cH+EguReUU/M4pH6hUgq6KO3Dq2Z50X3HFgvLlK+/726vnAqMC4RABis6iqTYHsKCwRR8APxyOFnWrTPvz44Nv+bhpBpy6OGiOAOwMppLFch19KSc3UWK9uEEfTrep02Rib8uYk9YpFgEoYJosmmziaOp0pU4YCBs36IOfD2bYKL8r/yEATLfXNkKWgT3mLAArGbkWmUXjmjrSqOpppSh31hJBnGoduU5H3qxry+PzlANWMspyKwkAYRg94xusIj5JLAgVEhXcFCGz7Wt4N4L2YeQ1WksAKCTvE2Y7YP+bfBfdrtb0c69KAsBvJM2iJTnBQTPKE110SRBYpjW9WeXm+izTysHxKAf9y1gBspIAy8iiycK752wIQPlyLgSuoN87U1oDnwBgHYKFZWXRsm3ZjSYCOkusylBijE+AZWXRKLgrsyOgUz5cVNDtcjWfAKxwZbUQcAQwqG85i4pTGHUfNyhG5NSlI4Bs5ggogxx86ZPm9bFIhDI0yrKCADamrUtHAOiDWUP4NTzjGzD57V8bgMZVWvXWcgY+GRlaSgIgvckkFZIdzFai3paTRllskUfHnlISAFdWXGuCd1vUkxi6DRdRTwsF5fOP7qqI9ZOsUToCENyVZlNc9gf+XmFy8esc3X3X71jwA+W11RKUjgCMrIOKpsnV3XcL1ntoOSbaQg1LrigdARBZq8y8rn7J+PrLg6A2uoFSEYDmNHj6dfU++hY8gAA23E6CUJSKAPTzQTNPt4D6qN8LBjdf1P9JXnMrSiauUyoC4BSpzD/9f/uwk/gHJAQiz5KE5A0gaLHyXCvrXKUiQNbNuvFhBBwBwphUqsYRoFLqDm/WESCMSaVqHAEqpe7wZv8CY7i93KtYIyQAAAAASUVORK5CYII=" alt="" /></span></p>
+<p class="MsoNormal" dir="RTL" style="text-align: justify; text-justify: kashida; text-kashida: 0%; direction: rtl; unicode-bidi: embed;"><span lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAAArCAYAAAB4iWowAAAFgklEQVR4Ae2cPUskQRCG9z/4DwwMzYwNTMXYRHMPLlYTA79CMZNlU838yBYNRDQwONAT5FBBOEFQEEHcSzTq4x14h9re7tmZWWeme+wFmZne/qiuerqqumfvGip8ggYG1EBjwPahedCAChAFCAbWQIBoYBWGDgJEgYGBNeAcRBfnR6rRaGT6m13aGlgRoYP8GnAOIkwFII0ODUUgNXePrbP7/PxQW0uzylWI7i7P1MT0gvr4/OyaA2TmQkmaX1cjhx+chAj6enq8j0Fa3tjuMQR12um8qWZzj4/OXCHX1PBwD0QSetbxHSRnIdJBMq1oEnNyeGiFjHXKvu41m6rVWumCCAtjcmxGvXU6sTjwVsPDU11l8Zee3DgNEXSI1TozORa5/7HJbgMk6ZghQ8JnCy9J/eT5DuOcXd6p491mF0QmYOhxUd/Xj/MQQbHIfRamJyKQsGqfX15T6Vs3GvrZbtlDY6pO+1SS4dUE0dDQqLp/fIp7CRDFqij+hiBlyR9goPGR8dhoMPDp6WWhwiKMMVzpEDEH0r2jDlahAhbQuReeCPMGEHNz65lyHxqNoeLy9DQ2cAG6jGS8vnmIu9Yh4jy48+QOrZY5ESeXdI01VcINYFj8sZgZAAkRIJRhpAixmYeZ9EaQ5bh5vKts78q9854Iil6fm8sFAI200moVHsZMBjV5Ilmv3/eybt57eeaGjUnahSTbIdwetM+tIjgP0fbGcrTTsc4g4QtCVNVhpA0SylV0GOPGghsRyJMm/0I7eNOj84tIu68vz9GZl8mbooIRoj+/f6mfMzMKh3z8cOJlGgSTljJQFv2KsHV7e68XR89XV1eZ8ihjJzkLdYi4E4OBsmwQ8gxPe0nDs0wm9qa+EZb1OpiLzfY9EMm4LjuiAEWvHk4qSyKNlUNlsd3j4191eHhSGUCcR1VXAku9UA7A0M+GYECvgzIb+D0QYTAbMChPOmeBgKak0lRmEwjjZ0mk4TXlNh7Kw3NSDKdC63y1QYQF1y+ksS1yKIRC5EdJr56MEEG5IE8fDJ0XbRwCbALPVqbLmRcO6YVtYyXBn3fcpHZ5ZSIIurxpIII8bA896H3o8lohglfRjdPe2S88PGTxZjS07nr1SX7XZzoCmSDj5D+NvpBMr62txa+ckkBKhAhGYkx9uLlW8iDtuxrGp3nDq2+uzkcpBhzCzn47en1kS5A5N3ghviiOUpiN5agPssB6vFoh4jYPDdERktR+nyxexEQ2PUtZV30+eUMH+vkqmb9SJr0vwCHzR/17PkMPOmgokxst1sW1L0QwdtGvC6RA4b4YDfQ76+GozEl1iOBUMkPExOrH4mIIY9Swh9d/7++qvb8TeSDmRnIagAPv8mSoYkRhfYJlih7oy+qJCJGtoRQk3LunAb43RC40v7oZbdVNUpogQr3z9kH8y1L0kbQrt0IEIVz82alJEaGsWg0YIUqbSFcruj+j06sz+dbzDX9mYpY0hghxEIkTXxeYq7tRypgNo9AgAB+xH/E9y89oy5iRlBcyy/yjjPGLHiOGiAdTSbGvaGGy9C+TPdy3Njejnzlw1btiqO+QFsQQZTGgC3WREPJEXf4kFeUurXbK45JMX20/byHi4RdCmPyhFT2qLPtqpaXtj94SAPGP4TdtHz7U8xIiGmdkvPttPbe1tkOxKg1CmevokbyEiHmPDgtDh8tnW/CUdfNGXkKE3Q7zIeldbOWyTtX3AD1AVLEVGBZ0L2Qrr1jcnuEBkSs7xx7hchZ454mY9+ghiyEO5S7+23zYBzJm/bdzOe1aajPvIMJKNoUy5kN4T6T/Vy6lalQMRrC5M9O9p6jq9a13EHmt7ZoKHyCqqWHLnFaAqExt13SsAFFNDVvmtAJEZWq7pmP9B0mdwsm4sJd0AAAAAElFTkSuQmCC" alt="" /></span></p>
+<p class="MsoNormal" dir="RTL" style="text-align: justify; text-justify: kashida; text-kashida: 0%; direction: rtl; unicode-bidi: embed;"><span lang="AR-EG" style="font-size: 13.0pt; mso-ansi-font-size: 12.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG; mso-ansi-font-weight: bold;"><strong><span style="font-size: 12pt; line-height: 107%; letter-spacing: 0.4pt;"><span style="position: relative; top: 12.0pt; mso-text-raise: -12.0pt;"> </span><!-- [if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1659770695">
+ </o:OLEObject>
+</xml><![endif]--></span></strong></span></p>
+<p class="MsoNormal" dir="RTL" style="text-align: left; direction: rtl; unicode-bidi: embed;" align="right"><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 13.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; position: relative; top: 12.0pt; mso-text-raise: -12.0pt; letter-spacing: .4pt; mso-bidi-language: AR-EG;"> </span></strong><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 13.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;"><!-- [if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042"
+    DrawAspect="Content" ObjectID="_1659770343">
+   </o:OLEObject>
+  </xml><![endif]--></span></strong></p>
+<p class="MsoNormal" dir="RTL" style="text-align: left; direction: rtl; unicode-bidi: embed;" align="right"><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 13.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; position: relative; top: 12.0pt; mso-text-raise: -12.0pt; letter-spacing: .4pt; mso-bidi-language: AR-EG;"> </span></strong><strong style="mso-bidi-font-weight: normal;"><span dir="LTR" style="mso-bidi-font-size: 13.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;"><!-- [if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1043"
+    DrawAspect="Content" ObjectID="_1659770344">
+   </o:OLEObject>
+  </xml><![endif]--></span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt; height: 14.8pt;" width="57">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">0</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt; height: 14.8pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">0</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt; height: 14.8pt;" width="96">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">7</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt; height: 14.8pt;" width="79">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">0</span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 2;">
+<td style="width: 0%; border-top: none; border-right: none; border-bottom: none; border-image: initial; border-left: 1.5pt solid windowtext; padding: 0cm 5.4pt;" valign="top" width="18">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="57">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">1</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">8</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="96">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">8</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="79">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">1</span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 3;">
+<td style="width: 0%; border-top: none; border-right: none; border-bottom: none; border-image: initial; border-left: 1.5pt solid windowtext; padding: 0cm 5.4pt;" valign="top" width="18">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="57">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">4</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">20</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="96">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">10</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="79">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">2</span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 4;">
+<td style="width: 0%; border-top: none; border-right: none; border-bottom: none; border-image: initial; border-left: 1.5pt solid windowtext; padding: 0cm 5.4pt;" valign="top" width="18">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="57">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">9</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">33</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="96">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">11</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="79">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">3</span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 5;">
+<td style="width: 0%; border-top: none; border-right: none; border-bottom: none; border-image: initial; border-left: 1.5pt solid windowtext; padding: 0cm 5.4pt;" valign="top" width="18">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="57">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">16</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">52</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="96">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">13</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt;" width="79">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">4</span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 6; height: 20.45pt;">
+<td style="width: 0%; border-top: none; border-right: none; border-bottom: none; border-image: initial; border-left: 1.5pt solid windowtext; padding: 0cm 5.4pt; height: 20.45pt;" rowspan="3" valign="top" width="18">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt; height: 20.45pt;" width="57">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">30</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt; height: 20.45pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">113</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt; height: 20.45pt;" width="96">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">49</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-right: none; background: #ffd966; padding: 0cm 5.4pt; height: 20.45pt;" width="79">
+<p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: center; line-height: normal; mso-pagination: no-line-numbers;" align="center"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; font-family: 'Traditional Arabic',serif; color: black; mso-color-alt: windowtext; letter-spacing: .4pt; mso-bidi-language: AR-EG;">10</span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 7; height: 20.4pt;">
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #bfbfbf; padding: 0cm 5.4pt; height: 20.4pt;" width="57">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #bfbfbf; padding: 0cm 5.4pt; height: 20.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1pt solid windowtext; border-right: none; background: #bfbfbf; padding: 0cm 5.4pt; height: 20.4pt;" width="96">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-right: none; background: #bfbfbf; padding: 0cm 5.4pt; height: 20.4pt;" width="79">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 8; mso-yfti-lastrow: yes; height: 20.4pt;">
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-right: none; background: #bfbfbf; padding: 0cm 5.4pt; height: 20.4pt;" width="57">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-right: none; background: #bfbfbf; padding: 0cm 5.4pt; height: 20.4pt;" width="50">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-right: none; background: #bfbfbf; padding: 0cm 5.4pt; height: 20.4pt;" width="96">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+<td style="width: 0%; border-top: none; border-left: 1.5pt solid windowtext; border-bottom: 1.5pt solid windowtext; border-right: none; background: #bfbfbf; padding: 0cm 5.4pt; height: 20.4pt;" width="79">
+<p class="MsoNormal" dir="LTR" style="text-align: right;" align="right"><strong style="mso-bidi-font-weight: normal;"><span style="mso-bidi-font-size: 10.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="MsoNormal" dir="RTL" style="text-align: justify; text-justify: kashida; text-kashida: 0%; mso-pagination: no-line-numbers; direction: rtl; unicode-bidi: embed;"><strong style="mso-ansi-font-weight: normal;"><span lang="AR-SA" style="font-size: 15.0pt; line-height: 107%; font-family: 'Traditional Arabic',serif; letter-spacing: .4pt;">&nbsp;</span></strong></p>
+<p class="MsoNormal" dir="RTL" style="margin-right: 54.0pt; text-align: justify; text-justify: kashida; text-kashida: 0%; text-indent: -18.0pt; mso-pagination: no-line-numbers; mso-list: l0 level1 lfo1; tab-stops: list 54.0pt; direction: rtl; unicode-bidi: embed;"><!-- [if !supportLists]-->&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">ويكون حساب&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAABbklEQVRIDeWUrW/CQBjG+z/0P6hA4tAVTBJStWCKr5heFWJZJibIHKlnDoarwyCQiDmSJgiSLlmWEDpD1bs8t11zcB+9MDKzml569/7ued6POnThx7kwj/4euF4tyHEcSiZzKzNGhWV5oKfbe9rkG4quItoVRS3UCFymM8q2OYMUxY6SZPo7YG204oBRIc5/7vc0Ht5R03VZLl23SbN0qUB9fzICYbPreTQcT+lQlixiPkkIUJ6KU7IROBr0qT8YHcWg6p7X1RZIC+TqFqt1BUTVH6KIxG/V5s9CC4SSdi9mVqEUNoMgMMLA1AIBOW3mfJuR3/C1+dMCYTdsdaRAVRqsLKOS3K4YcJZCJD7utSW7AOOi6/iR7esqLeUQKtDEYXhDb+8fTCAuQXNz1XzGVbMtAbndLHulsNNi09HwfXp+Savmtgaa7Iq5tAbaJB1ga6Bq1ERlfG0N5AF1b1yMvzgvknheKoq4ec76HwK/AI6KnjqXyOMyAAAAAElFTkSuQmCC" alt="" />&nbsp;كما يلي:</p>
+<p dir="RTL"><img src="data:image/png;base64,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" alt="" /><span dir="LTR">&nbsp;</span></p>
+<p dir="RTL"><!-- [if !supportLists]-->&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">ويمكن حساب&nbsp;</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAcCAYAAACOGPReAAABhUlEQVRIDeWUrW/CQBjG+z/0P6hA4tAVTBKCxBRfMT0UgiyTzRypZ44PV4dBIBFzJE0QJF2yLCF0hqpneS65pp/X2xYysZpe7t779Xnejxq4wWPcgIm/gR72WxiGAX+x0TalVJokVzw/POIYHeHeuTjHsRZYCd0Fa4SnSIDi+AzfX/4eqkWoCFIqrYjX2mqEfl4umHtTtE1TFMw021gHOyVcCWUe+5YFb77ENUkEaLPwQbDMdRVdCZ1NRhhNZrl7bDHL6is7oRYqVW73hxTKFntyXWT30sPMohZKRd3hWNimYloeDAaNQLJroQQVpyg6hbBbtjKftVBadzq90uWqlGRcp8tKpaywtJ5GAvixUhZjPOyWrBPOj8lu4LruR1NSSjVsdMe5x9v7hxDKD3EApHrGTL25OON+sWdLUGk9DF/h9DpCTcu28bIKcgMg24pdUixoDqqyns1t9u9F1cWxzUF1C0E32kqrxjKrUK6/nVN5selNAdrVb4LpnOdyqnNBJ+afQ78Agd2nOS4gxo8AAAAASUVORK5CYII=" alt="" />&nbsp;كما يلي:</p>
+<p dir="RTL"><img src="data:image/png;base64,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" alt="" /></p>
+<p dir="RTL" align="center"><span dir="LTR"><!-- [if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1659770348">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+<p dir="RTL"><!-- [if !supportLists]-->&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><span lang="AR-EG">إذا معادلة الاتجاه العام هي:</span></p>
+<p dir="RTL"><span lang="AR-EG"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAAAbCAYAAAB/aKHwAAADxElEQVRoBe1YPUsrQRTNf8g/SGFplzqFbbC2WXsfWKuNRTCvDOkk2MZO1y7EQiQWKQRjIaJCQCGgIIIkNqa6cpZ3lnEyszv7Xj59GwizO5mZe+ace+/cSUbSz9wzkJl7hClAiRVpf3ddMpmMrKxty+dwmFI2AwYiRXroXEipUpde71G8Yl5qR2czgJiatIo0GLxLq9UJGRoOP+W82ZSX17ewL32YDgNWkaZjPrXiwsBcifT2+iLVvS1ZzmYll1uV98Egcg9X7dNgLM7MbHZZThrtyPFJfkTmaPiHUigsyUXnIclU4TkOXPj+6zExNyKR8K29qjz2erGk4LwEAaftq2AsBF7N5RITajIEgX5vbIQOkESk5143nEfn6faeTWac+4wi3V5fyqbnBUUDVwLw7bUVWd/dZ9fY2rOjWhAJSTYDb9UrTqwzTnwkPIlIwBU3HoUYMoaKlbbUPhI8IpIaqioJFMklDXFxl5bg4jamrwWcOhb0uaQWRKHLuKTYUGwhmpF6D/2G8crCNdUoU/ucRAIZNkHQXz+oG43rJLq+g1g4A/I/ziKAR8qLu5NxY/miF1ScSJe4LsTNA65JiYRIBn5+IZYtOwAvxsFZDqrVyKp5JJJILsjTjYAY2+GM8QRna3XvpedBJJb2BG/yKGJjS6G4WfbHtZMSCXbhyEhnOC6AS492YmMggOObuyd2G1urSKZzonHoO3mq0ZKhkyTrqc7kIIbpgmKhXC4HF+0kQk1SJBUnI0vfH8dgnzYROQZtpEjYOA083d3EKq4u7PJsEwkk6lGsr4e5xbwXlOlBGq6UAs8lXnW8S5SbIteGT1076pnRomcQzjEFAn9TW6tIIIoiwVizea7OG3l2IUIHayPBRSTY04lFn1rsjID80zGtSII5YDI5DlK97/tBoaHzouOOFQkLdFqt2IulvrDLOz1NJxskRpH9t/OIaVoiASeKAtOlHH+x9T/63641H/0+IX5rrSLRy3/t7Iw9zakIaIfeZLuUglhUf/RK5nteZikc11Ft6M9JRbIVSyom2MeZzQII7/VKKcQLDIx+3ENZ9aEP59J99z4o23WseI8VyWXTpoWT9EEo/MuO9LpUKMjl9e3IdJUQ/thunIRlO84wG5kcz9ZFJJAHPPyaIlvFBFFwQeV4z9sMBaPd43olOGvpWOjnGlHXB6tIyJm12jHXT9sZMmAUCV4RVyjMEPN/ZzoUCTkeIY2LWCrQfPlBKBJycJK8Pl/b+NloQpF+9jYXe3epSAugXypSKtICMLAAENNIWgCRvgAqt+LGpkcRywAAAABJRU5ErkJggg==" alt="" /></span></p>
+<p dir="RTL" align="center"><span dir="LTR"><!-- [if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1659770349">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+<p dir="RTL" align="center"><span dir="LTR">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">لتقدير عدد العاملين </span><span dir="LTR">2026</span><span lang="AR-SA"> أي أن </span> <span dir="LTR"><!-- [if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1659770350">
+ </o:OLEObject>
+</xml><![endif]-->&nbsp; X= 10 </span><span lang="AR-SA">اذن</span></p>
+<p dir="RTL"><span lang="AR-SA"><img src="data:image/png;base64,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" alt="" /></span></p>
+<p dir="RTL" align="center"><span dir="LTR"><!-- [if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1659770351">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+<p dir="RTL"><span lang="AR-EG">أي أن عدد العاملين المتنبأ به عام </span><span dir="LTR">2026 </span><span lang="AR-EG">&nbsp;هو </span><span dir="LTR">21800</span><span lang="AR-EG"> عامل.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></p></div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <br>
+
+            <div class='container'>
+                <ul class='pagination justify-content-center'>
+                  <li class='page-item'><a class='page-link' href='U5-L7.html'>التالي</a></li> <span class='pr-5 pl-5 shadow-sm'>62 / 61</span><li class='page-item'><a class='page-link' href='U5-L5.html'>السابق</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </div>  <div class='overlay'></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper.JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js' integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ' crossorigin='anonymous'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js' integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm' crossorigin='anonymous'></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js'></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#sidebar').mCustomScrollbar({
+                theme: 'minimal'
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

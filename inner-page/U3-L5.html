@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>مقدمة في علم الاحصاء </title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'>
+    <!-- Our Custom CSS -->
+    <link rel='stylesheet' href='../css/page2.css'>
+    <link rel='stylesheet' href='../css/rtl.css'>
+    <!-- Scrollbar Custom CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap' rel='stylesheet'>
+
+
+    <!-- Font Awesome JS -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/solid.js'></script>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js'></script>
+
+
+</head>
+
+<body><nav id='sidebar'>
+            <div id='dismiss'>
+                <i class='fa fa-times' aria-hidden='true'></i>
+
+            </div>
+
+            <div class='sidebar-header'>
+                <!--<h3>Bootstrap Sidebar</h3>-->
+            </div>
+
+            <ul class='list-unstyled components'>
+                <p>الفهرس</p>
+                <li>
+                    <a href='#homeSubmenu1' data-toggle='collapse' aria-expanded='false'>الوحدة الاولى </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu1'>< li>
+                            <a href='U1-L1.html'>مقدمة</a>
+                        </li>< li>
+                            <a href='U1-L2.html'>تعريف علم الاحصاء</a>
+                        </li>< li>
+                            <a href='U1-L3.html'>المجتمع الإحصائي</a>
+                        </li>< li>
+                            <a href='U1-L4.html'>الوحدة الإحصائية</a>
+                        </li>< li>
+                            <a href='U1-L5.html'>العينة والمعاينة</a>
+                        </li>< li>
+                            <a href='U1-L6.html'>الإطار</a>
+                        </li>< li>
+                            <a href='U1-L7.html'>معالم المجتمع وإحصائية العينة</a>
+                        </li>< li>
+                            <a href='U1-L8.html'>وظائف علم الإحصاء</a>
+                        </li>< li>
+                            <a href='U1-L9.html'>وصف البيانات Data Description	</a>
+                        </li>< li>
+                            <a href='U1-L10.html'>الاستدلال الإحصائي Statistical Inference	</a>
+                        </li>< li>
+                            <a href='U1-L11.html'>التنبؤ Forecasting	</a>
+                        </li>< li>
+                            <a href='U1-L12.html'>أنواع البيانات وطرق قياسها	</a>
+                        </li>< li>
+                            <a href='U1-L13.html'>البيانات الوصفية	</a>
+                        </li>< li>
+                            <a href='U1-L14.html'>البيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U1-L15.html'>طرق جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L16.html'>المصادر الأولية</a>
+                        </li>< li>
+                            <a href='U1-L17.html'>المصادر الثانوية      </a>
+                        </li>< li>
+                            <a href='U1-L18.html'>وسائل جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L19.html'>أسلوب جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L20.html'>أنواع العينات</a>
+                        </li>< li>
+                            <a href='U1-L21.html'>العينات الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L22.html'>العينات غير الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L23.html'>تمارين</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu2' data-toggle='collapse' aria-expanded='false'>الوحدة الثانية </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu2'>< li>
+                            <a href='U2-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U2-L2.html'>عرض البيانات جدولياً</a>
+                        </li>< li>
+                            <a href='U2-L3.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L4.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L5.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L6.html'>تكوين التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L7.html'>تكوين جدول تفريغ البيانات</a>
+                        </li>< li>
+                            <a href='U2-L8.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L9.html'>العرض البياني للبيانات الوصفية</a>
+                        </li>< li>
+                            <a href='U2-L10.html'>الدائرة البيانية	</a>
+                        </li>< li>
+                            <a href='U2-L11.html'>رسم الدائرة</a>
+                        </li>< li>
+                            <a href='U2-L12.html'>الأعمدة البيانية</a>
+                        </li>< li>
+                            <a href='U2-L13.html'>الأعمدة البيانية المزدوجة</a>
+                        </li>< li>
+                            <a href='U2-L14.html'>الأعمدة البيانية المجزأة</a>
+                        </li>< li>
+                            <a href='U2-L15.html'>العرض البياني للبيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U2-L16.html'>المدرج التكراري Histogram </a>
+                        </li>< li>
+                            <a href='U2-L17.html'>المنحنى التكراري</a>
+                        </li>< li>
+                            <a href='U2-L18.html'>التوزيعات التكرارية المتجمعة </a>
+                        </li>< li>
+                            <a href='U2-L19.html'>التوزيع التكراري المتجمع الصاعد</a>
+                        </li>< li>
+                            <a href='U2-L20.html'>التوزيع التكراري المتجمع الهابط</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu3' data-toggle='collapse' aria-expanded='false'>الوحدة الثالثة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu3'>< li>
+                            <a href='U3-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U3-L2.html'>مقاييس النزعة المركزية</a>
+                        </li>< li>
+                            <a href='U3-L3.html'>الوسط الحسابي  Arithmetic Mean</a>
+                        </li>< li>
+                            <a href='U3-L4.html'>الوسيط  Median</a>
+                        </li>< li>
+                            <a href='U3-L5.html'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</a>
+                        </li>< li>
+                            <a href='U3-L6.html'>تطبيقات الفصل الثالث</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu4' data-toggle='collapse' aria-expanded='false'>الوحدة الرابعة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu4'>< li>
+                            <a href='U4-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U4-L2.html'>المدى Rang</a>
+                        </li>< li>
+                            <a href='U4-L3.html'>التباين والانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L4.html'>التباين والانحراف المعياري في العينة S</a>
+                        </li>< li>
+                            <a href='U4-L5.html'>خصائص الانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L6.html'>معامل الاختلاف النسبي	</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu5' data-toggle='collapse' aria-expanded='false'>الوحدة الخامسة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu5'>< li>
+                            <a href='U5-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U5-L2.html'>الارتباط الخطى البسيط Simple Correlation</a>
+                        </li>< li>
+                            <a href='U5-L3.html'>معامل الارتباط الخطى البسيط " لبيرسون" Pearson    </a>
+                        </li>< li>
+                            <a href='U5-L4.html'>معامل ارتباط الرتب (اسبيرمان) Spearman     </a>
+                        </li>< li>
+                            <a href='U5-L5.html'>الانحدار الخطى البسيط Simple Regression  </a>
+                        </li>< li>
+                            <a href='U5-L6.html'>السلاسل الزمنية</a>
+                        </li>< li>
+                            <a href='U5-L7.html'>تطبيقات الفصل الخامس</a>
+                        </li></ul>
+                </li></ul>
+
+
+
+        </nav>        <div id='content'>
+
+            <nav class='navbar navbar-light bg-light shadow-sm ' dir='rtl'>
+                <div class='container'>
+
+                    <a class='navbar-brand float-right' href='#'>
+                        <img src='../img/logo1.png' class='d-inline-block align-top img-fluid ' alt=''>
+
+                    </a>
+                    <a class='nav-link home' href='../index.html'>
+                        <i class='fa fa-home fa-lg' aria-hidden='false'></i>
+                        <span class='sr-only'>(current)</span></a>
+                </div>
+            </nav>
+
+
+
+
+            <div class='container'>
+                <nav class='navbar navbar-expand-lg navbar-light  '>
+                    <div class='container-fluid'>
+
+                        <button type='button' id='sidebarCollapse' class='btn btn-info'>
+                            <i class='fas fa-align-left'></i>
+                            <span></span>
+                        </button>
+
+                        <button class='btn btn-dark d-inline-block d-lg-none ml-auto' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                            <i class='fas fa-align-justify'></i>
+                        </button>
+                        <h2 class='pr-3'>مقدمة في علم الاحصاء </h2>
+                        <div class='collapse navbar-collapse ' id='navbarSupportedContent'>
+                            <ul class='nav navbar-nav mx-auto'>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='#'> <button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>تعريف الحقيبة</button></a>
+
+
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='U1-L1.html'><button type='button' class='btn btn-secondary pr-3 pl-4 shadow-sm active'>المحتوى التعليمي </button></a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='../book/pdf.pdf' target='_blank'><button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>الكتاب</button> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav aria-label='breadcrumb'>
+                    <ol class='breadcrumb'>
+                        <li class='breadcrumb-item'><a href='../index.html'>الرئيسية </a></li>
+                        <li class='breadcrumb-item'><span style='color:white'>الوحدة الثالثة </span></li>
+                        <li class='breadcrumb-item active' aria-current='page'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</li>
+                        
+                    </ol>
+                </nav>
+
+
+
+
+                <!--<h2 class='text-right'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</h2>-->
+
+                
+
+
+                    <div class='content-text' id='style-1'> <p class='text-right text-justify mr-1 font-weight-normal' dir='rtl'><p dir="RTL" style="text-align: right;"><span lang="AR-SA">استخدام مقاييس النزعة المركزية ف</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;تحديد شكل</span>&nbsp;<span lang="AR-EG">توزيع البيانات</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; يمكن استخدام الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;والوسيط والمنوال ف</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;وصف المنحنى التكرار</span><span lang="AR-EG">ي</span><span lang="AR-SA">، والذي يعبر عن شكل توزيع البيانات ، كما يل</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;:</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">يكون المنحنى موجب الالتواء (ملتو</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;جهة اليمين ) إذا كان</span><span lang="AR-EG">:</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">الوسط &gt; الوسيط &gt; المنوال</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA"><img src="blob:http://10.34.17.22/b3774888-6e2a-4a6b-80d2-07f2b194c4bc" alt="" />&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">يكون المنحنى سالب الالتواء (ملتو</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;جهة اليسار) إذا كان</span><span lang="AR-EG">&nbsp;:</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">الوسط &lt; الوسيط &lt; المنوال</span></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/452a6b07-71bd-4e04-a108-0cb99a48abf7" alt="" /></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">يكون المنحنى متماثل إذا كان :</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">الوسط = الوسيط = المنوال.</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/52ceb2f4-6256-4371-be6b-78f1306ad981" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">مثال (</span><span lang="AR-EG">3-</span><span lang="AR-SA">8)</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">قام مدير مراقبة الإنتاج بسحب عينة من</span><span dir="LTR">10 &nbsp;</span><span lang="AR-SA">&nbsp;عبوات من الميا</span><span lang="AR-EG">ه&nbsp;</span><span lang="AR-SA">المعبأة للشرب، ذات الحجم&nbsp;</span><span dir="LTR">5&nbsp;</span><span lang="AR-SA">&nbsp;لتر، &nbsp;والمنتجة بواسطة إحدى شركات تعبئة المياه لفحص كمية الأملاح الذائبة، وكانت كالتال</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;:</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><span dir="LTR">115&nbsp;&nbsp;&nbsp; 123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 119&nbsp;&nbsp;&nbsp; 123&nbsp;&nbsp;&nbsp; &nbsp;124 &nbsp;&nbsp;119&nbsp;&nbsp;&nbsp; 123&nbsp;&nbsp;&nbsp; 121&nbsp;&nbsp;&nbsp; 123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 121 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="AR-SA">&nbsp;&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">والمطلوب</span><span lang="AR-SA">&nbsp;: حساب الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">، والوسيط، والمنوال، ثم حدد شكل الالتواء له</span><span lang="AR-EG">ذ</span><span lang="AR-SA">ه البيانات .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">الحل</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">حساب الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA"><img src="blob:http://10.34.17.22/6f199e9a-c585-4944-8e50-67d3dc4293fd" alt="" /></span></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">حساب الوسيط :</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">رتبة الوسيط :&nbsp;</span><img src="blob:http://10.34.17.22/981a9f77-e169-4bf4-8452-3e1fcf5acd4b" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">ترتيب القيم تصاعديا</span></p>
+<p dir="RTL" style="text-align: right;">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/b6d69f7c-2f07-4e9f-8c14-488dcd0652fa" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; عدد القيم =&nbsp;</span><span dir="LTR">10</span><span lang="AR-SA">&nbsp;، وهو عدد زوجي.&nbsp;&nbsp; الوسيط = الوسط الحساب</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;للقيمتين رقم&nbsp;</span><span dir="LTR">(6 , 5 )</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/04619b0e-c5c7-4f06-923e-e4ed65587648" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">حساب المنوال :</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">المنوال يساوى القيمة الأكثر تكرارا:&nbsp; القيمة&nbsp;</span><span dir="LTR">123</span><span lang="AR-SA">&nbsp;تكررت أكثر من غيرها ، إذا</span></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/65a25396-2c20-4c4a-ba61-b8fccc4b82b1" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">وبمقارنة الوسط والوسيط و المنوال نجد أن :</span></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/3a7a8a28-f30b-4fef-8df9-60e5200e5e10" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">نجد أن&nbsp;&nbsp; : الوسط &lt; الوسيط &lt; المنوال ، إذا توزيع بيانات كمية الأملاح سالبة الالتواء.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">مثال (3-9)&nbsp;</span><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; الجدول التكرار</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;التال</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;يعرض توزيع&nbsp;</span><span dir="LTR">100</span><span lang="AR-SA">&nbsp;عامل ف</span><span lang="AR-EG">ي</span>&nbsp;<span lang="AR-SA">مصنع حسب الأجر اليوم</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;بالريال .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<div style="text-align: right;" align="center">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="84">
+<p dir="RTL" align="center"><span dir="LTR">170 - 190</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">150 -</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">130 -</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">110 -</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">90 -</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">70 -</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">50 -</span></p>
+</td>
+<td width="67">
+<p dir="RTL" align="center"><span lang="AR-SA">الأجر&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="84">
+<p dir="RTL" align="center"><span dir="LTR">6</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">8</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">15</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">20</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">28</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">15</span></p>
+</td>
+<td width="50">
+<p dir="RTL" align="center"><span dir="LTR">8</span></p>
+</td>
+<td width="67">
+<p dir="RTL" align="center"><span lang="AR-SA">عدد العمال</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">والمطلوب :</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">حساب الوسط والوسيط والمنوال .</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">بيان شكل توزيع الأجور ف</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;هذا المصنع .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">الحل</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">حساب الوسط والوسيط والمنوال .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">أولا : الوسط الحسابي&nbsp;</span><img src="blob:http://10.34.17.22/543d3528-bcb3-4618-8b1d-c328d0d16dea" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<div style="text-align: right;" align="center">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">f x</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span lang="AR-SA">مراكز الفئات&nbsp;</span><span dir="LTR">(x )</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span lang="AR-SA">التكرارات&nbsp;</span><span dir="LTR">( f )</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span lang="AR-SA">فئات الأجر</span></p>
+</td>
+</tr>
+<tr>
+<td width="105">
+<p dir="LTR" align="center">480</p>
+</td>
+<td width="105">
+<p dir="LTR" align="center">60</p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">8</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="right"><span dir="LTR">&nbsp; 50&nbsp; &ndash;&nbsp; 70</span></p>
+</td>
+</tr>
+<tr>
+<td width="105">
+<p dir="LTR" align="center">1200</p>
+</td>
+<td width="105">
+<p dir="LTR" align="center">80</p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">15</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="right"><span dir="LTR">&nbsp; 70&nbsp; &ndash;&nbsp; 90</span></p>
+</td>
+</tr>
+<tr>
+<td width="105">
+<p dir="LTR" align="center">2800</p>
+</td>
+<td width="105">
+<p dir="LTR" align="center">100</p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">28</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="right"><span dir="LTR">&nbsp; 90&nbsp; &ndash;&nbsp; 110</span></p>
+</td>
+</tr>
+<tr>
+<td width="105">
+<p dir="LTR" align="center">2400</p>
+</td>
+<td width="105">
+<p dir="LTR" align="center">120</p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">20</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="right"><span dir="LTR">110 - 130</span></p>
+</td>
+</tr>
+<tr>
+<td width="105">
+<p dir="LTR" align="center">2100</p>
+</td>
+<td width="105">
+<p dir="LTR" align="center">140</p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">15</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="right"><span dir="LTR">130 - 150</span></p>
+</td>
+</tr>
+<tr>
+<td width="105">
+<p dir="LTR" align="center">1280</p>
+</td>
+<td width="105">
+<p dir="LTR" align="center">160</p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">8</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="right"><span dir="LTR">150 &ndash;&nbsp; 170</span></p>
+</td>
+</tr>
+<tr>
+<td width="105">
+<p dir="LTR" align="center">1080</p>
+</td>
+<td width="105">
+<p dir="LTR" align="center">180</p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">6</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="right"><span dir="LTR">170 - 190</span></p>
+</td>
+</tr>
+<tr>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">11340</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">100</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span lang="AR-SA">المجموع</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA"><img src="blob:http://10.34.17.22/409f67de-7030-4b27-94d8-a2156830ffb0" alt="" /></span></p>
+<p dir="RTL" style="text-align: right;">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">ثانيا : الوسيط &nbsp;&nbsp;&nbsp;</span><img src="blob:http://10.34.17.22/ec95128d-f273-456a-88e3-88cb30099af2" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; رتبة الوسيط :&nbsp;&nbsp;</span><span dir="LTR">(n/2 =100/2 =50)</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">تكوين التوزيع التكرار</span><span lang="AR-EG">ي</span><span lang="AR-SA">&nbsp;المتجمع الصاعد .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<div style="text-align: right;" align="center">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="60">
+<p dir="RTL" align="center"><span dir="LTR">&nbsp;</span></p>
+</td>
+<td width="149">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span lang="AR-SA">تكرار متجمع صاعد</span></p>
+</td>
+<td width="114">
+<p dir="RTL" align="center"><span lang="AR-EG">أقل من&nbsp;</span><span lang="AR-EG">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="60">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="149">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">0 &nbsp;&nbsp;&nbsp;</span></p>
+</td>
+<td width="114">
+<p dir="RTL" align="center"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">50</span></p>
+</td>
+</tr>
+<tr>
+<td width="60">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="149">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">8&nbsp;&nbsp;&nbsp;</span></p>
+</td>
+<td width="114">
+<p dir="RTL" align="center"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">70</span></p>
+</td>
+</tr>
+<tr>
+<td width="60">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td rowspan="2" width="149">
+<p dir="RTL" align="center"><span lang="AR-SA">رتبة الوسيط&nbsp;&nbsp; &nbsp;</span><span dir="LTR">(50 )</span></p>
+</td>
+<td width="105">
+<p dir="RTL"><span dir="LTR">&nbsp;&nbsp;&nbsp;23</span><img src="blob:http://10.34.17.22/6ad2eebd-d443-4057-a4e3-f59f824e82c2" alt="" /></p>
+</td>
+<td width="114">
+<p dir="RTL" align="center"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">90</span></p>
+</td>
+</tr>
+<tr>
+<td width="60">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="105">
+<p dir="RTL"><span dir="LTR">&nbsp;&nbsp;&nbsp;51</span><img src="blob:http://10.34.17.22/6ad2eebd-d443-4057-a4e3-f59f824e82c2" alt="" /></p>
+</td>
+<td width="114">
+<p dir="RTL" align="center"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">110</span></p>
+</td>
+</tr>
+<tr>
+<td width="60">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="149">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">71&nbsp;&nbsp;&nbsp;</span></p>
+</td>
+<td width="114">
+<p dir="RTL" align="center"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">130</span></p>
+</td>
+</tr>
+<tr>
+<td width="60">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="149">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">86&nbsp;&nbsp;&nbsp;</span></p>
+</td>
+<td width="114">
+<p dir="RTL" align="center"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">150</span></p>
+</td>
+</tr>
+<tr>
+<td width="60">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="149">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">94&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+</td>
+<td width="114">
+<p dir="RTL" align="center"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">170</span></p>
+</td>
+</tr>
+<tr>
+<td width="60">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="149">
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="105">
+<p dir="RTL" align="center"><span dir="LTR">100&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+</td>
+<td width="114">
+<p dir="RTL" align="center"><span lang="AR-SA">أقل من&nbsp;</span><span dir="LTR">190</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; من الجدول أعلاه نجد أن :</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA"><img src="blob:http://10.34.17.22/8884f923-b004-4f72-87e9-6000259a08f0" alt="" /></span></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; إذا الوسيط قيمته هى :</span></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/99cdf966-d85f-433c-907b-d0e6e4d1b0cf" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">ثالثا : المنوال&nbsp;</span><img src="blob:http://10.34.17.22/f37da307-979d-4150-be2f-d1508f2febf8" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">الفئة المنوالية ، هى الفئة المناظرة لأكبر تكرار</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp; أكبر تكرار =</span><span dir="LTR">28&nbsp;</span><span lang="AR-SA">&nbsp;، وهو يناظر الفئة التقريبية&nbsp;&nbsp;&nbsp;</span><span dir="LTR">(90 - 110)</span>&nbsp;<span lang="AR-SA">.&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">حساب الفروق :&nbsp;</span><img src="blob:http://10.34.17.22/e05cda1e-53e7-4639-a6ac-9101e46c98e3" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">الحد الأدنى للفئة :&nbsp;</span><img src="blob:http://10.34.17.22/5898aa2a-091f-4970-b3ad-d02c7566bb6f" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;طول الفئة :&nbsp;<img src="blob:http://10.34.17.22/8a34ae8c-6cbd-426f-9744-bcbc19b3c343" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">إذا المنوال يحسب بتطبيق المعادلة التالية :</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA"><img src="blob:http://10.34.17.22/4c56b236-6b2b-4172-aba3-e4a9d159a4eb" alt="" /></span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">بيان شكل التوزيع .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; من النتائج السابقة ، نجد أن :</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;الوسط الحسابي&nbsp;</span><img src="blob:http://10.34.17.22/17c0ec34-b7b9-4d91-8bfb-a8af02522231" alt="" /><span lang="AR-SA">:&nbsp;</span><span lang="AR-SA">&nbsp;</span><span lang="AR-SA">&nbsp;&nbsp;&nbsp;الوسيط :&nbsp;</span><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/5fc7fa01-3534-4e81-86c1-445ade1ba886" alt="" /><span lang="AR-EG">&nbsp;&nbsp;</span><span lang="AR-EG">&nbsp;</span><span lang="AR-SA">&nbsp;المنوال :</span><img src="blob:http://10.34.17.22/2e5f0caa-c43b-4aa4-98f0-3ccfd1eb4d0c" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">أى أن :&nbsp;&nbsp; الوسط&nbsp; &gt;&nbsp; الوسيط&nbsp; &gt;&nbsp; المنوال&nbsp;&nbsp;&nbsp; إذا توزيع بيانات الأجور موجب الالتواء. كما هو مبين في الشكل التالي:</span></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;</p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA"><img src="blob:http://10.34.17.22/5b0e3327-7b61-4c9a-90a9-c0b7e6b5daec" alt="" />&nbsp;</span></p>
+<p class="MsoNormal" dir="RTL" style="line-height: 10pt; direction: rtl; unicode-bidi: embed; text-align: right;" align="center">&nbsp;</p>
+<p class="MsoNormal" dir="RTL" style="line-height: 10pt; direction: rtl; unicode-bidi: embed; text-align: right;" align="center">&nbsp;</p></p></div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <br>
+
+            <div class='container'>
+                <ul class='pagination justify-content-center'>
+                  <li class='page-item'><a class='page-link' href='U3-L6.html'>التالي</a></li> <span class='pr-5 pl-5 shadow-sm'>62 / 48</span><li class='page-item'><a class='page-link' href='U3-L4.html'>السابق</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </div>  <div class='overlay'></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper.JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js' integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ' crossorigin='anonymous'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js' integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm' crossorigin='anonymous'></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js'></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#sidebar').mCustomScrollbar({
+                theme: 'minimal'
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

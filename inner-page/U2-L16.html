@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>مقدمة في علم الاحصاء </title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'>
+    <!-- Our Custom CSS -->
+    <link rel='stylesheet' href='../css/page2.css'>
+    <link rel='stylesheet' href='../css/rtl.css'>
+    <!-- Scrollbar Custom CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap' rel='stylesheet'>
+
+
+    <!-- Font Awesome JS -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/solid.js'></script>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js'></script>
+
+
+</head>
+
+<body><nav id='sidebar'>
+            <div id='dismiss'>
+                <i class='fa fa-times' aria-hidden='true'></i>
+
+            </div>
+
+            <div class='sidebar-header'>
+                <!--<h3>Bootstrap Sidebar</h3>-->
+            </div>
+
+            <ul class='list-unstyled components'>
+                <p>الفهرس</p>
+                <li>
+                    <a href='#homeSubmenu1' data-toggle='collapse' aria-expanded='false'>الوحدة الاولى </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu1'>< li>
+                            <a href='U1-L1.html'>مقدمة</a>
+                        </li>< li>
+                            <a href='U1-L2.html'>تعريف علم الاحصاء</a>
+                        </li>< li>
+                            <a href='U1-L3.html'>المجتمع الإحصائي</a>
+                        </li>< li>
+                            <a href='U1-L4.html'>الوحدة الإحصائية</a>
+                        </li>< li>
+                            <a href='U1-L5.html'>العينة والمعاينة</a>
+                        </li>< li>
+                            <a href='U1-L6.html'>الإطار</a>
+                        </li>< li>
+                            <a href='U1-L7.html'>معالم المجتمع وإحصائية العينة</a>
+                        </li>< li>
+                            <a href='U1-L8.html'>وظائف علم الإحصاء</a>
+                        </li>< li>
+                            <a href='U1-L9.html'>وصف البيانات Data Description	</a>
+                        </li>< li>
+                            <a href='U1-L10.html'>الاستدلال الإحصائي Statistical Inference	</a>
+                        </li>< li>
+                            <a href='U1-L11.html'>التنبؤ Forecasting	</a>
+                        </li>< li>
+                            <a href='U1-L12.html'>أنواع البيانات وطرق قياسها	</a>
+                        </li>< li>
+                            <a href='U1-L13.html'>البيانات الوصفية	</a>
+                        </li>< li>
+                            <a href='U1-L14.html'>البيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U1-L15.html'>طرق جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L16.html'>المصادر الأولية</a>
+                        </li>< li>
+                            <a href='U1-L17.html'>المصادر الثانوية      </a>
+                        </li>< li>
+                            <a href='U1-L18.html'>وسائل جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L19.html'>أسلوب جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L20.html'>أنواع العينات</a>
+                        </li>< li>
+                            <a href='U1-L21.html'>العينات الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L22.html'>العينات غير الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L23.html'>تمارين</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu2' data-toggle='collapse' aria-expanded='false'>الوحدة الثانية </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu2'>< li>
+                            <a href='U2-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U2-L2.html'>عرض البيانات جدولياً</a>
+                        </li>< li>
+                            <a href='U2-L3.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L4.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L5.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L6.html'>تكوين التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L7.html'>تكوين جدول تفريغ البيانات</a>
+                        </li>< li>
+                            <a href='U2-L8.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L9.html'>العرض البياني للبيانات الوصفية</a>
+                        </li>< li>
+                            <a href='U2-L10.html'>الدائرة البيانية	</a>
+                        </li>< li>
+                            <a href='U2-L11.html'>رسم الدائرة</a>
+                        </li>< li>
+                            <a href='U2-L12.html'>الأعمدة البيانية</a>
+                        </li>< li>
+                            <a href='U2-L13.html'>الأعمدة البيانية المزدوجة</a>
+                        </li>< li>
+                            <a href='U2-L14.html'>الأعمدة البيانية المجزأة</a>
+                        </li>< li>
+                            <a href='U2-L15.html'>العرض البياني للبيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U2-L16.html'>المدرج التكراري Histogram </a>
+                        </li>< li>
+                            <a href='U2-L17.html'>المنحنى التكراري</a>
+                        </li>< li>
+                            <a href='U2-L18.html'>التوزيعات التكرارية المتجمعة </a>
+                        </li>< li>
+                            <a href='U2-L19.html'>التوزيع التكراري المتجمع الصاعد</a>
+                        </li>< li>
+                            <a href='U2-L20.html'>التوزيع التكراري المتجمع الهابط</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu3' data-toggle='collapse' aria-expanded='false'>الوحدة الثالثة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu3'>< li>
+                            <a href='U3-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U3-L2.html'>مقاييس النزعة المركزية</a>
+                        </li>< li>
+                            <a href='U3-L3.html'>الوسط الحسابي  Arithmetic Mean</a>
+                        </li>< li>
+                            <a href='U3-L4.html'>الوسيط  Median</a>
+                        </li>< li>
+                            <a href='U3-L5.html'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</a>
+                        </li>< li>
+                            <a href='U3-L6.html'>تطبيقات الفصل الثالث</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu4' data-toggle='collapse' aria-expanded='false'>الوحدة الرابعة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu4'>< li>
+                            <a href='U4-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U4-L2.html'>المدى Rang</a>
+                        </li>< li>
+                            <a href='U4-L3.html'>التباين والانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L4.html'>التباين والانحراف المعياري في العينة S</a>
+                        </li>< li>
+                            <a href='U4-L5.html'>خصائص الانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L6.html'>معامل الاختلاف النسبي	</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu5' data-toggle='collapse' aria-expanded='false'>الوحدة الخامسة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu5'>< li>
+                            <a href='U5-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U5-L2.html'>الارتباط الخطى البسيط Simple Correlation</a>
+                        </li>< li>
+                            <a href='U5-L3.html'>معامل الارتباط الخطى البسيط " لبيرسون" Pearson    </a>
+                        </li>< li>
+                            <a href='U5-L4.html'>معامل ارتباط الرتب (اسبيرمان) Spearman     </a>
+                        </li>< li>
+                            <a href='U5-L5.html'>الانحدار الخطى البسيط Simple Regression  </a>
+                        </li>< li>
+                            <a href='U5-L6.html'>السلاسل الزمنية</a>
+                        </li>< li>
+                            <a href='U5-L7.html'>تطبيقات الفصل الخامس</a>
+                        </li></ul>
+                </li></ul>
+
+
+
+        </nav>        <div id='content'>
+
+            <nav class='navbar navbar-light bg-light shadow-sm ' dir='rtl'>
+                <div class='container'>
+
+                    <a class='navbar-brand float-right' href='#'>
+                        <img src='../img/logo1.png' class='d-inline-block align-top img-fluid ' alt=''>
+
+                    </a>
+                    <a class='nav-link home' href='../index.html'>
+                        <i class='fa fa-home fa-lg' aria-hidden='false'></i>
+                        <span class='sr-only'>(current)</span></a>
+                </div>
+            </nav>
+
+
+
+
+            <div class='container'>
+                <nav class='navbar navbar-expand-lg navbar-light  '>
+                    <div class='container-fluid'>
+
+                        <button type='button' id='sidebarCollapse' class='btn btn-info'>
+                            <i class='fas fa-align-left'></i>
+                            <span></span>
+                        </button>
+
+                        <button class='btn btn-dark d-inline-block d-lg-none ml-auto' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                            <i class='fas fa-align-justify'></i>
+                        </button>
+                        <h2 class='pr-3'>مقدمة في علم الاحصاء </h2>
+                        <div class='collapse navbar-collapse ' id='navbarSupportedContent'>
+                            <ul class='nav navbar-nav mx-auto'>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='#'> <button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>تعريف الحقيبة</button></a>
+
+
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='U1-L1.html'><button type='button' class='btn btn-secondary pr-3 pl-4 shadow-sm active'>المحتوى التعليمي </button></a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='../book/pdf.pdf' target='_blank'><button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>الكتاب</button> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav aria-label='breadcrumb'>
+                    <ol class='breadcrumb'>
+                        <li class='breadcrumb-item'><a href='../index.html'>الرئيسية </a></li>
+                        <li class='breadcrumb-item'><span style='color:white'>الوحدة الثانية </span></li>
+                        <li class='breadcrumb-item active' aria-current='page'>المدرج التكراري Histogram </li>
+                        
+                    </ol>
+                </nav>
+
+
+
+
+                <!--<h2 class='text-right'>المدرج التكراري Histogram </h2>-->
+
+                
+
+
+                    <div class='content-text' id='style-1'> <p class='text-right text-justify mr-1 font-weight-normal' dir='rtl'><p>&nbsp;</p>
+<p dir="RTL"><strong><span lang="AR-SA">2/4/1 المدرج التكراري&nbsp;</span><span dir="LTR">Histogram&nbsp;</span>&nbsp;</strong></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; المدرج التكراري هو التمثيل البياني للجدول التكراري البسيط الخاص بالبيانات الكمية المتصلة، وهو عبارة عن أعمدة بيانية متلاصقة، حيث تمثل التكرارات على المحور الرأسي، بينما تمثل قيم المتغير ( حدود الفئات) على المحور الأفقي، ويتم تمثيل كل فئة بعمود، ارتفاعه هو تكرار الفئة، وطول قاعدته هو طول الفئة.</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">مثال (2-8)</span></p>
+<p dir="RTL"><span lang="AR-SA">فيما يلي التوزيع التكراري لأوزان عينة من الدواجن بالجرام، حجمها&nbsp;</span><span dir="LTR">100</span><span lang="AR-SA">&nbsp;اختيرت من أحد المزارع بعد&nbsp;</span><span dir="LTR">45&nbsp;</span><span lang="AR-SA">&nbsp;يوم.</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span></p>
+<div align="right">
+<table dir="rtl" border="1" width="492" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="48">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">المجموع</span></p>
+</td>
+<td width="67">
+<p dir="LTR">700-720</p>
+</td>
+<td width="59">
+<p dir="LTR">680-</p>
+</td>
+<td width="59">
+<p dir="LTR">660-</p>
+</td>
+<td width="59">
+<p dir="LTR">640-</p>
+</td>
+<td width="59">
+<p dir="LTR">620-</p>
+</td>
+<td width="59">
+<p dir="LTR">600-</p>
+</td>
+<td width="82">
+<p dir="LTR" align="right"><span dir="RTL" lang="AR-SA">الوزن</span></p>
+</td>
+</tr>
+<tr>
+<td width="48">
+<p dir="LTR" align="center">100</p>
+</td>
+<td width="67">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">20</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">25</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">20</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">15</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="82">
+<p dir="LTR" align="right"><span dir="RTL" lang="AR-SA">عدد الدجاج</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL"><span lang="AR-SA">والمطلوب:</span></p>
+<p dir="RTL">1-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">ما هو طول الفئة؟</span></p>
+<p dir="RTL">2-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">ارسم المدرج التكراري.</span></p>
+<p dir="RTL">3-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">ارسم المدرج التكراري النسبي، ثم علق على الرسم.</span></p>
+<p dir="RTL"><span dir="LTR">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">الحـل</span></p>
+<p dir="RTL">1-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">طول الفئة&nbsp;</span><span dir="LTR">(L)</span></p>
+<p dir="RTL"><img src="blob:http://10.34.17.22/31ededdd-abc1-4a10-a419-e7fb3d8d71fc" alt="" /></p>
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/cdb50262-41fa-4c7c-904a-0f26325fae48" alt="" /></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; إذا طول الفئة =&nbsp;</span><span dir="LTR">20</span></p>
+<p dir="RTL">2-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">رسم المدرج التكراري.</span></p>
+<p dir="RTL"><span lang="AR-SA">لرسم المدرج التكراري يتم إتباع الخطوات التالية:</span></p>
+<p dir="RTL">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">رسم محوران متعامدان، الرأسي ويمثل التكرارات، الأفقي ويمثل الأوزان.</span></p>
+<p dir="RTL">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">كل فئة تمثل بعمود ارتفاعه هو تكرار الفئة، وطول قاعدته هو طول الفئة.</span></p>
+<p dir="RTL">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">كل عمود يبدأ من حيث انتهى به عمود الفئة السابقة.</span></p>
+<p dir="RTL"><span lang="AR-SA">والشكل (2-5) يبين المدرج التكراري لأوزان الدجاج.</span></p>
+<p dir="RTL" align="center"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/a99ef815-ed85-4e1f-abdb-cb61e209e160" alt="" /></p>
+<p dir="RTL" align="center"><span lang="AR-SA">شكل رقم (2-5)</span>&nbsp;<span lang="AR-SA">المدرج التكراري لأوزان عينة من الدجاج حجمها 100 دجاجة</span></p>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="rtl" style="text-align: right;">3-&nbsp;&nbsp;&nbsp;<span lang="AR-SA">رسم المدرج التكراري النسبي: لرسم المدرج التكراري النسبي يتم إجراء الآتي:</span></p>
+<p dir="rtl" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">حساب التكرارات النسبية.</span></p>
+<div dir="rtl" style="text-align: right;" align="right">
+<table dir="rtl" border="1" width="492" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="48">
+<p dir="LTR" align="center">Sum</p>
+</td>
+<td width="67">
+<p dir="LTR">700-720</p>
+</td>
+<td width="59">
+<p dir="LTR">680-</p>
+</td>
+<td width="59">
+<p dir="LTR">660-</p>
+</td>
+<td width="59">
+<p dir="LTR">640-</p>
+</td>
+<td width="59">
+<p dir="LTR">620-</p>
+</td>
+<td width="59">
+<p dir="LTR">600-</p>
+</td>
+<td width="82">
+<p dir="LTR" align="right"><span dir="RTL" lang="AR-SA">الوزن</span></p>
+</td>
+</tr>
+<tr>
+<td width="48">
+<p dir="LTR" align="center">100</p>
+</td>
+<td width="67">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">20</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">25</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">20</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">15</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="82">
+<p dir="LTR" align="right"><span dir="RTL" lang="AR-SA">عدد الدجاج</span></p>
+</td>
+</tr>
+<tr>
+<td width="48">
+<p dir="LTR" align="center">1.00</p>
+</td>
+<td width="67">
+<p dir="LTR" align="center">0.10</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">0.20</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">0.25</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">0.20</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">0.15</p>
+</td>
+<td width="59">
+<p dir="LTR" align="center">0.10</p>
+</td>
+<td width="82">
+<p dir="LTR" align="right"><span dir="RTL" lang="AR-SA">التكرار النسبي</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="rtl" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">بإتباع نفس الخطوات السابقة عند رسم المدرج التكراري، يتم رسم المدرج التكراري النسبي، بإحلال التكرارات النسبية محل التكرارات المطلقة على المحور الرأسي، كما هو مبين في الشكل التالي:</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span><img src="data:image/png;base64,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" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">شكل رقم (2-6)</span>&nbsp;<span lang="AR-SA">المدرج التكراري</span><span lang="AR-SA">&nbsp;النسبي</span><span lang="AR-SA">&nbsp;لأوزان عينة من الدجاج حجمها 100 دجاجة</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">ومن الشكل أعلاه يلاحظ الآتي:</span></p>
+<p dir="RTL">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">أن&nbsp;</span><span dir="LTR">25%&nbsp;</span><span lang="AR-SA">&nbsp;&nbsp;من الدجاج يتراوح وزنه بين&nbsp;</span><span dir="LTR">660</span><span lang="AR-SA">&nbsp;،&nbsp;</span><span dir="LTR">680</span><span lang="AR-SA">&nbsp;جرام وهي أكبر نسبة.</span></p>
+<p dir="RTL">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">أن الشكل ملتوي جهة اليسار، مما يدل على أن توزيع أوزان الدجاج سالب&nbsp; الالتواء.</span></p>
+<p dir="RTL"><span lang="AR-SA">ملاحظات على شكل المدرج التكراري</span></p>
+<p dir="RTL"><span lang="AR-SA">أ&zwnj;-&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="AR-SA">أن المساحة أسفل المدرج التكراري تساوي مجموع التكرارات&nbsp;</span><span dir="LTR">(n)</span><span lang="AR-SA">.</span></p>
+<p dir="RTL"><span lang="AR-SA">ب&zwnj;-&nbsp;</span><span lang="AR-SA">أما المساحة أسفل المدرج التكراري النسبي، فهي تعبر عن مجموع التكرارات النسبية، وهي تساوي الواحد الصحيح.</span></p>
+<p dir="RTL"><span lang="AR-SA">ت&zwnj;-&nbsp;</span><span lang="AR-SA">يمكن تقدير القيم الشائعة، وهي القيم التي يناظرها أكبر ارتفاع، ففي الشكلين السابقين، نجد أن الوزن الشائع يقع في الفئة&nbsp;</span><span dir="LTR">(660-680)&nbsp;</span><span lang="AR-SA">&nbsp;ويطلق عليه المنوال.</span></p>
+<p dir="RTL"><span lang="AR-SA">ث&zwnj;-&nbsp;</span>&nbsp;<span lang="AR-SA">يمكن معرفة شكل توزيع البيانات، كما هو مبين بالأشكال الثلاث التالية:</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span><img src="blob:http://10.34.17.22/87833f03-bc0b-4977-a410-c2342419af0e" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">شكل (2-7)</span>&nbsp;<span lang="AR-SA">يمثل توزيع البيانات</span></p>
+<p dir="RTL" align="center">&nbsp;</p>
+<p dir="RTL"><span lang="AR-SA">2/4/2 المضلع التكراري</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; هو تمثيل بياني أيضا للجدول التكراري البسيط، حيث تمثل التكرارات على المحور الرأسي، ومراكز الفئات على المحور الأفقي، ثم التوصيل بين الإحداثيات بخطوط منكسرة، وبعد ذلك يتم توصيل طرفي المضلع بالمحور الأفقي.</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ومركز الفئة هي القيمة التي تقع في منتصف الفئة، وتحسب بتطبيق المعادلة التالية:</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL"><img src="blob:http://10.34.17.22/ae019cc4-8365-4c63-9771-64b571550294" alt="" /></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">ونظرا لعدم معرفة القيم الفعلية لتكرار كل فئة، يعتبر مركز الفئة هو التقدير المناسب لقيمة كل مفردة من مفردات الفئة.</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">مثال (2-9)</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; استخدم بيانات الجدول التكراري في المثال (2-8) لرسم المضلع التكراري.</span></p>
+<p dir="RTL"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL"><span lang="AR-SA">الحـل</span></p>
+<p dir="RTL"><span lang="AR-SA">لرسم المضلع التكراري يتبع الآتي:</span></p>
+<p dir="RTL">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">حساب مراكز الفئات بتطبيق المعادلة رقم (2-3)</span></p>
+<div align="center">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="136">
+<p dir="RTL" align="center"><span lang="AR-SA">مركز الفئة&nbsp;</span><span dir="LTR">(x)</span></p>
+</td>
+<td width="136">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">عدد الدجاج (التكرار)</span></p>
+</td>
+<td width="136">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">الوزن</span></p>
+</td>
+</tr>
+<tr>
+<td width="136">
+<p dir="LTR" align="right">(600+620)/2= 610</p>
+</td>
+<td width="136">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="136">
+<p dir="LTR">600-</p>
+</td>
+</tr>
+<tr>
+<td width="136">
+<p dir="LTR" align="right">(620+640)/2=630</p>
+</td>
+<td width="136">
+<p dir="LTR" align="center">15</p>
+</td>
+<td width="136">
+<p dir="LTR">620-</p>
+</td>
+</tr>
+<tr>
+<td width="136">
+<p dir="LTR" align="right">650</p>
+</td>
+<td width="136">
+<p dir="LTR" align="center">20</p>
+</td>
+<td width="136">
+<p dir="LTR">640-</p>
+</td>
+</tr>
+<tr>
+<td width="136">
+<p dir="LTR" align="right">670</p>
+</td>
+<td width="136">
+<p dir="LTR" align="center">25</p>
+</td>
+<td width="136">
+<p dir="LTR">660-</p>
+</td>
+</tr>
+<tr>
+<td width="136">
+<p dir="LTR" align="right">690</p>
+</td>
+<td width="136">
+<p dir="LTR" align="center">20</p>
+</td>
+<td width="136">
+<p dir="LTR">680-</p>
+</td>
+</tr>
+<tr>
+<td width="136">
+<p dir="LTR" align="right">(700+720)/710</p>
+</td>
+<td width="136">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="136">
+<p dir="LTR">700-720</p>
+</td>
+</tr>
+<tr>
+<td width="136">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-SA">&nbsp;</span></p>
+</td>
+<td width="136">
+<p dir="LTR" align="center">100</p>
+</td>
+<td width="136">
+<p dir="LTR" align="center">Sum</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" align="center"><span dir="LTR">&nbsp;</span></p>
+<p dir="RTL">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">نقط الإحداثيات هي :</span></p>
+<p dir="RTL"><span dir="LTR">&nbsp;</span></p>
+<div align="right">
+<table dir="rtl" border="1" width="396" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="40">
+<p dir="LTR" align="center">730</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">710</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">690</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">670</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">650</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">630</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">610</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">590</p>
+</td>
+<td width="79">
+<p dir="RTL"><span lang="AR-SA">مركز الفئة&nbsp;</span><span dir="LTR">(x)</span></p>
+</td>
+</tr>
+<tr>
+<td width="40">
+<p dir="LTR" align="center">0</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">20</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">25</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">20</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">15</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="40">
+<p dir="LTR" align="center">0</p>
+</td>
+<td width="79">
+<p dir="RTL"><span lang="AR-SA">&nbsp;التكرار&nbsp;</span><span dir="LTR">(y)</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL"><span dir="LTR">&nbsp;</span></p>
+<p dir="RTL">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-SA">التمثيل البياني لنقط الإحداثيات وتوصيلها بخطوط مستقيمة، كما هو مبين بالشكل (2-8)</span></p>
+<p dir="RTL"><img src="data:image/png;base64,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" alt="" /><img src="blob:http://10.34.17.22/2ef63bd5-75be-46a9-9bf0-1ee2623de0ea" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center"><span lang="AR-SA">شكل (2-8) المضلع التكراري لأوزان عينة من الدجاج حجمها&nbsp;</span><span dir="LTR">100</span><span lang="AR-SA">&nbsp;دجاجة</span></p></p></div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <br>
+
+            <div class='container'>
+                <ul class='pagination justify-content-center'>
+                  <li class='page-item'><a class='page-link' href='U2-L17.html'>التالي</a></li> <span class='pr-5 pl-5 shadow-sm'>62 / 39</span><li class='page-item'><a class='page-link' href='U2-L15.html'>السابق</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </div>  <div class='overlay'></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper.JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js' integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ' crossorigin='anonymous'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js' integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm' crossorigin='anonymous'></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js'></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#sidebar').mCustomScrollbar({
+                theme: 'minimal'
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

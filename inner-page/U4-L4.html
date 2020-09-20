@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>مقدمة في علم الاحصاء </title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'>
+    <!-- Our Custom CSS -->
+    <link rel='stylesheet' href='../css/page2.css'>
+    <link rel='stylesheet' href='../css/rtl.css'>
+    <!-- Scrollbar Custom CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap' rel='stylesheet'>
+
+
+    <!-- Font Awesome JS -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/solid.js'></script>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js'></script>
+
+
+</head>
+
+<body><nav id='sidebar'>
+            <div id='dismiss'>
+                <i class='fa fa-times' aria-hidden='true'></i>
+
+            </div>
+
+            <div class='sidebar-header'>
+                <!--<h3>Bootstrap Sidebar</h3>-->
+            </div>
+
+            <ul class='list-unstyled components'>
+                <p>الفهرس</p>
+                <li>
+                    <a href='#homeSubmenu1' data-toggle='collapse' aria-expanded='false'>الوحدة الاولى </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu1'>< li>
+                            <a href='U1-L1.html'>مقدمة</a>
+                        </li>< li>
+                            <a href='U1-L2.html'>تعريف علم الاحصاء</a>
+                        </li>< li>
+                            <a href='U1-L3.html'>المجتمع الإحصائي</a>
+                        </li>< li>
+                            <a href='U1-L4.html'>الوحدة الإحصائية</a>
+                        </li>< li>
+                            <a href='U1-L5.html'>العينة والمعاينة</a>
+                        </li>< li>
+                            <a href='U1-L6.html'>الإطار</a>
+                        </li>< li>
+                            <a href='U1-L7.html'>معالم المجتمع وإحصائية العينة</a>
+                        </li>< li>
+                            <a href='U1-L8.html'>وظائف علم الإحصاء</a>
+                        </li>< li>
+                            <a href='U1-L9.html'>وصف البيانات Data Description	</a>
+                        </li>< li>
+                            <a href='U1-L10.html'>الاستدلال الإحصائي Statistical Inference	</a>
+                        </li>< li>
+                            <a href='U1-L11.html'>التنبؤ Forecasting	</a>
+                        </li>< li>
+                            <a href='U1-L12.html'>أنواع البيانات وطرق قياسها	</a>
+                        </li>< li>
+                            <a href='U1-L13.html'>البيانات الوصفية	</a>
+                        </li>< li>
+                            <a href='U1-L14.html'>البيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U1-L15.html'>طرق جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L16.html'>المصادر الأولية</a>
+                        </li>< li>
+                            <a href='U1-L17.html'>المصادر الثانوية      </a>
+                        </li>< li>
+                            <a href='U1-L18.html'>وسائل جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L19.html'>أسلوب جمع البيانات</a>
+                        </li>< li>
+                            <a href='U1-L20.html'>أنواع العينات</a>
+                        </li>< li>
+                            <a href='U1-L21.html'>العينات الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L22.html'>العينات غير الاحتمالية</a>
+                        </li>< li>
+                            <a href='U1-L23.html'>تمارين</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu2' data-toggle='collapse' aria-expanded='false'>الوحدة الثانية </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu2'>< li>
+                            <a href='U2-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U2-L2.html'>عرض البيانات جدولياً</a>
+                        </li>< li>
+                            <a href='U2-L3.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L4.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L5.html'>تكوين الجدول التكراري</a>
+                        </li>< li>
+                            <a href='U2-L6.html'>تكوين التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L7.html'>تكوين جدول تفريغ البيانات</a>
+                        </li>< li>
+                            <a href='U2-L8.html'>التوزيع التكراري النسبي</a>
+                        </li>< li>
+                            <a href='U2-L9.html'>العرض البياني للبيانات الوصفية</a>
+                        </li>< li>
+                            <a href='U2-L10.html'>الدائرة البيانية	</a>
+                        </li>< li>
+                            <a href='U2-L11.html'>رسم الدائرة</a>
+                        </li>< li>
+                            <a href='U2-L12.html'>الأعمدة البيانية</a>
+                        </li>< li>
+                            <a href='U2-L13.html'>الأعمدة البيانية المزدوجة</a>
+                        </li>< li>
+                            <a href='U2-L14.html'>الأعمدة البيانية المجزأة</a>
+                        </li>< li>
+                            <a href='U2-L15.html'>العرض البياني للبيانات الكمية	</a>
+                        </li>< li>
+                            <a href='U2-L16.html'>المدرج التكراري Histogram </a>
+                        </li>< li>
+                            <a href='U2-L17.html'>المنحنى التكراري</a>
+                        </li>< li>
+                            <a href='U2-L18.html'>التوزيعات التكرارية المتجمعة </a>
+                        </li>< li>
+                            <a href='U2-L19.html'>التوزيع التكراري المتجمع الصاعد</a>
+                        </li>< li>
+                            <a href='U2-L20.html'>التوزيع التكراري المتجمع الهابط</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu3' data-toggle='collapse' aria-expanded='false'>الوحدة الثالثة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu3'>< li>
+                            <a href='U3-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U3-L2.html'>مقاييس النزعة المركزية</a>
+                        </li>< li>
+                            <a href='U3-L3.html'>الوسط الحسابي  Arithmetic Mean</a>
+                        </li>< li>
+                            <a href='U3-L4.html'>الوسيط  Median</a>
+                        </li>< li>
+                            <a href='U3-L5.html'>استخدام مقاييس النزعة المركزية في تحديد شكل توزيع البيانات	</a>
+                        </li>< li>
+                            <a href='U3-L6.html'>تطبيقات الفصل الثالث</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu4' data-toggle='collapse' aria-expanded='false'>الوحدة الرابعة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu4'>< li>
+                            <a href='U4-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U4-L2.html'>المدى Rang</a>
+                        </li>< li>
+                            <a href='U4-L3.html'>التباين والانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L4.html'>التباين والانحراف المعياري في العينة S</a>
+                        </li>< li>
+                            <a href='U4-L5.html'>خصائص الانحراف المعياري </a>
+                        </li>< li>
+                            <a href='U4-L6.html'>معامل الاختلاف النسبي	</a>
+                        </li></ul>
+                </li>
+                <li>
+                    <a href='#homeSubmenu5' data-toggle='collapse' aria-expanded='false'>الوحدة الخامسة </a>
+                    <ul class='collapse list-unstyled' id='homeSubmenu5'>< li>
+                            <a href='U5-L1.html'>مقدمـــة</a>
+                        </li>< li>
+                            <a href='U5-L2.html'>الارتباط الخطى البسيط Simple Correlation</a>
+                        </li>< li>
+                            <a href='U5-L3.html'>معامل الارتباط الخطى البسيط " لبيرسون" Pearson    </a>
+                        </li>< li>
+                            <a href='U5-L4.html'>معامل ارتباط الرتب (اسبيرمان) Spearman     </a>
+                        </li>< li>
+                            <a href='U5-L5.html'>الانحدار الخطى البسيط Simple Regression  </a>
+                        </li>< li>
+                            <a href='U5-L6.html'>السلاسل الزمنية</a>
+                        </li>< li>
+                            <a href='U5-L7.html'>تطبيقات الفصل الخامس</a>
+                        </li></ul>
+                </li></ul>
+
+
+
+        </nav>        <div id='content'>
+
+            <nav class='navbar navbar-light bg-light shadow-sm ' dir='rtl'>
+                <div class='container'>
+
+                    <a class='navbar-brand float-right' href='#'>
+                        <img src='../img/logo1.png' class='d-inline-block align-top img-fluid ' alt=''>
+
+                    </a>
+                    <a class='nav-link home' href='../index.html'>
+                        <i class='fa fa-home fa-lg' aria-hidden='false'></i>
+                        <span class='sr-only'>(current)</span></a>
+                </div>
+            </nav>
+
+
+
+
+            <div class='container'>
+                <nav class='navbar navbar-expand-lg navbar-light  '>
+                    <div class='container-fluid'>
+
+                        <button type='button' id='sidebarCollapse' class='btn btn-info'>
+                            <i class='fas fa-align-left'></i>
+                            <span></span>
+                        </button>
+
+                        <button class='btn btn-dark d-inline-block d-lg-none ml-auto' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                            <i class='fas fa-align-justify'></i>
+                        </button>
+                        <h2 class='pr-3'>مقدمة في علم الاحصاء </h2>
+                        <div class='collapse navbar-collapse ' id='navbarSupportedContent'>
+                            <ul class='nav navbar-nav mx-auto'>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='#'> <button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>تعريف الحقيبة</button></a>
+
+
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='U1-L1.html'><button type='button' class='btn btn-secondary pr-3 pl-4 shadow-sm active'>المحتوى التعليمي </button></a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link' href='../book/pdf.pdf' target='_blank'><button type='button' class='btn btn-secondary pr-5 pl-5 shadow-sm'>الكتاب</button> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav aria-label='breadcrumb'>
+                    <ol class='breadcrumb'>
+                        <li class='breadcrumb-item'><a href='../index.html'>الرئيسية </a></li>
+                        <li class='breadcrumb-item'><span style='color:white'>الوحدة الرابعة </span></li>
+                        <li class='breadcrumb-item active' aria-current='page'>التباين والانحراف المعياري في العينة S</li>
+                        
+                    </ol>
+                </nav>
+
+
+
+
+                <!--<h2 class='text-right'>التباين والانحراف المعياري في العينة S</h2>-->
+
+                
+
+
+                    <div class='content-text' id='style-1'> <p class='text-right text-justify mr-1 font-weight-normal' dir='rtl'><p>&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">ثانيا: التباين والانحراف المعياري في العينة (</span><img src="blob:http://10.34.17.22/03b9bd46-c0ec-4dd2-beb5-4ed764110764" alt="" /><span lang="AR-EG">)</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">في كثير من الحالات يكون تباين المجتمع&nbsp;</span><span lang="AR-EG"><img src="blob:http://10.34.17.22/3b229995-6bcb-4161-8c04-4535665894e7" alt="" />&nbsp;غير معلوم، وعندئذ يتم سحب عينة من هذا المجتمع ، ويحسب التباين من بيانات العينة كتقدير لتباين المجتمع، فإذا كانت قراءات عينة عشوائية حجمها&nbsp;</span><span dir="LTR">n</span>&nbsp;<span lang="AR-EG">هي ،&nbsp;</span><img src="blob:http://10.34.17.22/1eb29a5a-7669-4135-9a6f-cf512866df3a" alt="" /><span lang="AR-EG">&nbsp;، فإن تباين العينة ويرمز له بالرمز</span><span dir="LTR">s2</span><span lang="AR-EG">&nbsp;هو:</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span><img src="blob:http://10.34.17.22/85869aaf-115f-46ba-bf99-d5b8d33bee23" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="AR-EG">حيث أن&nbsp;<img src="blob:http://10.34.17.22/7afcd3d5-7434-4478-8138-6e31078d1338" alt="" />&nbsp;هو الوسط الحسابي لقراءات العينة، أي أن :&nbsp;&nbsp;<img src="blob:http://10.34.17.22/9d86a489-6fdd-4b7d-9a1f-d4bd65f359a9" alt="" />&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">مثـال(4-4)</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="AR-EG">في المثال (4-3) السابق، إذا تم سحب عينة من عمال المصنع حجمها&nbsp;</span><span dir="LTR">5</span>&nbsp;<span lang="AR-EG">عمال ، وسجل عدد سنوات الخبرة ، وكانت كالتالي .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<div style="text-align: right;" align="center">
+<table dir="rtl" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="38">
+<p dir="LTR" align="center">9</p>
+</td>
+<td width="38">
+<p dir="LTR" align="center">5</p>
+</td>
+<td width="38">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="38">
+<p dir="LTR" align="center">13</p>
+</td>
+<td width="38">
+<p dir="LTR" align="center">8</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">احسب التباين والانحراف المعياري لعدد سنوات الخبرة في العينة .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">الحــل</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="AR-EG">لحساب التباين في العينة نتبع الآتي :</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-EG">الوسط الحسابي في العينة :</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="blob:http://10.34.17.22/30998c66-cc74-45f5-b239-7367f1a38414" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-EG">حساب مربعات الانحرافات&nbsp;<img src="blob:http://10.34.17.22/96f59c28-e382-4031-9234-e39d69a347cc" alt="" />&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span dir="LTR">&nbsp;</span></p>
+<div style="text-align: right;" align="center">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="57">
+<p dir="LTR" align="center">=45</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">9</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">5</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">13</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">8</p>
+</td>
+<td width="108">
+<p dir="RTL" align="center"><span lang="AR-EG">سنوات الخبرة<img src="file:///C:/Users/F/AppData/Local/Temp/msohtmlclip1/01/clip_image063.gif" width="17" height="20" /></span></p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p dir="LTR" align="center">=0</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">0</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">-4</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">1</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">4</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">-1</p>
+</td>
+<td width="108">
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/9119b3a3-1516-4a40-845f-5ea09cddc727" alt="" /></p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p dir="LTR" align="center">=34</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">0</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">16</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">1</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">16</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">1</p>
+</td>
+<td width="108">
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/fb646301-1d5d-4781-9b66-1a21c92897a3" alt="" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; أي أن :&nbsp;&nbsp;</span><img src="blob:http://10.34.17.22/27ad5e7b-e4e2-41fb-a98a-b1b1d50633de" alt="" /><span lang="AR-EG">&nbsp;،</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-EG">إذا تباين سنوات الخبرة في العينة قيمته هي :</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="blob:http://10.34.17.22/9eb1a458-153e-4859-aec2-809b5652bb60" alt="" /></p>
+<p dir="RTL" style="text-align: right;" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">ومن ثم نجد أن الانحراف المعياري لسنوات الخبرة لعمال العينة، ويرمز له بالرمز&nbsp;<img src="blob:http://10.34.17.22/38bff50b-8c1a-44e2-907f-d17738aa855a" alt="" />&nbsp;، هو :</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="blob:http://10.34.17.22/2c94cc5b-6be4-4fbb-aae4-1f33561ad2c5" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; أي أن الانحراف المعياري لسنوات الخبرة في العينة هو&nbsp;</span><span dir="LTR">2.92</span><span lang="AR-EG">&nbsp; سنة .</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">يمكن تبسيط الصيغة الرياضية لتباين العينة إلى صيغة سهلة يمكن التعامل معها، وخاصة إذا كانت البيانات تحتوي على قيم كسرية وهي:</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><img src="blob:http://10.34.17.22/dad0a80a-7b65-4aff-b372-1bad0e42aa10" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">وبالتطبيق على بيانات المثال السابق، نجد أن :</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<div style="text-align: right;" align="center">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="57">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-EG">=</span>45</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">9</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">5</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">13</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">8</p>
+</td>
+<td width="108">
+<p dir="RTL" align="center"><span lang="AR-EG">سنوات الخبرة</span><img src="blob:http://10.34.17.22/d6bf602b-f82f-46e1-8624-1a6df224dce3" alt="" /></p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-EG">=</span>439</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">81</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">25</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">100</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">169</p>
+</td>
+<td width="57">
+<p dir="LTR" align="center">64</p>
+</td>
+<td width="108">
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/cc54ecf8-0a5a-4472-8f35-47c2f1399222" alt="" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-EG">تباين العينة هو :</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG"><img src="blob:http://10.34.17.22/6285814c-16d5-4cca-8ec5-a02019e51c1f" alt="" /></span></p>
+<p dir="RTL" style="text-align: right;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span lang="AR-EG">ومن ثم نجد أن الانحراف المعياري لسنوات الخبرة لعمال العينة، ويرمز له بالرمز&nbsp;<img src="blob:http://10.34.17.22/41e7ff4d-0197-428d-a51c-e86ae2de23b4" alt="" />، هو :</span></p>
+<p dir="RTL" style="text-align: right;" align="center"><img src="blob:http://10.34.17.22/2c94cc5b-6be4-4fbb-aae4-1f33561ad2c5" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span dir="LTR">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">التباين والانحراف المعياري في حالة البيانات المبوبة</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="AR-EG">إذا كانت بيانات الظاهرة، مبوبة في جدول توزيع تكرار، فإن التباين يحسب بتطبيق المعادلة التالية.</span></p>
+<p style="text-align: right;" align="center"><img src="blob:http://10.34.17.22/793d3a7b-0a35-497c-903b-d7622d6bab04" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">وكما نعرف أن الانحراف المعياري هو جذر&nbsp;</span><span lang="AR-EG">التباين</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">حيث أن&nbsp;<img src="blob:http://10.34.17.22/c7d441b6-291c-4b11-935c-e6d3e0b9e30e" alt="" />&nbsp;هو تكرار الفئة،&nbsp;<img src="blob:http://10.34.17.22/0e4fdf05-019b-4280-b730-56577b533d94" alt="" />&nbsp;هو مركز الفئة ،&nbsp;<img src="blob:http://10.34.17.22/56d4ab87-c96d-470c-bfc8-07b3e746b2a3" alt="" />&nbsp;هي مجموع التكرارات&nbsp;<img src="blob:http://10.34.17.22/a8ec53d6-c53d-461f-b48a-0a5f2f2a1c19" alt="" />.</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">مثـال(4-5)</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">يبين الجدول التكراري التالي توزيع</span><span dir="LTR">40&nbsp;</span><span lang="AR-SA">&nbsp;أسرة حسب الإنفاق الشهري بالألف ريال.</span></p>
+<div style="text-align: right;" align="center">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="66">
+<p dir="LTR" align="center">14 &ndash; 17</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">11 &ndash; 14</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">8 - 11</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">5 - 8</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">2 - 5</p>
+</td>
+<td width="87">
+<p dir="RTL" align="center"><span lang="AR-EG">الإنفاق</span></p>
+</td>
+</tr>
+<tr>
+<td width="66">
+<p dir="LTR" align="center">8</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">13</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">8</p>
+</td>
+<td width="66">
+<p dir="LTR" align="center">1</p>
+</td>
+<td width="87">
+<p dir="RTL" align="center"><span lang="AR-EG">عدد الأسرة</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;احسب التباين والانحراف المعياري للإنفاق الشهري للأسرة</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">الحـــــل</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="AR-SA">لحساب التباين والانحراف المعياري للإنفاق الشهري نكون الجدول التالي:</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">&nbsp;</span></p>
+<div style="text-align: right;" align="center">
+<table dir="rtl" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td rowspan="7" valign="top" width="188">
+<p dir="RTL" align="right"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" align="right"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" align="right"><img src="blob:http://10.34.17.22/d4949154-1181-4498-a1e9-1446311946dd" alt="" /></p>
+<p dir="RTL" align="right"><img src="blob:http://10.34.17.22/cf7a09de-47e5-4ab7-a68b-836d6033e529" alt="" /></p>
+<p dir="RTL" align="right"><img src="blob:http://10.34.17.22/5d0ce9c9-dc75-4c32-b77f-fc14e14838a7" alt="" /></p>
+<p dir="RTL" align="right"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" align="right"><span lang="AR-EG">&nbsp;</span></p>
+</td>
+<td width="24">
+<p dir="RTL" align="center"><span lang="AR-EG">&nbsp;</span></p>
+</td>
+<td width="60">
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/37ed2ad3-27ed-4201-8852-8c505e3fbc84" alt="" /></p>
+</td>
+<td width="52">
+<p dir="RTL" align="center"><img src="blob:http://10.34.17.22/e4ccb9bd-fb4f-4b93-9b65-48271eb89670" alt="" /></p>
+</td>
+<td width="68">
+<p dir="RTL" align="center"><span lang="AR-EG">مركز الفئة&nbsp;</span><img src="blob:http://10.34.17.22/77eddd32-4a8d-44fd-8adf-23611bd46991" alt="" /></p>
+</td>
+<td width="65">
+<p dir="RTL" align="center"><span lang="AR-EG">عدد الأسر</span></p>
+<img src="blob:http://10.34.17.22/6e02aeb1-f3dd-4d8e-a43f-1173926e7ad4" alt="" /></td>
+<td width="58">
+<p dir="RTL" align="center"><span lang="AR-EG">الإنفاق</span></p>
+</td>
+</tr>
+<tr>
+<td width="24">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-EG">&nbsp;</span></p>
+</td>
+<td width="60">
+<p dir="LTR" align="center">12.25</p>
+</td>
+<td width="52">
+<p dir="LTR" align="center">3.5</p>
+</td>
+<td width="68">
+<p dir="LTR" align="center">3.5</p>
+</td>
+<td width="65">
+<p dir="LTR" align="center">1</p>
+</td>
+<td width="58">
+<p dir="LTR" align="center">2-5</p>
+</td>
+</tr>
+<tr>
+<td width="24">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-EG">&nbsp;</span></p>
+</td>
+<td width="60">
+<p dir="LTR" align="center">338</p>
+</td>
+<td width="52">
+<p dir="LTR" align="center">52</p>
+</td>
+<td width="68">
+<p dir="LTR" align="center">6.5</p>
+</td>
+<td width="65">
+<p dir="LTR" align="center">8</p>
+</td>
+<td width="58">
+<p dir="LTR" align="center">5-8</p>
+</td>
+</tr>
+<tr>
+<td width="24">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-EG">&nbsp;</span></p>
+</td>
+<td width="60">
+<p dir="LTR" align="center">1173.25</p>
+</td>
+<td width="52">
+<p dir="LTR" align="center">123.5</p>
+</td>
+<td width="68">
+<p dir="LTR" align="center">9.5</p>
+</td>
+<td width="65">
+<p dir="LTR" align="center">13</p>
+</td>
+<td width="58">
+<p dir="LTR" align="center">8-11</p>
+</td>
+</tr>
+<tr>
+<td width="24">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-EG">&nbsp;</span></p>
+</td>
+<td width="60">
+<p dir="LTR" align="center">1562.5</p>
+</td>
+<td width="52">
+<p dir="LTR" align="center">125</p>
+</td>
+<td width="68">
+<p dir="LTR" align="center">12.5</p>
+</td>
+<td width="65">
+<p dir="LTR" align="center">10</p>
+</td>
+<td width="58">
+<p dir="LTR" align="center">11-14</p>
+</td>
+</tr>
+<tr>
+<td width="24">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-EG">&nbsp;</span></p>
+</td>
+<td width="60">
+<p dir="LTR" align="center">1922</p>
+</td>
+<td width="52">
+<p dir="LTR" align="center">124</p>
+</td>
+<td width="68">
+<p dir="LTR" align="center">15.5</p>
+</td>
+<td width="65">
+<p dir="LTR" align="center">8</p>
+</td>
+<td width="58">
+<p dir="LTR" align="center">14-17</p>
+</td>
+</tr>
+<tr>
+<td width="24">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-EG">&nbsp;</span></p>
+</td>
+<td width="60">
+<p dir="LTR" align="center">5008</p>
+</td>
+<td width="52">
+<p dir="LTR" align="center">428</p>
+</td>
+<td width="68">
+<p dir="LTR" align="center"><span dir="RTL" lang="AR-EG">&nbsp;</span></p>
+</td>
+<td width="65">
+<p dir="LTR" align="center">40</p>
+</td>
+<td width="58">
+<p dir="LTR" align="center">sum</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">وبتطبيق المعادلة ، نجد أن التباين قيمته هي :</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span><img src="blob:http://10.34.17.22/bd2f08c5-efd4-4618-9e0e-fc321e583eea" alt="" /></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">أي أن التباين</span>&nbsp;<span lang="AR-EG">للإنفاق الشهري =&nbsp;</span><span dir="LTR">10.98</span><span lang="AR-SA">&nbsp;&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-SA">و</span><span lang="AR-EG">الانحراف المعياري للإنفاق الشهري&nbsp;</span><span dir="LTR">3.314</span><span lang="AR-EG">&nbsp;ألف ريال.</span><span lang="AR-EG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p dir="RTL" style="text-align: right;"><span lang="AR-EG">&nbsp;&nbsp;</span></p></p></div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <br>
+
+            <div class='container'>
+                <ul class='pagination justify-content-center'>
+                  <li class='page-item'><a class='page-link' href='U4-L5.html'>التالي</a></li> <span class='pr-5 pl-5 shadow-sm'>62 / 53</span><li class='page-item'><a class='page-link' href='U4-L3.html'>السابق</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </div>  <div class='overlay'></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper.JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js' integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ' crossorigin='anonymous'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js' integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm' crossorigin='anonymous'></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js'></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#sidebar').mCustomScrollbar({
+                theme: 'minimal'
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
